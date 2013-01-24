@@ -1,0 +1,4 @@
+@import "class/_sentence";
+.sentence {
+  @extend %sentence;
+}
