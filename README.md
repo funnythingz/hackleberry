@@ -1,7 +1,7 @@
-HTML/CSS3/JS Toolkit
+hackleberry: HTML5/CSS3/JavaScript Framework
 =======
 
-HTML/CSS3/JS Toolkitです。Sass/CompassとpureなJSでできています。
+HTML5/CSS3/JavaScript Frameworkです。Sass/CompassとpureなJSでできています。
 
 
 == 絶賛開発中 ==
@@ -14,4 +14,4 @@ Sass 3.2.5 (Media Mark)
 Compass 0.12.2 (Alnilam)
 </blockquote>
 
-&copy; <a href="http://www.funnythingz.com" target="_blank">funnythingz</a>
+&copy; <a href="http://hackleberry.me" target="_blank">hackleberry</a>
