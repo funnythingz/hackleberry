@@ -1,4 +1,24 @@
 @charset "utf-8";
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/class\/typography\/__sentence\.scss}line{font-family:\000031}}
+.sentence, .text {
+  line-height: 1.4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/class\/typography\/__small\.scss}line{font-family:\000031}}
+.small {
+  font-size: 13px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/class\/typography\/__medium\.scss}line{font-family:\000031}}
+.medium, .text {
+  font-size: 14px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/class\/typography\/__large\.scss}line{font-family:\000031}}
+.large {
+  font-size: 15px;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -17,7 +37,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font: inherit;
-  font-size: 100%;
+  font-size: 14;
   vertical-align: baseline;
 }
 
@@ -62,51 +82,4 @@ a img {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/core\/_reset\.scss}line{font-family:\0000316}}
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  font-size: 14;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/class\/__sentence\.scss}line{font-family:\000033}}
-.sentence, .text {
-  line-height: 1.4;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/class\/__small\.scss}line{font-family:\000033}}
-.small {
-  font-size: 13px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/class\/__medium\.scss}line{font-family:\000033}}
-.medium, .text {
-  font-size: 14px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/class\/__large\.scss}line{font-family:\000033}}
-.large {
-  font-size: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/class\/__sentence\.scss}line{font-family:\000033}}
-.sentence, .text {
-  line-height: 1.4;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/class\/__medium\.scss}line{font-family:\000033}}
-.medium, .text {
-  font-size: 14px;
 }

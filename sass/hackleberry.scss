@@ -2,12 +2,12 @@
 
 @import "compass/css3";
 
+@import "hackleberry/settings";
+
+@import "hackleberry/class/all";
+
 @import "hackleberry/functions/all";
 
-@import "hackleberry/themes/hackleberry";
-
 @import "hackleberry/mixins/all";
-
-@import "hackleberry/core/base";
 
 @import "hackleberry/components/all";

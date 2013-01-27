@@ -1,6 +1,3 @@
-@import "class/_sentence";
-@import "class/_medium";
-
 .text {
   @extend %sentence;
   @extend %medium;
