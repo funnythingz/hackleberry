@@ -1,20 +1,20 @@
 @charset "utf-8";
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/class\/typography\/__sentence\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/classes\/typography\/__sentence\.scss}line{font-family:\000031}}
 .sentence, .text {
   line-height: 1.4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/class\/typography\/__small\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/classes\/typography\/__small\.scss}line{font-family:\000031}}
 .small {
   font-size: 13px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/class\/typography\/__medium\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/classes\/typography\/__medium\.scss}line{font-family:\000031}}
 .medium, .text {
   font-size: 14px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/class\/typography\/__large\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/classes\/typography\/__large\.scss}line{font-family:\000031}}
 .large {
   font-size: 15px;
 }
@@ -37,7 +37,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font: inherit;
-  font-size: 14;
+  font-size: 14px;
   vertical-align: baseline;
 }
 
