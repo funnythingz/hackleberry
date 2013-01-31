@@ -1,4 +1,4 @@
-.text {
+.#{$class_text} {
   @extend %sentence;
   @extend %medium;
 }

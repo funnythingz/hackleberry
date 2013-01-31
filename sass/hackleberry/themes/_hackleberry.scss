@@ -1,8 +1,20 @@
 // Font
 
 $textDefaultSize: 14;
-$textLargeSize: ($textDefaultSize + 1);
+$textLargeSize: ($textDefaultSize + 2);
 $textMediumSize: $textDefaultSize;
-$textSmallSize: ($textDefaultSize - 1);
+$textSmallSize: ($textDefaultSize - 2);
 
 $textLineHeight: $textDefaultSize * 0.1;
+
+
+// layout
+$class_cassette: 'cassette';
+$class_unit: 'unit';
+
+// typography
+$class_sentence: 'sentence';
+$class_small: 'small';
+$class_medium: 'medium';
+$class_large: 'large';
+$class_text: 'text';

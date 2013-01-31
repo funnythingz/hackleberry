@@ -1,1 +1,12 @@
-@import "typography/_all";
+%sentence {
+  line-height: #{$textLineHeight};
+}
+%small {
+  font-size: #{$textSmallSize}px;
+}
+%medium {
+  font-size: #{$textMediumSize}px;
+}
+%large {
+  font-size: #{$textLargeSize}px;
+}
