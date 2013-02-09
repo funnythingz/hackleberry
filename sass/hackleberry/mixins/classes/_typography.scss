@@ -1,12 +1,35 @@
-@mixin sentence {
-  line-height: #{$textLineHeight};
+@mixin sentence($arg: ''){
+  line-height: #{$textLineHeight}#{$arg};
 }
-@mixin small {
-  font-size: #{$textSmallSize}px;
+@mixin small($arg: ''){
+  font-size: #{$textSmallSize}px#{$arg};
 }
-@mixin medium {
-  font-size: #{$textMediumSize}px;
+@mixin medium($arg: ''){
+  font-size: #{$textMediumSize}px#{$arg};
 }
-@mixin large {
-  font-size: #{$textLargeSize}px;
+@mixin large($arg: ''){
+  font-size: #{$textLargeSize}px#{$arg};
+}
+@mixin jumbo($arg: ''){
+  font-size: #{$textJumboSize}px#{$arg};
+}
+
+@mixin normal($arg: ''){
+  font-weight: normal#{$arg};
+}
+@mixin bold($arg: ''){
+  font-weight: bold#{$arg};
+}
+@mixin italic($arg: ''){
+  font-style: italic#{$arg};
+}
+
+@mixin left($arg: ''){
+  text-align: left#{$arg};
+}
+@mixin center($arg: ''){
+  text-align: center#{$arg};
+}
+@mixin right($arg: ''){
+  text-align: right#{$arg};
 }

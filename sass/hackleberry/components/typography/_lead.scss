@@ -1,0 +1,4 @@
+.#{$class_lead} {
+  @include sentence();
+  @include large();
+}

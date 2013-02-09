@@ -1,6 +1,24 @@
 // typography
+@import "typography/lv1";
+@import "typography/lv2";
+@import "typography/lv3";
+@import "typography/lv4";
+@import "typography/lv5";
+@import "typography/lv6";
+
+@import "typography/text";
+@import "typography/lead";
+
 @import "typography/sentence";
 @import "typography/small";
 @import "typography/medium";
 @import "typography/large";
-@import "typography/text";
+@import "typography/jumbo";
+
+@import "typography/normal";
+@import "typography/bold";
+@import "typography/italic";
+
+@import "typography/left";
+@import "typography/center";
+@import "typography/right";

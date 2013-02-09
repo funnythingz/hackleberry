@@ -1,4 +1,22 @@
 @charset "utf-8";
+/**
+* Global
+*/
+/* All */
+/* spacing outer */
+/* spacingInner */
+/* border-radius */
+/* border-radius */
+/**
+* glid
+*/
+/* className */
+/*
+* typography
+*/
+/* font-size */
+/* line-height */
+/* className */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/base\/_global-reset\.scss}line{font-family:\0000314}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -16,6 +34,9 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0 none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   font: inherit;
   font-size: 14px;
   vertical-align: baseline;
@@ -64,39 +85,116 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/layout\/_cassette\.scss}line{font-family:\000031}}
-.cassette {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_section\.scss}line{font-family:\000031}}
+.section {
+  margin: 0 0 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_article\.scss}line{font-family:\000031}}
+.article {
   margin: 0 8px 8px;
   padding: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/layout\/_unit\.scss}line{font-family:\000031}}
-.unit {
-  margin: 0 0 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_sentence\.scss}line{font-family:\000031}}
-.sentence {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lv1\.scss}line{font-family:\000031}}
+.lv1 {
   line-height: 1.4;
+  font-size: 18px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_small\.scss}line{font-family:\000031}}
-.small {
-  font-size: 12px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lv2\.scss}line{font-family:\000031}}
+.lv2 {
+  line-height: 1.4;
+  font-size: 16px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_medium\.scss}line{font-family:\000031}}
-.medium {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lv3\.scss}line{font-family:\000031}}
+.lv3 {
+  line-height: 1.4;
   font-size: 14px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_large\.scss}line{font-family:\000031}}
-.large {
-  font-size: 16px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lv4\.scss}line{font-family:\000031}}
+.lv4 {
+  line-height: 1.4;
+  font-size: 12px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lv5\.scss}line{font-family:\000031}}
+.lv5 {
+  line-height: 1.4;
+  font-size: 12px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lv6\.scss}line{font-family:\000031}}
+.lv6 {
+  line-height: 1.4;
+  font-size: 12px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_text\.scss}line{font-family:\000031}}
 .text {
   line-height: 1.4;
   font-size: 14px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lead\.scss}line{font-family:\000031}}
+.lead {
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_sentence\.scss}line{font-family:\000031}}
+.sentence {
+  line-height: 1.4!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_small\.scss}line{font-family:\000031}}
+.small {
+  font-size: 12px!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_medium\.scss}line{font-family:\000031}}
+.medium {
+  font-size: 14px!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_large\.scss}line{font-family:\000031}}
+.large {
+  font-size: 16px!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_jumbo\.scss}line{font-family:\000031}}
+.jumbo {
+  font-size: 18px!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_normal\.scss}line{font-family:\000031}}
+.normal {
+  font-weight: normal!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_bold\.scss}line{font-family:\000031}}
+.bold {
+  font-weight: bold!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_italic\.scss}line{font-family:\000031}}
+.italic {
+  font-style: italic!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_left\.scss}line{font-family:\000031}}
+.left {
+  text-align: left!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_center\.scss}line{font-family:\000031}}
+.center {
+  text-align: center!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_right\.scss}line{font-family:\000031}}
+.right {
+  text-align: right!important;
 }

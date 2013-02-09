@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="description" content="hackleberry: HTML5/CSS3/JavaScript Framework">
@@ -9,69 +9,70 @@
   <meta name="apple-mobile-web-app-capable" content="no">
   <meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="address=no">
+  <link rel="canonical" href="http://hackleberry.me">
   <link rel="apple-touch-icon-precomposed" href="">
   <!-- /iphone -->
   <title>hackleberry: HTML5/CSS3/JavaScript Framework</title>
   <link rel="shortcut icon" type="image/x-icon" href="">
-  <script src="js/hackleberry.min.js"></script>
-  <script>
-  (function(){
-    HACKLEBERRY.changeStylesheet({
-      path: 'css/',
-      file: ['hackleberry.css'],
-      pure: true
-    });
-  })();
-  </script>
 </head>
 <body>
 
-<head>
+<section class="section">
+  <nav class="menu global">
+    <ul class="unstyled">
+      <li class="current"><a href="index.html">HOME</a></li>
+      <li><a href="getting-started.html">Get Started</a></li>
+      <li><a href="scaffolding.html">Scaffolding</a></li>
+      <li><a href="components.html">Components</a></li>
+      <li><a href="custmize.html">Custmize</a></li>
+    </ul>
+  </nav>
+</section><!-- {* /.section *} -->
 
-<article>
-  <header>
-    <h1 class="heading1">title</h1>
-    <p class="text">description</p>
-  </header>
-  <section class="unit">
-    <p class="text">text/text/text/text/text/text/text/text/</p>
-    <section class="cassete">
-      <p class="text">in cassete.</p>
-      <ul>
-        <li>list</li>
-        <li>list</li>
-        <li>list</li>
-      </ul>
-      <ol>
-        <li>list</li>
-      </ol>
-      <dl>
-        <dt>title</dt>
-      </dl>
-      <table>
-        <tr>
-          <th>th</th>
-          <td>td</td>
-        </tr>
-        <tr>
-          <th>th</th>
-          <td>td</td>
-        </tr>
-        <tr>
-          <th>th</th>
-          <td>td</td>
-        </tr>
-        <tr>
-          <th>th</th>
-          <td>td</td>
-        </tr>
-      </table>
-      <form>
-        <label for="text_1">text</label><input type="text" id="text_1">
-      </form>
-    </section><!-- {* /.cassete *} -->
-  </section><!-- {* /.unit *} -->
-</article>
+<header class="header home">
+  <div class="center">
+    <hgroup>
+      <h1 class="lv1">hackleberry</h1>
+      <h2 class="lv2">HTML5/CSS3/JavaScript Framework</h2>
+    </hgroup>
+    <button class="button primary large">Download hackleberry</button>
+    <ul class="unstyled horizontal">
+      <li class="text">
+        <a href="http://github.com/funnythingz/hackleberry">GitHub project</a>
+      </li>
+      <li class="text">
+        Version Dev.
+      </li>
+    </ul>
+  </div><!-- {/.center} -->
+</header><!-- {* /.header *} -->
+
+<footer class="footer global">
+  <p class="text">Made for all good people by <a href="http://www.facebook.com/funnythingz" target="_blank">funnythingz</a> in 2013</p>
+  <p class="text">Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+</footer><!-- {* /.footer *} -->
+
+<script src="js/hackleberry.min.js"></script>
+<script>
+(function(){
+  HACKLEBERRY.changeStylesheet({
+    path: 'css/',
+    file: ['hackleberry.css'],
+    pure: true
+  });
+})();
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1882060-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 
 </body>
 </html>

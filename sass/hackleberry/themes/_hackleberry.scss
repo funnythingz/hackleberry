@@ -1,20 +1,73 @@
-// Font
+/**
+* Global
+*/
+/* All */
+$boxSizing: 'border-box';
 
+/* spacing outer */
+$spacingOuterTop: 10;
+$spacingOuterRight: 10;
+$spacingOuterLeft: 10;
+$spacingOuterBottom: 10;
+
+/* spacingInner */
+$spacingInnerTop: 7;
+$spacingInnerRight: 7;
+$spacingInnerLeft: 7;
+$spacingInnerBottom: 7;
+
+/* border-radius */
+$borderOuterRadiusTop: 5;
+$borderOuterRadiusRight: 5;
+$borderOuterRadiusLeft: 5;
+$borderOuterRadiusBottom: 5;
+
+/* border-radius */
+$borderInnerRadiusTop: 3;
+$borderInnerRadiusRight: 3;
+$borderInnerRadiusLeft: 3;
+$borderInnerRadiusBottom: 3;
+
+/**
+* glid
+*/
+/* className */
+$class_section: 'section';
+$class_article: 'article';
+
+/*
+* typography
+*/
+/* font-size */
 $textDefaultSize: 14;
+$textJumboSize: ($textDefaultSize + 4);
 $textLargeSize: ($textDefaultSize + 2);
 $textMediumSize: $textDefaultSize;
 $textSmallSize: ($textDefaultSize - 2);
-
+/* line-height */
 $textLineHeight: $textDefaultSize * 0.1;
 
+/* className */
+$class_lv1: 'lv1';
+$class_lv2: 'lv2';
+$class_lv3: 'lv3';
+$class_lv4: 'lv4';
+$class_lv5: 'lv5';
+$class_lv6: 'lv6';
 
-// layout
-$class_cassette: 'cassette';
-$class_unit: 'unit';
+$class_text: 'text';
+$class_lead: 'lead';
 
-// typography
 $class_sentence: 'sentence';
 $class_small: 'small';
 $class_medium: 'medium';
 $class_large: 'large';
-$class_text: 'text';
+$class_jumbo: 'jumbo';
+
+$class_normal: 'normal';
+$class_bold: 'bold';
+$class_italic: 'italic';
+
+$class_left: 'left';
+$class_center: 'center';
+$class_right: 'right';
