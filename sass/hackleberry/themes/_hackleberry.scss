@@ -5,7 +5,7 @@
 $boxSizing: 'border-box';
 
 /* spacing outer */
-$spacingOuterTop: 10;
+$spacingOuterTop: 0;
 $spacingOuterRight: 10;
 $spacingOuterLeft: 10;
 $spacingOuterBottom: 10;
@@ -31,9 +31,18 @@ $borderInnerRadiusBottom: 3;
 /**
 * glid
 */
+/* row */
+$rowBaseSize: '%';
+$rowBaseNumber: 100;
+$rowGlidLength: 12;
+
 /* className */
 $class_section: 'section';
 $class_article: 'article';
+
+$class_row: 'row';
+$class_span: 'span';
+$class_offset: 'offset';
 
 /*
 * typography
@@ -46,6 +55,8 @@ $textMediumSize: $textDefaultSize;
 $textSmallSize: ($textDefaultSize - 2);
 /* line-height */
 $textLineHeight: $textDefaultSize * 0.1;
+
+/* background */
 
 /* className */
 $class_lv1: 'lv1';
@@ -71,3 +82,5 @@ $class_italic: 'italic';
 $class_left: 'left';
 $class_center: 'center';
 $class_right: 'right';
+
+$class_blockquote: 'blockquote';

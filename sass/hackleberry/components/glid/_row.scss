@@ -1,0 +1,9 @@
+@for $i from 1 through $rowGlidLength {
+  .#{$class_span}#{$i} {
+    @include span($i);
+    @include floatLeft();
+  }
+}
+.#{$class_row} {
+  @include legacy-pie-clearfix();
+}

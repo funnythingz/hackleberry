@@ -1,0 +1,13 @@
+@mixin floatLeft($arg:''){
+  float: left#{$arg};
+}
+@mixin floatRight($arg:''){
+  float: right#{$arg};
+}
+@mixin floatStatic($arg:''){
+  float: static#{$arg};
+}
+
+@mixin span($num:0, $arg:''){
+  width: #{($rowBaseNumber / ($rowGlidLength / $num))}#{$rowBaseSize}#{$arg};
+}
