@@ -1,12 +1,12 @@
-%sentence {
+@mixin sentence {
   line-height: #{$textLineHeight};
 }
-%small {
+@mixin small {
   font-size: #{$textSmallSize}px;
 }
-%medium {
+@mixin medium {
   font-size: #{$textMediumSize}px;
 }
-%large {
+@mixin large {
   font-size: #{$textLargeSize}px;
 }

@@ -1,0 +1,4 @@
+.#{$class_text} {
+  @include sentence();
+  @include medium();
+}

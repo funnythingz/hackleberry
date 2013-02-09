@@ -1,25 +1,5 @@
 @charset "utf-8";
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/classes\/_typography\.scss}line{font-family:\000031}}
-.sentence, .text {
-  line-height: 1.4;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/classes\/_typography\.scss}line{font-family:\000034}}
-.small {
-  font-size: 12px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/classes\/_typography\.scss}line{font-family:\000037}}
-.medium, .text {
-  font-size: 14px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/classes\/_typography\.scss}line{font-family:\0000310}}
-.large {
-  font-size: 16px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/_global-reset\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/base\/_global-reset\.scss}line{font-family:\0000314}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,30 +21,30 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/_global-reset\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/base\/_global-reset\.scss}line{font-family:\0000320}}
 html {
   line-height: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/_global-reset\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/base\/_global-reset\.scss}line{font-family:\0000324}}
 ol.unstyled, ul.unstyled {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/_global-reset\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/base\/_global-reset\.scss}line{font-family:\0000328}}
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/_global-reset\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/base\/_global-reset\.scss}line{font-family:\0000331}}
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/_global-reset\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/base\/_global-reset\.scss}line{font-family:\0000334}}
 q, blockquote {
   quotes: none;
 }
@@ -74,7 +54,7 @@ q:before, q:after, blockquote:before, blockquote:after {
   content: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/_global-reset\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/base\/_global-reset\.scss}line{font-family:\0000337}}
 a img {
   border: none;
 }
@@ -84,13 +64,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/_cassette\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/layout\/_cassette\.scss}line{font-family:\000031}}
 .cassette {
   margin: 0 8px 8px;
   padding: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/_unit\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/layout\/_unit\.scss}line{font-family:\000031}}
 .unit {
   margin: 0 0 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_sentence\.scss}line{font-family:\000031}}
+.sentence {
+  line-height: 1.4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_small\.scss}line{font-family:\000031}}
+.small {
+  font-size: 12px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_medium\.scss}line{font-family:\000031}}
+.medium {
+  font-size: 14px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_large\.scss}line{font-family:\000031}}
+.large {
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_text\.scss}line{font-family:\000031}}
+.text {
+  line-height: 1.4;
+  font-size: 14px;
 }
