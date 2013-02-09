@@ -33,3 +33,7 @@
 @mixin right($arg: ''){
   text-align: right#{$arg};
 }
+
+@mixin ellipsis($arg: ''){
+  text-overflow: ellipsis#{$arg};
+}

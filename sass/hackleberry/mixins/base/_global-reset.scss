@@ -20,11 +20,7 @@
   html {
     @include reset-body;
   }
-  ol, ul {
-    &.unstyled {
-      @include reset-list-style;
-    }
-  }
+  @include reset-list;
   table {
     @include reset-table;
   }

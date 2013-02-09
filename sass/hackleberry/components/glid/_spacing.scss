@@ -1,8 +1,27 @@
+/* Bottom (Default) */
 .#{$class_spacing} {
   margin-bottom: #{$spacing}#{$spacingUnit};
 }
 @for $i from 0 through $spacingLength {
   .#{$class_spacing}#{($i * $spacing)} {
     margin-bottom: #{($i * $spacing)}#{$spacingUnit}!important;
+  }
+}
+/* Left */
+.#{$class_spacing}-left {
+  margin-left: #{$spacing}#{$spacingUnit};
+}
+@for $i from 0 through $spacingLength {
+  .#{$class_spacing}-left#{($i * $spacing)} {
+    margin-left: #{($i * $spacing)}#{$spacingUnit}!important;
+  }
+}
+/* Right */
+.#{$class_spacing}-right {
+  margin-right: #{$spacing}#{$spacingUnit};
+}
+@for $i from 0 through $spacingLength {
+  .#{$class_spacing}-right#{($i * $spacing)} {
+    margin-right: #{($i * $spacing)}#{$spacingUnit}!important;
   }
 }

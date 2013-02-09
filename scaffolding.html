@@ -60,7 +60,9 @@
         </div><!-- {* /.header.page *} -->
         <article class="article">
           <h1 class="lv2">span1</h1>
-          <p class="text">sub test</p>
+          <p class="text">
+            <code class="code">.span1</code>
+          </p>
           <div class="row">
             <div class="span1">1</div>
             <div class="span1">1</div>
@@ -78,7 +80,9 @@
         </article>
         <article class="article">
           <h1 class="lv2">span2</h1>
-          <p class="text">sub test</p>
+          <p class="text">
+            <code class="code">.span2</code>
+          </p>
           <div class="row">
             <div class="span2">2</div>
             <div class="span2">2</div>
@@ -90,7 +94,9 @@
         </article>
         <article class="article">
           <h1 class="lv2">span3</h1>
-          <p class="text">sub test</p>
+          <p class="text">
+            <code class="code">.span3</code>
+          </p>
           <div class="row">
             <div class="span3">3</div>
             <div class="span3">3</div>
@@ -115,7 +121,15 @@
             <div class="span6">6</div>
           </div>
         </article>
-      </section><!-- {* /.section *} -->
+        <article class="article">
+          <h1 class="lv2"><code class="code">.span3</code><code class="code">.span8.offset1</code></h1>
+          <p class="text">sub test</p>
+          <div class="row">
+            <div class="span3">3</div>
+            <div class="span8 offset1">8</div>
+          </div>
+        </article>
+      </section><!-- {* /#Grid *} -->
         
       <section class="section" id="Typography">
         <div class="header page">
@@ -191,7 +205,106 @@
           <p class="text spacing">spacing text spacing text spacing text spacing text</p>
           <p class="text">text text text text text text text text text text</p>
         </article>
-      </section><!-- {* /.section *} -->
+      </section><!-- {* /#Typography *} -->
+      
+      <section class="section" id="Lists">
+        <div class="header page">
+          <h1 class="lv1">Lists</h1>
+        </div><!-- {* /.header.page *} -->
+        <article class="article">
+          <h1 class="lv2">Marked lists</h1>
+          <ul>
+            <li>List element</li>
+            <li>List element
+              <ul>
+                <li>List element</li>
+                <li>List element
+                  <ul>
+                    <li>List element</li>
+                    <li>List element</li>
+                    <li>List element</li>
+                  </ul>
+                </li>
+                <li>List element</li>
+              </ul>
+            </li>
+            <li>List element</li>
+          </ul>
+        </article>
+        <article class="article">
+          <h1 class="lv2">Numbered lists</h1>
+          <ol>
+            <li>element</li>
+            <li>element
+              <ol>
+                <li>element</li>
+                <li>element
+                  <ol>
+                    <li>element</li>
+                    <li>element</li>
+                    <li>element</li>
+                  </ol>
+                </li>
+                <li>element</li>
+              </ol>
+            </li>
+            <li>element</li>
+          </ol>
+        </article>
+        <article class="article">
+          <h1 class="lv2">unstyled lists</h1>
+          <ul class="unstyled">
+            <li>element</li>
+            <li>element
+              <ul class="unstyled">
+                <li>element</li>
+                <li>element
+                  <ul class="unstyled">
+                    <li>element</li>
+                    <li>element</li>
+                    <li>element</li>
+                  </ul>
+                </li>
+                <li>element</li>
+              </ul>
+            </li>
+            <li>element</li>
+          </ul>
+        </article>
+        <article class="article">
+          <h1 class="lv2">Horizontal</h1>
+          <ul class="unstyled horizontal"><!-- inline comment
+            --><li class="text">element</li><!--
+            --><li class="spacing-left text">element</li><!--
+            --><li class="spacing-left text">element</li><!--
+            --><li class="spacing-left text">element</li><!--
+            --><li class="spacing-left text">element</li><!--
+            --><li class="spacing-left text">element</li><!--
+          --></ul>
+        </article>
+        <article class="article">
+          <h1 class="lv2">Descriptions</h1>
+          <dl class="descriptions">
+            <dt>Description lists</dt>
+            <dd>text text text text text text text</dd>
+            <dt>Description lists</dt>
+            <dd>text text text text text text text</dd>
+            <dt>Description lists</dt>
+            <dd>text text text text text text text</dd>
+          </dl>
+        </article>
+        <article class="article">
+          <h1 class="lv2">Descriptions</h1>
+          <dl class="descriptions">
+            <dt class="title">Description lists</dt>
+            <dd class="text">text text text text text text text text text text text text text text text text text text text text text</dd>
+            <dt class="title">Description lists</dt>
+            <dd class="text">text text text text text text text text text text text text text text</dd>
+            <dt class="title">Description lists</dt>
+            <dd class="text">text text text text text text text</dd>
+          </dl>
+        </article>
+      </section><!-- {* /#Lists *} -->
     </div><!-- {* /.span8 *} -->
   </div><!-- {* /.row *} -->
 </div><!-- {* /.container *} -->
