@@ -1,3 +1,3 @@
 .#{$class_section} {
-  margin: #{$spacingOuterTop}px #{$spacingOuterLeft}px #{$spacingOuterBottom}px #{$spacingOuterRight}px;
+  margin: #{$spacingOuterTop}#{$spacingUnit} #{$spacingOuterLeft}#{$spacingUnit} #{$spacingOuterBottom}#{$spacingUnit} #{$spacingOuterRight}#{$spacingUnit};
 }

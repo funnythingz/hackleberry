@@ -1,0 +1,10 @@
+.#{$class_code} {
+  margin: 0 2px;
+  padding: 2px 4px;
+  @include small();
+  color: #{$textErrorColor};
+  white-space: nowrap;
+  background-color: #f7f8f9;
+  border: 1px solid #e1e1e1;
+  @include border-radius(#{$borderInnerRadius}#{$borderUnit});
+}

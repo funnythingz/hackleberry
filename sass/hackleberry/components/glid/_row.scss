@@ -4,6 +4,11 @@
     @include floatLeft();
   }
 }
+@for $i from 1 through $rowGlidLength {
+  .#{$class_offset}#{$i} {
+    @include offset($i);
+  }
+}
 .#{$class_row} {
   @include legacy-pie-clearfix();
 }

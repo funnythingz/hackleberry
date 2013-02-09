@@ -1,5 +1,5 @@
 .#{$class_article} {
-  padding: #{$spacingInnerTop}px #{$spacingInnerLeft}px #{$spacingInnerBottom}px #{$spacingInnerRight}px;
+  padding: #{$spacingInner}#{$spacingUnit};
   &:only-child,
   &:last-child {
   }

@@ -4,45 +4,64 @@
 /* All */
 $boxSizing: 'border-box';
 
+/**
+* glid
+*/
+/* spacing base */
+$spacing: 5;
+$spacingUnit: 'px';
+$spacingLength: 5;
+
 /* spacing outer */
+$spacingOuter: 10;
 $spacingOuterTop: 0;
 $spacingOuterRight: 10;
 $spacingOuterLeft: 10;
 $spacingOuterBottom: 10;
 
 /* spacingInner */
+$spacingInner: 7;
 $spacingInnerTop: 7;
 $spacingInnerRight: 7;
 $spacingInnerLeft: 7;
 $spacingInnerBottom: 7;
 
-/* border-radius */
+/* border-radius base */
+$borderUnit: 'px';
+/* border-radius outer */
+$borderOuterRadius: 5;
 $borderOuterRadiusTop: 5;
 $borderOuterRadiusRight: 5;
 $borderOuterRadiusLeft: 5;
 $borderOuterRadiusBottom: 5;
 
-/* border-radius */
+/* border-radius inner */
+$borderInnerRadius: 3;
 $borderInnerRadiusTop: 3;
 $borderInnerRadiusRight: 3;
 $borderInnerRadiusLeft: 3;
 $borderInnerRadiusBottom: 3;
 
-/**
-* glid
-*/
+/* container */
+$containerUnit: 'px';
+$containerMaxWidth: 960;
+$containerMinWidth: 320;
+$containerPosition: 'center';
+
 /* row */
-$rowBaseSize: '%';
-$rowBaseNumber: 100;
+$rowBaseUnit: '%';
+$rowBaseWidth: 100;
 $rowGlidLength: 12;
 
 /* className */
 $class_section: 'section';
 $class_article: 'article';
 
+$class_container: 'container';
 $class_row: 'row';
 $class_span: 'span';
 $class_offset: 'offset';
+$class_spacing: 'spacing';
 
 /*
 * typography
@@ -54,9 +73,14 @@ $textLargeSize: ($textDefaultSize + 2);
 $textMediumSize: $textDefaultSize;
 $textSmallSize: ($textDefaultSize - 2);
 /* line-height */
-$textLineHeight: $textDefaultSize * 0.1;
-
-/* background */
+$textLineHeight: 1.5;
+/* color */
+$textMutedColor: '#e1e2e3';
+$textWarningColor: '#c09853';
+$textErrorColor: '#d14';
+$textPrimaryColor: '#187abf';
+$textDisabledColor: '#f7f7f9';
+$textSuccessColor: '#34b842';
 
 /* className */
 $class_lv1: 'lv1';
@@ -84,3 +108,5 @@ $class_center: 'center';
 $class_right: 'right';
 
 $class_blockquote: 'blockquote';
+$class_address: 'address';
+$class_code: 'code';

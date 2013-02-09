@@ -3,13 +3,16 @@
 * Global
 */
 /* All */
-/* spacing outer */
-/* spacingInner */
-/* border-radius */
-/* border-radius */
 /**
 * glid
 */
+/* spacing base */
+/* spacing outer */
+/* spacingInner */
+/* border-radius base */
+/* border-radius outer */
+/* border-radius inner */
+/* container */
 /* row */
 /* className */
 /*
@@ -17,7 +20,7 @@
 */
 /* font-size */
 /* line-height */
-/* background */
+/* color */
 /* className */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/mixins\/base\/_global-reset\.scss}line{font-family:\0000314}}
 html, body, div, span, applet, object, iframe,
@@ -94,7 +97,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_article\.scss}line{font-family:\000031}}
 .article {
-  padding: 7px 7px 7px 7px;
+  padding: 7px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_container\.scss}line{font-family:\000031}}
+.container {
+  max-width: 960px;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000032}}
@@ -169,7 +180,67 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000038}}
+.offset1 {
+  margin-left: 8.33333%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000038}}
+.offset2 {
+  margin-left: 16.66667%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000038}}
+.offset3 {
+  margin-left: 25%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000038}}
+.offset4 {
+  margin-left: 33.33333%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000038}}
+.offset5 {
+  margin-left: 41.66667%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000038}}
+.offset6 {
+  margin-left: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000038}}
+.offset7 {
+  margin-left: 58.33333%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000038}}
+.offset8 {
+  margin-left: 66.66667%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000038}}
+.offset9 {
+  margin-left: 75%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000038}}
+.offset10 {
+  margin-left: 83.33333%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000038}}
+.offset11 {
+  margin-left: 91.66667%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\000038}}
+.offset12 {
+  margin-left: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_row\.scss}line{font-family:\0000312}}
 .row {
   *zoom: 1;
 }
@@ -183,57 +254,92 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   visibility: hidden;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_spacing\.scss}line{font-family:\000031}}
+.spacing {
+  margin-bottom: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_spacing\.scss}line{font-family:\000035}}
+.spacing0 {
+  margin-bottom: 0px!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_spacing\.scss}line{font-family:\000035}}
+.spacing5 {
+  margin-bottom: 5px!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_spacing\.scss}line{font-family:\000035}}
+.spacing10 {
+  margin-bottom: 10px!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_spacing\.scss}line{font-family:\000035}}
+.spacing15 {
+  margin-bottom: 15px!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_spacing\.scss}line{font-family:\000035}}
+.spacing20 {
+  margin-bottom: 20px!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/glid\/_spacing\.scss}line{font-family:\000035}}
+.spacing25 {
+  margin-bottom: 25px!important;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lv1\.scss}line{font-family:\000031}}
 .lv1 {
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: 18px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lv2\.scss}line{font-family:\000031}}
 .lv2 {
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: 16px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lv3\.scss}line{font-family:\000031}}
 .lv3 {
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: 14px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lv4\.scss}line{font-family:\000031}}
 .lv4 {
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: 12px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lv5\.scss}line{font-family:\000031}}
 .lv5 {
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: 12px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lv6\.scss}line{font-family:\000031}}
 .lv6 {
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: 12px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_text\.scss}line{font-family:\000031}}
 .text {
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: 14px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_lead\.scss}line{font-family:\000031}}
 .lead {
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: 16px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_sentence\.scss}line{font-family:\000031}}
 .sentence {
-  line-height: 1.4!important;
+  line-height: 1.5!important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_small\.scss}line{font-family:\000031}}
@@ -288,5 +394,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_blockquote\.scss}line{font-family:\000031}}
 .blockquote {
+  padding: 7px;
   background-color: #eee;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_address\.scss}line{font-family:\000031}}
+.address {
+  padding: 7px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/hackleberry\/components\/typography\/_code\.scss}line{font-family:\000031}}
+.code {
+  margin: 0 2px;
+  padding: 2px 4px;
+  font-size: 12px;
+  color: #d14;
+  white-space: nowrap;
+  background-color: #f7f8f9;
+  border: 1px solid #e1e1e1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }

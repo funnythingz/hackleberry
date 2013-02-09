@@ -1,0 +1,8 @@
+.#{$class_spacing} {
+  margin-bottom: #{$spacing}#{$spacingUnit};
+}
+@for $i from 0 through $spacingLength {
+  .#{$class_spacing}#{($i * $spacing)} {
+    margin-bottom: #{($i * $spacing)}#{$spacingUnit}!important;
+  }
+}
