@@ -1,10 +1,10 @@
-@for $i from 1 through $rowGlidLength {
+@for $i from 1 through $rowgridLength {
   .#{$class_span}#{$i} {
     @include span($i);
     @include floatLeft();
   }
 }
-@for $i from 1 through $rowGlidLength {
+@for $i from 1 through $rowgridLength {
   .#{$class_offset}#{$i} {
     @include offset($i);
   }

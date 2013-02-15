@@ -9,8 +9,8 @@
 }
 
 @mixin span($num:0, $arg:''){
-  width: #{($rowBaseWidth / ($rowGlidLength / $num))}#{$rowBaseUnit}#{$arg};
+  width: #{($rowBaseWidth / ($rowgridLength / $num))}#{$rowBaseUnit}#{$arg};
 }
 @mixin offset($num:0, $arg:''){
-  margin-left: #{($rowBaseWidth / ($rowGlidLength / $num))}#{$rowBaseUnit}#{$arg};
+  margin-left: #{($rowBaseWidth / ($rowgridLength / $num))}#{$rowBaseUnit}#{$arg};
 }
