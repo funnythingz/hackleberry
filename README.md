@@ -14,4 +14,4 @@ Sass 3.2.5 (Media Mark)
 Compass 0.12.2 (Alnilam)
 </blockquote>
 
-&copy; <a href="http://hackleberry.me" target="_blank">hackleberry</a>
+Deploy to &copy; <a href="http://hackleberry.me" target="_blank">hackleberry</a>
