@@ -1,14 +1,15 @@
-@for $i from 1 through $rowgridLength {
+@for $i from 1 through $rowGridLength {
   .#{$class_span}#{$i} {
     @include span($i);
     @include floatLeft();
   }
 }
-@for $i from 1 through $rowgridLength {
+@for $i from 1 through $rowGridLength {
   .#{$class_offset}#{$i} {
     @include offset($i);
   }
 }
 .#{$class_row} {
   @include legacy-pie-clearfix();
+  width: #{($rowBaseWidth + $rowBaseMargin)}#{$rowBaseUnit};
 }

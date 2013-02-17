@@ -1,0 +1,9 @@
+// rowの全体横幅
+@function getRowWidth(){
+  @return $rowBaseWidth + $rowBaseMargin;
+}
+
+// spanの最小横幅
+@function getSpanWidth(){
+  @return (getRowWidth() - ($rowBaseMargin * ($rowGridLength - 1))) / $rowGridLength;
+}

@@ -9,8 +9,12 @@
 }
 
 @mixin span($num:0, $arg:''){
-  width: #{($rowBaseWidth / ($rowgridLength / $num))}#{$rowBaseUnit}#{$arg};
+  width: #{(getSpanWidth() * $num) + ($rowBaseMargin * $num) - $rowBaseMargin}#{$rowBaseUnit}#{$arg};
+  margin-left: #{$rowBaseMargin}#{$rowBaseUnit};
+  &:first-child {
+    margin-left: 0;
+  }
 }
 @mixin offset($num:0, $arg:''){
-  margin-left: #{($rowBaseWidth / ($rowgridLength / $num))}#{$rowBaseUnit}#{$arg};
+  margin-left: #{($rowBaseMargin + (getSpanWidth() * $num))}#{$rowBaseUnit}#{$arg};
 }

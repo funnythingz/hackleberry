@@ -51,11 +51,12 @@ $containerPosition: 'center';
 /* row */
 $rowBaseUnit: '%';
 $rowBaseWidth: 100;
-$rowgridLength: 12;
+$rowBaseMargin: 2;
+$rowGridLength: 12;
 
 /* className */
-$class_section: 'section';
-$class_article: 'article';
+$class_unit: 'unit';
+$class_cassette: 'cassette';
 
 $class_container: 'container';
 $class_row: 'row';
