@@ -1,6 +1,6 @@
 @for $i from 1 through $rowGridLength {
-  .#{$class_span}#{$i} {
-    @include span($i);
+  .#{$class_col}#{$i} {
+    @include col($i);
     @include floatLeft();
   }
 }
@@ -11,5 +11,5 @@
 }
 .#{$class_row} {
   @include legacy-pie-clearfix();
-  width: #{($rowBaseWidth + $rowBaseMargin)}#{$rowBaseUnit};
+  width: #{$rowBaseWidth}#{$rowBaseUnit};
 }

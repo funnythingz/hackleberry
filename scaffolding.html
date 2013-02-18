@@ -40,7 +40,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="span3">
+    <div class="col3">
       <ul>
         <li><a href="#Grid">Grid</a></li>
         <li><a href="#Typography">Typography</a></li>
@@ -50,83 +50,146 @@
         <li><a href="#Images">Images</a></li>
         <li><a href="#Sprites">Sprites</a></li>
       </ul>
-    </div><!-- {* /.span4 *} -->
+    </div><!-- {* /.col4 *} -->
     
-    <div class="span9">
+    <div class="col9">
       <section class="unit" id="Grid">
         <div class="header page">
           <h1 class="lv1">Grid</h1>
           <p class="lead">text text text text text text text text text text text text</p>
         </div><!-- {* /.header.page *} -->
         <article class="cassette">
-          <h1 class="lv2">span1</h1>
+          <h1 class="lv2">col1</h1>
           <p class="text">
-            <code class="code">.span1</code>
+            <code class="code">.col1</code>
           </p>
           <div class="row">
-            <div class="span1">1</div>
-            <div class="span1">1</div>
-            <div class="span1">1</div>
-            <div class="span1">1</div>
-            <div class="span1">1</div>
-            <div class="span1">1</div>
-            <div class="span1">1</div>
-            <div class="span1">1</div>
-            <div class="span1">1</div>
-            <div class="span1">1</div>
-            <div class="span1">1</div>
-            <div class="span1">1</div>
+            <div class="col1">1</div>
+            <div class="col1">1</div>
+            <div class="col1">1</div>
+            <div class="col1">1</div>
+            <div class="col1">1</div>
+            <div class="col1">1</div>
+            <div class="col1">1</div>
+            <div class="col1">1</div>
+            <div class="col1">1</div>
+            <div class="col1">1</div>
+            <div class="col1">1</div>
+            <div class="col1">1</div>
           </div>
         </article>
         <article class="cassette">
-          <h1 class="lv2">span2</h1>
+          <h1 class="lv2">col2</h1>
           <p class="text">
-            <code class="code">.span2</code>
+            <code class="code">.col2</code>
           </p>
           <div class="row">
-            <div class="span2">2</div>
-            <div class="span2">2</div>
-            <div class="span2">2</div>
-            <div class="span2">2</div>
-            <div class="span2">2</div>
-            <div class="span2">2</div>
+            <div class="col2">2</div>
+            <div class="col2">2</div>
+            <div class="col2">2</div>
+            <div class="col2">2</div>
+            <div class="col2">2</div>
+            <div class="col2">2</div>
           </div>
         </article>
         <article class="cassette">
-          <h1 class="lv2">span3</h1>
+          <h1 class="lv2">col3</h1>
           <p class="text">
-            <code class="code">.span3</code>
+            <code class="code">.col3</code>
           </p>
           <div class="row">
-            <div class="span3">3</div>
-            <div class="span3">3</div>
-            <div class="span3">3</div>
-            <div class="span3">3</div>
+            <div class="col3">3</div>
+            <div class="col3">3</div>
+            <div class="col3">3</div>
+            <div class="col3">3</div>
           </div>
         </article>
         <article class="cassette">
-          <h1 class="lv2">span4</h1>
-          <p class="text">sub test</p>
+          <h1 class="lv2">col4</h1>
+          <p class="text">
+            <code class="code">.col4</code>
+          </p>
           <div class="row">
-            <div class="span4">4</div>
-            <div class="span4">4</div>
-            <div class="span4">4</div>
+            <div class="col4">4</div>
+            <div class="col4">4</div>
+            <div class="col4">4</div>
           </div>
         </article>
         <article class="cassette">
-          <h1 class="lv2">span6</h1>
-          <p class="text">sub test</p>
+          <h1 class="lv2">col6</h1>
+          <p class="text">
+            <code class="code">.col6</code>
+          </p>
           <div class="row">
-            <div class="span6">6</div>
-            <div class="span6">6</div>
+            <div class="col6">6</div>
+            <div class="col6">6</div>
           </div>
         </article>
         <article class="cassette">
-          <h1 class="lv2"><code class="code">.span3</code><code class="code">.span8.offset1</code></h1>
+          <h1 class="lv2">col12</h1>
+          <p class="text">
+            <code class="code">.col12</code>
+          </p>
+          <div class="row">
+            <div class="col12">12</div>
+          </div>
+        </article>
+        <article class="cassette">
+          <h1 class="lv2">.col3 .col8.offset1</h1>
+          <p class="text">
+            <code class="code">.col3</code><code class="code">.col8.offset1</code>
+          </p>
+          <div class="row">
+            <div class="col3">3</div>
+            <div class="col8 offset1">8</div>
+          </div>
+        </article>
+        <article class="cassette">
+          <h1 class="lv2"><code class="code">.col1</code><code class="code">.col1.offset[10-1]</code></h1>
           <p class="text">sub test</p>
           <div class="row">
-            <div class="span3">3</div>
-            <div class="span8 offset1">8</div>
+            <div class="col1">1</div>
+            <div class="col1 offset10">1</div>
+          </div>
+          <div class="row">
+            <div class="col1">1</div>
+            <div class="col1 offset9">1</div>
+          </div>
+          <div class="row">
+            <div class="col1">1</div>
+            <div class="col1 offset8">1</div>
+          </div>
+          <div class="row">
+            <div class="col1">1</div>
+            <div class="col1 offset7">1</div>
+          </div>
+          <div class="row">
+            <div class="col1">1</div>
+            <div class="col1 offset6">1</div>
+          </div>
+          <div class="row">
+            <div class="col1">1</div>
+            <div class="col1 offset5">1</div>
+          </div>
+          <div class="row">
+            <div class="col1">1</div>
+            <div class="col1 offset4">1</div>
+          </div>
+          <div class="row">
+            <div class="col1">1</div>
+            <div class="col1 offset3">1</div>
+          </div>
+          <div class="row">
+            <div class="col1">1</div>
+            <div class="col1 offset2">1</div>
+          </div>
+          <div class="row">
+            <div class="col1">1</div>
+            <div class="col1 offset1">1</div>
+          </div>
+          <div class="row">
+            <div class="col1">1</div>
+            <div class="col1">1</div>
           </div>
         </article>
       </section><!-- {* /#Grid *} -->
@@ -305,7 +368,7 @@
           </dl>
         </article>
       </section><!-- {* /#Lists *} -->
-    </div><!-- {* /.span9 *} -->
+    </div><!-- {* /.col9 *} -->
   </div><!-- {* /.row *} -->
 </div><!-- {* /.container *} -->
 

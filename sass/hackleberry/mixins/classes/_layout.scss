@@ -8,13 +8,13 @@
   float: static#{$arg};
 }
 
-@mixin span($num:0, $arg:''){
-  width: #{(getSpanWidth() * $num) + ($rowBaseMargin * $num) - $rowBaseMargin}#{$rowBaseUnit}#{$arg};
+@mixin col($num:0, $arg:''){
+  width: #{getColWidth($num)}#{$rowBaseUnit}#{$arg};
   margin-left: #{$rowBaseMargin}#{$rowBaseUnit};
   &:first-child {
     margin-left: 0;
   }
 }
 @mixin offset($num:0, $arg:''){
-  margin-left: #{($rowBaseMargin + (getSpanWidth() * $num))}#{$rowBaseUnit}#{$arg};
+  margin-left: #{getColWidth($num) + ($rowBaseMargin * 2)}#{$rowBaseUnit}#{$arg};
 }
