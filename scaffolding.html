@@ -42,7 +42,11 @@
   <div class="row">
     <div class="col3">
       <ul>
-        <li><a href="#Grid">Grid</a></li>
+        <li class="lv1"><a href="#Grid">Grid</a>
+          <ul class="medium">
+            <li><a href="#Basic">Basic</a></li>
+          </ul>
+        </li>
         <li><a href="#Typography">Typography</a></li>
         <li><a href="#Lists">Lists</a></li>
         <li><a href="#Tables">Tables</a></li>
@@ -53,16 +57,42 @@
     </div><!-- {* /.col4 *} -->
     
     <div class="col9">
-      <section class="unit" id="Grid">
+      <section class="unit scaffolding" id="Grid">
         <div class="header page">
           <h1 class="lv1">Grid</h1>
-          <p class="lead">text text text text text text text text text text text text</p>
+          <p class="lead">
+            hackleberryではgridが12カラム(100%幅の中)で区切られています。1~12のカラムを使ってさまざまなレイアウトを構築できます。<br>
+            <code class="code">.row</code>で枠をつくりその中の<code class="code">.col*</code>でレイアウトします。
+          </p>
         </div><!-- {* /.header.page *} -->
         <article class="cassette">
-          <h1 class="lv2">col1</h1>
-          <p class="text">
-            <code class="code">.col1</code>
-          </p>
+          <h1 class="lv2" id="Basic">Basic</h1>
+          <div class="row">
+            <div class="col12">12</div>
+          </div>
+          <div class="row">
+            <div class="col6">6</div>
+            <div class="col6">6</div>
+          </div>
+          <div class="row">
+            <div class="col4">4</div>
+            <div class="col4">4</div>
+            <div class="col4">4</div>
+          </div>
+          <div class="row">
+            <div class="col3">3</div>
+            <div class="col3">3</div>
+            <div class="col3">3</div>
+            <div class="col3">3</div>
+          </div>
+          <div class="row">
+            <div class="col2">2</div>
+            <div class="col2">2</div>
+            <div class="col2">2</div>
+            <div class="col2">2</div>
+            <div class="col2">2</div>
+            <div class="col2">2</div>
+          </div>
           <div class="row">
             <div class="col1">1</div>
             <div class="col1">1</div>
@@ -77,6 +107,47 @@
             <div class="col1">1</div>
             <div class="col1">1</div>
           </div>
+<pre class="prettyprint linenums lang-html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col12&quot;&gt;12&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col6&quot;&gt;6&lt;/div&gt;
+  &lt;div class=&quot;col6&quot;&gt;6&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col4&quot;&gt;4&lt;/div&gt;
+  &lt;div class=&quot;col4&quot;&gt;4&lt;/div&gt;
+  &lt;div class=&quot;col4&quot;&gt;4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+  &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+  &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+  &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col2&quot;&gt;2&lt;/div&gt;
+  &lt;div class=&quot;col2&quot;&gt;2&lt;/div&gt;
+  &lt;div class=&quot;col2&quot;&gt;2&lt;/div&gt;
+  &lt;div class=&quot;col2&quot;&gt;2&lt;/div&gt;
+  &lt;div class=&quot;col2&quot;&gt;2&lt;/div&gt;
+  &lt;div class=&quot;col2&quot;&gt;2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+&lt;/div&gt;</pre>
         </article>
         <article class="cassette">
           <h1 class="lv2">col2</h1>
@@ -382,11 +453,24 @@
 <script src="js/hackleberry.min.js"></script>
 <script>
 (function(){
+  // hackleberry
   HACKLEBERRY.changeStylesheet({
     path: 'css/',
-    file: ['hackleberry.css'],
+    file: ['hackleberry.css','scaffolding.css'],
     pure: true
   });
+  // prettify
+  HACKLEBERRY.changeStylesheet({
+    path: 'tmp/google-code-prettify/',
+    file: ['prettify.css'],
+    pure: true
+  });
+})();
+</script>
+<script src="tmp/google-code-prettify/prettify.js"></script>
+<script>
+(function(){
+  prettyPrint();
 })();
 </script>
 <script type="text/javascript">
