@@ -17,4 +17,7 @@
 }
 @mixin offset($num:0, $arg:''){
   margin-left: #{getColWidth($num) + ($rowBaseMargin * 2)}#{$rowBaseUnit}#{$arg};
+  &:first-child {
+    margin-left: #{getColWidth($num) + ($rowBaseMargin)}#{$rowBaseUnit}#{$arg};
+  }
 }

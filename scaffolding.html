@@ -42,9 +42,10 @@
   <div class="row">
     <div class="col3">
       <ul>
-        <li class="lv1"><a href="#Grid">Grid</a>
+        <li><a href="#Grid">Grid</a>
           <ul class="medium">
             <li><a href="#Basic">Basic</a></li>
+            <li><a href="#Offset">Offset</a></li>
           </ul>
         </li>
         <li><a href="#Typography">Typography</a></li>
@@ -61,8 +62,8 @@
         <div class="header page">
           <h1 class="lv1">Grid</h1>
           <p class="lead">
-            hackleberryではgridが12カラム(100%幅の中)で区切られています。1~12のカラムを使ってさまざまなレイアウトを構築できます。<br>
-            <code class="code">.row</code>で枠をつくりその中の<code class="code">.col*</code>でレイアウトします。
+            hackleberryでは100%幅のカラムを12カラムで分割したグリッドでレイアウトしています。1~12のカラムを使ってさまざまなレイアウトを構築できます。<br>
+            <code class="code">.row</code>で枠をつくりその中の<code class="code">.col*</code>でレイアウトします。また、カラムの間にマージンをとりたい場合は<code class="code">.offset*</code>を使います。
           </p>
         </div><!-- {* /.header.page *} -->
         <article class="cassette">
@@ -150,118 +151,60 @@
 &lt;/div&gt;</pre>
         </article>
         <article class="cassette">
-          <h1 class="lv2">col2</h1>
-          <p class="text">
-            <code class="code">.col2</code>
-          </p>
+          <h1 class="lv2" id="Offset">Offset</h1>
           <div class="row">
-            <div class="col2">2</div>
-            <div class="col2">2</div>
-            <div class="col2">2</div>
-            <div class="col2">2</div>
-            <div class="col2">2</div>
-            <div class="col2">2</div>
+            <div class="col11 offset1">11</div>
           </div>
-        </article>
-        <article class="cassette">
-          <h1 class="lv2">col3</h1>
-          <p class="text">
-            <code class="code">.col3</code>
-          </p>
           <div class="row">
-            <div class="col3">3</div>
-            <div class="col3">3</div>
-            <div class="col3">3</div>
-            <div class="col3">3</div>
+            <div class="col5">5</div>
+            <div class="col6 offset1">6</div>
           </div>
-        </article>
-        <article class="cassette">
-          <h1 class="lv2">col4</h1>
-          <p class="text">
-            <code class="code">.col4</code>
-          </p>
           <div class="row">
-            <div class="col4">4</div>
-            <div class="col4">4</div>
+            <div class="col2">2</div>
+            <div class="col2 offset2">2</div>
+            <div class="col2 offset4">2</div>
+          </div>
+          <div class="row">
+            <div class="col3">3</div>
+            <div class="col3 offset6">3</div>
+          </div>
+          <div class="row">
+            <div class="col5">5</div>
+            <div class="col5 offset2">5</div>
+          </div>
+          <div class="row">
+            <div class="col1">1</div>
+            <div class="col2 offset1">2</div>
+            <div class="col3 offset1">3</div>
             <div class="col4">4</div>
           </div>
-        </article>
-        <article class="cassette">
-          <h1 class="lv2">col6</h1>
-          <p class="text">
-            <code class="code">.col6</code>
-          </p>
-          <div class="row">
-            <div class="col6">6</div>
-            <div class="col6">6</div>
-          </div>
-        </article>
-        <article class="cassette">
-          <h1 class="lv2">col12</h1>
-          <p class="text">
-            <code class="code">.col12</code>
-          </p>
-          <div class="row">
-            <div class="col12">12</div>
-          </div>
-        </article>
-        <article class="cassette">
-          <h1 class="lv2">.col3 .col8.offset1</h1>
-          <p class="text">
-            <code class="code">.col3</code><code class="code">.col8.offset1</code>
-          </p>
-          <div class="row">
-            <div class="col3">3</div>
-            <div class="col8 offset1">8</div>
-          </div>
-        </article>
-        <article class="cassette">
-          <h1 class="lv2"><code class="code">.col1</code><code class="code">.col1.offset[10-1]</code></h1>
-          <p class="text">sub test</p>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col1 offset10">1</div>
-          </div>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col1 offset9">1</div>
-          </div>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col1 offset8">1</div>
-          </div>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col1 offset7">1</div>
-          </div>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col1 offset6">1</div>
-          </div>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col1 offset5">1</div>
-          </div>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col1 offset4">1</div>
-          </div>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col1 offset3">1</div>
-          </div>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col1 offset2">1</div>
-          </div>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col1 offset1">1</div>
-          </div>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col1">1</div>
-          </div>
+<pre class="prettyprint linenums lang-html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col11 offset1&quot;&gt;11&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col5&quot;&gt;5&lt;/div&gt;
+  &lt;div class=&quot;col6 offset1&quot;&gt;6&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col2&quot;&gt;2&lt;/div&gt;
+  &lt;div class=&quot;col2 offset2&quot;&gt;2&lt;/div&gt;
+  &lt;div class=&quot;col2 offset4&quot;&gt;2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+  &lt;div class=&quot;col3 offset6&quot;&gt;3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col5&quot;&gt;5&lt;/div&gt;
+  &lt;div class=&quot;col5 offset2&quot;&gt;5&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col2 offset1&quot;&gt;2&lt;/div&gt;
+  &lt;div class=&quot;col3 offset1&quot;&gt;3&lt;/div&gt;
+  &lt;div class=&quot;col4&quot;&gt;4&lt;/div&gt;
+&lt;/div&gt;</pre>
         </article>
       </section><!-- {* /#Grid *} -->
         

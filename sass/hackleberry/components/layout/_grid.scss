@@ -6,7 +6,7 @@
 }
 @for $i from 1 through $rowGridLength {
   .#{$class_offset}#{$i} {
-    @include offset($i);
+    @include offset($i,!important);
   }
 }
 .#{$class_row} {
