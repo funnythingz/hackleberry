@@ -35,5 +35,7 @@
 }
 
 @mixin ellipsis($arg: ''){
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis#{$arg};
 }

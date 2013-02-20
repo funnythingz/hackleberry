@@ -1,7 +1,6 @@
 @for $i from 1 through $rowGridLength {
   .#{$class_col}#{$i} {
     @include col($i);
-    @include floatLeft();
   }
 }
 @for $i from 1 through $rowGridLength {

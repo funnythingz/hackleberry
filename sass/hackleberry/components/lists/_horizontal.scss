@@ -6,12 +6,11 @@
   }
   dt {
     @include col(4);
-    @include floatLeft();
+    @include ellipsis();
     margin-left: 0;
-    text-overflow: ellipsis;
   }
   dd {
     @include col(8);
-    @include floatLeft();
+    min-height: #{($textLargeSize * $textLineHeight)}px
   }
 }

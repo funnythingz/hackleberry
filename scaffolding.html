@@ -433,6 +433,32 @@
           </div>
         </section>
         <section class="cassette">
+          <h1 class="lv2">Lead body copy</h1>
+          <p class="text"><code class="code">.lead</code></p>
+          <div class="example">
+            <p class="lead">Lead body copy Lead body copy Lead body copy Lead body copy</p>
+            <p class="lead">Lead body copy Lead body copy</p>
+          </div>
+<pre class="prettyprint linenums lang-html">
+&lt;p class=&quot;lead&quot;&gt;Lead body copy Lead body copy Lead body copy Lead body copy&lt;/p&gt;
+&lt;p class=&quot;lead&quot;&gt;Lead body copy Lead body copy&lt;/p&gt;</pre>
+        </section>
+        <section class="cassette">
+          <h1 class="lv2">Ellipsis</h1>
+          <p class="text"><code class="code">.ellipsis</code></p>
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <p class="text ellipsis">text text text text text text text text</p>
+              </div>
+            </div>
+            <div class="col8">
+<pre class="prettyprint linenums lang-html">
+&lt;p class=&quot;text ellipsis&quot;&gt;text text text text text text text text&lt;/p&gt;</pre>
+            </div>
+          </div>
+        </section>
+        <section class="cassette">
           <h1 class="lv2">Font style/weight</h1>
           <p class="text">Default font style/weight on <code class="code">.normal</code></p>
           <div class="row">
@@ -743,14 +769,10 @@
             <dl class="descriptions horizontal row">
               <dt>Description lists</dt>
               <dd>text text text text text text text</dd>
-            </dl>
-            <dl class="descriptions horizontal row">
               <dt>Description lists Description lists</dt>
-              <dd>text text text text text text text</dd>
-            </dl>
-            <dl class="descriptions horizontal row">
+              <dd>text text text text text text text text text text text text text text text text text text text text text text text</dd>
               <dt>Description lists</dt>
-              <dd>text text text text text text text</dd>
+              <dd>text text text text text text text text text text text</dd>
             </dl>
           </div>
 <pre class="prettyprint linenums lang-html">
@@ -821,11 +843,16 @@
   (function(){
     var sideMenu = document.getElementById('sideMenu');
     var flag = false;
+    var getScrollTop = function(){
+      var d = document;
+      return (d.documentElement.scrollTop || d.body.scrollTop);
+    }
     window.addEventListener('scroll',function(){
-      if(document.body.scrollTop > 100 && !flag){
+      console.log(getScrollTop());
+      if(getScrollTop() > 100 && !flag){
         sideMenu.setAttribute('class', 'fixed');
         flag = true;
-      }else if(document.body.scrollTop < 100 && flag){
+      }else if(getScrollTop() < 100 && flag){
         sideMenu.removeAttribute('class');
         flag = false;
       }

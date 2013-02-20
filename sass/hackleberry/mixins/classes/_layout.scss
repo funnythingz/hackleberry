@@ -10,6 +10,7 @@
 
 @mixin col($num:0, $arg:''){
   width: #{getColWidth($num)}#{$rowBaseUnit}#{$arg};
+  @include floatLeft();
   margin-left: #{$rowBaseMargin}#{$rowBaseUnit};
   &:first-child {
     margin-left: 0;
