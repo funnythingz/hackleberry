@@ -639,13 +639,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/hackleberry\/mixins\/classes\/_lists\.scss}line{font-family:\000032}}
-.descriptions .title {
+.descriptions dt {
   line-height: 1.5;
   font-size: 16px;
   font-weight: bold;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/hackleberry\/mixins\/classes\/_lists\.scss}line{font-family:\000037}}
+.descriptions dd {
+  line-height: 1.5;
+  font-size: 14px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/hackleberry\/mixins\/classes\/_lists\.scss}line{font-family:\000039}}
-.horizontal > li {
-  display: inline;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/hackleberry\/components\/lists\/_horizontal\.scss}line{font-family:\000034}}
+.horizontal > li,
+.horizontal > dt,
+.horizontal > dd {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/hackleberry\/components\/lists\/_horizontal\.scss}line{font-family:\000037}}
+.horizontal dt {
+  width: 32%;
+  margin-left: 2%;
+  float: left;
+  margin-left: 0;
+  text-overflow: ellipsis;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/hackleberry\/mixins\/classes\/_layout\.scss}line{font-family:\0000314}}
+.horizontal dt:first-child {
+  margin-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/hackleberry\/components\/lists\/_horizontal\.scss}line{font-family:\0000313}}
+.horizontal dd {
+  width: 66%;
+  margin-left: 2%;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/hackleberry\/mixins\/classes\/_layout\.scss}line{font-family:\0000314}}
+.horizontal dd:first-child {
+  margin-left: 0;
 }

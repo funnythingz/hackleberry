@@ -1,12 +1,14 @@
 @mixin descriptions(){
-  .#{$class_title} {
+  dt {
     @include sentence;
     @include large;
     @include bold;
   }
+  dd {
+    @include sentence;
+    @include medium;
+  }
 }
 @mixin horizontal(){
-  > li {
-    display: inline;
-  }
+  display: inline-block;
 }

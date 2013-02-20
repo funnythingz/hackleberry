@@ -12,6 +12,7 @@
   @for $i from 1 through $rowGridLength {
     .#{$class_col}#{$i} {
       background-color: #eee;
+      border: solid 1px #ccc;
       padding: 4px;
       text-align: center;
     }
@@ -19,4 +20,13 @@
   .#{$class_row} {
     margin-bottom: 5px;
   }
+}
+.fixed {
+  position: fixed;
+  top: 0;
+}
+.example {
+  margin: 1em 0;
+  padding: 1em 0;
+  border-top: solid 1px #f1f2f3;
 }

@@ -40,73 +40,114 @@
 
 <div class="container">
   <div class="row">
-    <div class="col3">
-      <ul>
-        <li><a href="#Grid">Grid</a>
-          <ul class="medium">
-            <li><a href="#Basic">Basic</a></li>
-            <li><a href="#Offset">Offset</a></li>
+    <div class="col3" style="height:10px;">
+      <ul id="sideMenu">
+        <li><a href="#Layout">Layout</a>
+          <ul>
+            <li><a href="#Container">Container</a></li>
           </ul>
         </li>
-        <li><a href="#Typography">Typography</a></li>
-        <li><a href="#Lists">Lists</a></li>
+        <li><a href="#Grid">Grid system</a>
+          <ul>
+            <li><a href="#Basic">Basic grid HTML</a></li>
+            <li><a href="#Offset">Offsetting columns</a></li>
+            <li><a href="#Nest">Nesting columns</a></li>
+          </ul>
+        </li>
+        <li><a href="#Typography">Typography</a>
+          <ul>
+            <li><a href="#Text">Headings & Text</a></li>
+            <li><a href="#Font">Font & Alignment</a></li>
+            <li><a href="#Block">Blockquote & Address</a></li>
+          </ul>
+        </li>
+        <li><a href="#Lists">Lists</a>
+          <ul>
+            <li><a href="#Marked">Marked & Numbered</a></li>
+            <li><a href="#Unstyled">Unstyled & Horizontal</a></li>
+            <li><a href="#Descriptions">Descriptions</a></li>
+          </ul>
+        </li>
         <li><a href="#Tables">Tables</a></li>
         <li><a href="#Buttons">Buttons</a></li>
         <li><a href="#Images">Images</a></li>
         <li><a href="#Sprites">Sprites</a></li>
+        <li><a href="#Spacing">Spacing</a></li>
       </ul>
-    </div><!-- {* /.col4 *} -->
+    </div><!-- {* /.col3 *} -->
     
     <div class="col9">
-      <section class="unit scaffolding" id="Grid">
-        <div class="header page">
-          <h1 class="lv1">Grid</h1>
+      <article class="unit scaffolding" id="Layout">
+        <div class="header">
+          <h1 class="lv1">Layout</h1>
+          <p class="lead">
+            基本レイアウトを構成する要素は<code class=".container">.container</code>を使います。
+          </p>
+        </div><!-- {* /.header.page *} -->
+        <section class="cassette">
+          <h1 class="lv2" id="Basic">Container</h1>
+          <p class="text">基本的なコンテナーをつくります。横幅を最小値/最大値が指定されています。</p>
+<pre class="prettyprint linenums lang-html">
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/body&gt;</pre>
+        </section>
+      </article><!-- {* /#Layout *} -->
+      
+      <article class="unit scaffolding" id="Grid">
+        <div class="header">
+          <h1 class="lv1">Grid system</h1>
           <p class="lead">
             hackleberryでは100%幅のカラムを12カラムで分割したグリッドでレイアウトしています。1~12のカラムを使ってさまざまなレイアウトを構築できます。<br>
             <code class="code">.row</code>で枠をつくりその中の<code class="code">.col*</code>でレイアウトします。また、カラムの間にマージンをとりたい場合は<code class="code">.offset*</code>を使います。
           </p>
         </div><!-- {* /.header.page *} -->
-        <article class="cassette">
-          <h1 class="lv2" id="Basic">Basic</h1>
-          <div class="row">
-            <div class="col12">12</div>
-          </div>
-          <div class="row">
-            <div class="col6">6</div>
-            <div class="col6">6</div>
-          </div>
-          <div class="row">
-            <div class="col4">4</div>
-            <div class="col4">4</div>
-            <div class="col4">4</div>
-          </div>
-          <div class="row">
-            <div class="col3">3</div>
-            <div class="col3">3</div>
-            <div class="col3">3</div>
-            <div class="col3">3</div>
-          </div>
-          <div class="row">
-            <div class="col2">2</div>
-            <div class="col2">2</div>
-            <div class="col2">2</div>
-            <div class="col2">2</div>
-            <div class="col2">2</div>
-            <div class="col2">2</div>
-          </div>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col1">1</div>
-            <div class="col1">1</div>
-            <div class="col1">1</div>
-            <div class="col1">1</div>
-            <div class="col1">1</div>
-            <div class="col1">1</div>
-            <div class="col1">1</div>
-            <div class="col1">1</div>
-            <div class="col1">1</div>
-            <div class="col1">1</div>
-            <div class="col1">1</div>
+        <section class="cassette">
+          <h1 class="lv2" id="Basic">Basic grid HTML</h1>
+          <p class="text"><code class="code">.col*</code></p>
+          <div class="example">
+            <div class="row">
+              <div class="col12">12</div>
+            </div>
+            <div class="row">
+              <div class="col6">6</div>
+              <div class="col6">6</div>
+            </div>
+            <div class="row">
+              <div class="col4">4</div>
+              <div class="col4">4</div>
+              <div class="col4">4</div>
+            </div>
+            <div class="row">
+              <div class="col3">3</div>
+              <div class="col3">3</div>
+              <div class="col3">3</div>
+              <div class="col3">3</div>
+            </div>
+            <div class="row">
+              <div class="col2">2</div>
+              <div class="col2">2</div>
+              <div class="col2">2</div>
+              <div class="col2">2</div>
+              <div class="col2">2</div>
+              <div class="col2">2</div>
+            </div>
+            <div class="row">
+              <div class="col1">1</div>
+              <div class="col1">1</div>
+              <div class="col1">1</div>
+              <div class="col1">1</div>
+              <div class="col1">1</div>
+              <div class="col1">1</div>
+              <div class="col1">1</div>
+              <div class="col1">1</div>
+              <div class="col1">1</div>
+              <div class="col1">1</div>
+              <div class="col1">1</div>
+              <div class="col1">1</div>
+            </div>
           </div>
 <pre class="prettyprint linenums lang-html">
 &lt;div class=&quot;row&quot;&gt;
@@ -149,34 +190,37 @@
   &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
   &lt;div class=&quot;col1&quot;&gt;1&lt;/div&gt;
 &lt;/div&gt;</pre>
-        </article>
-        <article class="cassette">
-          <h1 class="lv2" id="Offset">Offset</h1>
-          <div class="row">
-            <div class="col11 offset1">11</div>
-          </div>
-          <div class="row">
-            <div class="col5">5</div>
-            <div class="col6 offset1">6</div>
-          </div>
-          <div class="row">
-            <div class="col2">2</div>
-            <div class="col2 offset2">2</div>
-            <div class="col2 offset4">2</div>
-          </div>
-          <div class="row">
-            <div class="col3">3</div>
-            <div class="col3 offset6">3</div>
-          </div>
-          <div class="row">
-            <div class="col5">5</div>
-            <div class="col5 offset2">5</div>
-          </div>
-          <div class="row">
-            <div class="col1">1</div>
-            <div class="col2 offset1">2</div>
-            <div class="col3 offset1">3</div>
-            <div class="col4">4</div>
+        </section>
+        <section class="cassette">
+          <h1 class="lv2" id="Offset">Offsetting columns</h1>
+          <p class="text"><code class="code">.col*.offset*</code></p>
+          <div class="example">
+            <div class="row">
+              <div class="col11 offset1">11</div>
+            </div>
+            <div class="row">
+              <div class="col5">5</div>
+              <div class="col6 offset1">6</div>
+            </div>
+            <div class="row">
+              <div class="col2">2</div>
+              <div class="col2 offset2">2</div>
+              <div class="col2 offset4">2</div>
+            </div>
+            <div class="row">
+              <div class="col3">3</div>
+              <div class="col3 offset6">3</div>
+            </div>
+            <div class="row">
+              <div class="col5">5</div>
+              <div class="col5 offset2">5</div>
+            </div>
+            <div class="row">
+              <div class="col1">1</div>
+              <div class="col2 offset1">2</div>
+              <div class="col3 offset1">3</div>
+              <div class="col4">4</div>
+            </div>
           </div>
 <pre class="prettyprint linenums lang-html">
 &lt;div class=&quot;row&quot;&gt;
@@ -205,183 +249,548 @@
   &lt;div class=&quot;col3 offset1&quot;&gt;3&lt;/div&gt;
   &lt;div class=&quot;col4&quot;&gt;4&lt;/div&gt;
 &lt;/div&gt;</pre>
-        </article>
-      </section><!-- {* /#Grid *} -->
+        </section>
+        <section class="cassette">
+          <h1 class="lv2" id="Nest">Nesting columns</h1>
+          <div class="example">
+            <div class="row">
+              <div class="col12">
+                12
+                <div class="row">
+                  <div class="col6">6</div>
+                  <div class="col6">6</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col6">
+                6
+                <div class="row">
+                  <div class="col3">3</div>
+                  <div class="col3">3</div>
+                  <div class="col3">3</div>
+                  <div class="col3">3</div>
+                </div>
+              </div>
+              <div class="col6">
+                6
+                <div class="row">
+                  <div class="col4">4</div>
+                  <div class="col4">4</div>
+                  <div class="col4">4</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col12">
+                12
+                <div class="row">
+                  <div class="col6">
+                    6
+                    <div class="row">
+                      <div class="col6">6</div>
+                      <div class="col6">6</div>
+                    </div>
+                  </div>
+                  <div class="col6">
+                    6
+                    <div class="row">
+                      <div class="col3">3</div>
+                      <div class="col3">3</div>
+                      <div class="col3">3</div>
+                      <div class="col3">3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums lang-html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col12&quot;&gt;
+    12
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col6&quot;&gt;6&lt;/div&gt;
+      &lt;div class=&quot;col6&quot;&gt;6&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col6&quot;&gt;
+    6
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+      &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+      &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+      &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col6&quot;&gt;
+    6
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col4&quot;&gt;4&lt;/div&gt;
+      &lt;div class=&quot;col4&quot;&gt;4&lt;/div&gt;
+      &lt;div class=&quot;col4&quot;&gt;4&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col12&quot;&gt;
+    12
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col6&quot;&gt;
+        6
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col6&quot;&gt;6&lt;/div&gt;
+          &lt;div class=&quot;col6&quot;&gt;6&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col6&quot;&gt;
+        6
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+          &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+          &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+          &lt;div class=&quot;col3&quot;&gt;3&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/pre&gt;
+        </section>
+      </article><!-- {* /#Grid *} -->
         
-      <section class="unit" id="Typography">
-        <div class="header page">
+      <article class="unit" id="Typography">
+        <div class="header">
           <h1 class="lv1">Typography</h1>
-          <p class="lead">text text text text text text text text text text text text</p>
         </div><!-- {* /.header.page *} -->
-        <article class="cassette">
+        <section class="cassette" id="Text">
           <h1 class="lv2">Headings</h1>
           <p class="text">All HTML headings, <code class="code">&lt;h1&gt;</code> ~ <code class="code">&lt;h6&gt;.</code></p>
-          <h1 class="lv1">heading lv1</h1>
-          <h2 class="lv2">heading lv2</h2>
-          <h3 class="lv3">heading lv3</h2>
-          <h4 class="lv4">heading lv4</h2>
-          <h5 class="lv5">heading lv5</h2>
-          <h6 class="lv6">heading lv6</h2>
-        </article>
-        <article class="cassette">
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <h1 class="lv1">heading lv1</h1>
+                <h2 class="lv2">heading lv2</h2>
+                <h3 class="lv3">heading lv3</h3>
+                <h4 class="lv4">heading lv4</h4>
+                <h5 class="lv5">heading lv5</h5>
+                <h6 class="lv6">heading lv6</h6>
+              </div>
+            </div>
+            <div class="col8">
+<pre class="prettyprint linenums lang-html">
+&lt;h1 class=&quot;lv1&quot;&gt;heading lv1&lt;/h1&gt;
+&lt;h2 class=&quot;lv2&quot;&gt;heading lv2&lt;/h2&gt;
+&lt;h3 class=&quot;lv3&quot;&gt;heading lv3&lt;/h3&gt;
+&lt;h4 class=&quot;lv4&quot;&gt;heading lv4&lt;/h4&gt;
+&lt;h5 class=&quot;lv5&quot;&gt;heading lv5&lt;/h5&gt;
+&lt;h6 class=&quot;lv6&quot;&gt;heading lv6&lt;/h6&gt;</pre>
+            </div>
+          </div>
+        </section>
+        <section class="cassette">
           <h1 class="lv2">Body copy</h1>
-          <p class="text"><code class="code">&lt;p&gt;</code><code class="code">.text</code></p>
-          <p class="text">Body copy Body copy Body copy Body copy Body copy Body copy Body copy Body copy Body copy</p>
-          <p class="text">Body copy Body copy Body copy Body copy</p>
-        </article>
-        <article class="cassette">
+          <p class="text"><code class="code">.text</code></p>
+          <div class="example">
+            <p class="text">Body copy Body copy Body copy Body copy Body copy Body copy</p>
+            <p class="text">Body copy Body copy Body copy Body copy</p>
+          </div>
+<pre class="prettyprint linenums lang-html">
+&lt;p class=&quot;text&quot;&gt;Body copy Body copy Body copy Body copy Body copy Body copy&lt;/p&gt;
+&lt;p class=&quot;text&quot;&gt;Body copy Body copy Body copy Body copy&lt;/p&gt;</pre>
+        </section>
+        <section class="cassette">
           <h1 class="lv2">Lead body copy</h1>
-          <p class="text"><code class="code">&lt;p&gt;</code><code class="code">.lead</code></p>
-          <p class="lead">Lead body copy Lead body copy Lead body copy Lead body copy Lead body copy Lead body copy</p>
-          <p class="lead">Lead body copy Lead body copy</p>
-        </article>
-        <article class="cassette">
+          <p class="text"><code class="code">.lead</code></p>
+          <div class="example">
+            <p class="lead">Lead body copy Lead body copy Lead body copy Lead body copy</p>
+            <p class="lead">Lead body copy Lead body copy</p>
+          </div>
+<pre class="prettyprint linenums lang-html">
+&lt;p class=&quot;lead&quot;&gt;Lead body copy Lead body copy Lead body copy Lead body copy&lt;/p&gt;
+&lt;p class=&quot;lead&quot;&gt;Lead body copy Lead body copy&lt;/p&gt;</pre>
+        </section>
+        <section class="cassette" id="Font">
           <h1 class="lv2">Font size</h1>
           <p class="text">Default font-size on <code class="code">.medium</code></p>
-          <p class="text small"><code class="code">.small</code>small text small text small text small text small text small text</p>
-          <p class="text medium"><code class="code">.medium</code>medium text medium text medium text medium text medium text medium text</p>
-          <p class="text large"><code class="code">.large</code>large text large text large text large text large text large text</p>
-          <p class="text jumbo"><code class="code">.jumbo</code>jumbo text jumbo text jumbo text jumbo text jumbo text jumbo text</p>
-        </article>
-        <article class="cassette">
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <p class="text small">small text</p>
+                <p class="text medium">medium text</p>
+                <p class="text large">large text</p>
+                <p class="text jumbo">jumbo text</p>
+              </div>
+            </div>
+            <div class="col8">
+<pre class="prettyprint linenums lang-html">
+&lt;p class=&quot;text small&quot;&gt;small text&lt;/p&gt;
+&lt;p class=&quot;text medium&quot;&gt;medium text&lt;/p&gt;
+&lt;p class=&quot;text large&quot;&gt;large text&lt;/p&gt;
+&lt;p class=&quot;text jumbo&quot;&gt;jumbo text&lt;/p&gt;</pre>
+            </div>
+          </div>
+        </section>
+        <section class="cassette">
           <h1 class="lv2">Font style/weight</h1>
           <p class="text">Default font style/weight on <code class="code">.normal</code></p>
-          <p class="text"><code class="code">.normal</code>text <em class="normal">text</em> <strong class="normal">text</strong> <span class="normal">text</span> text text text text</p>
-          <p class="text"><code class="code">.bold</code>text <em class="bold">text</em> <strong class="bold">text</strong> <span class="bold">text</span> text text text text</p>
-          <p class="text"><code class="code">.italic</code>text <em class="italic">text</em> <strong class="italic">text</strong> <span class="italic">text</span> text text text text</p>
-        </article>
-        <article class="cassette">
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <p class="text"><span class="normal">normal text</span></p>
+                <p class="text"><span class="bold">bold text</span></p>
+                <p class="text"><span class="italic">italic text</span></p>
+              </div>
+            </div>
+            <div class="col8">
+<pre class="prettyprint linenums lang-html">
+&lt;p class=&quot;text&quot;&gt;&lt;span class=&quot;normal&quot;&gt;normal text&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;text&quot;&gt;&lt;span class=&quot;bold&quot;&gt;bold text&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;text&quot;&gt;&lt;span class=&quot;italic&quot;&gt;italic text&lt;/span&gt;&lt;/p&gt;</pre>
+            </div>
+          </div>
+        </section>
+        <section class="cassette">
           <h1 class="lv2">Alignment</h1>
           <p class="text">Default text-align on <code class="code">.left</code></p>
-          <p class="text">left text left text left text left text</p>
-          <p class="text right">left text left text left text left text</p>
-          <p class="text center">center text center text center text center text</p>
-        </article>
-        <article class="cassette">
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <p class="text">default(left) text</p>
+                <p class="text right">right text</p>
+                <p class="text center">center text</p>
+              </div>
+            </div>
+            <div class="col8">
+<pre class="prettyprint linenums lang-html">
+&lt;p class=&quot;text&quot;&gt;default(left) text&lt;/p&gt;
+&lt;p class=&quot;text right&quot;&gt;right text&lt;/p&gt;
+&lt;p class=&quot;text center&quot;&gt;center text&lt;/p&gt;</pre>
+            </div>
+          </div>
+        </section>
+        <section class="cassette" id="Block">
           <h1 class="lv2">Blockquote</h1>
-          <blockquote class="blockquote">
-            <p class="text">text text text text text text</p>
-            <p class="text">text text text text text text</p>
-            <p class="text">text text text text text text</p>
-          </blockquote>
-        </article>
-        <article class="cassette">
+          <p class="text"><code class="code">.blockquote</code></p>
+          <div class="example">
+            <blockquote class="blockquote">
+              <p class="text">text text text text text text</p>
+              <p class="text">text text text text text text</p>
+              <p class="text">text text text text text text</p>
+            </blockquote>
+<pre class="prettyprint linenums lang-html">
+&lt;blockquote class=&quot;blockquote&quot;&gt;
+  &lt;p class=&quot;text&quot;&gt;text text text text text text&lt;/p&gt;
+  &lt;p class=&quot;text&quot;&gt;text text text text text text&lt;/p&gt;
+  &lt;p class=&quot;text&quot;&gt;text text text text text text&lt;/p&gt;
+&lt;/blockquote&gt;</pre>
+          </div>
+        </section>
+        <section class="cassette">
           <h1 class="lv2">Address</h1>
-          <address class="address">
-            <strong>hackleberry</strong><br>
-            <a href="mailto:#">hackleberry@example.com</a>
-          </address>
-        </article>
-        <article class="cassette">
-          <h1 class="lv2">Code</h1>
-          <code class="code">.code</code>
-        </article>
-        <article class="cassette">
-          <h1 class="lv2">Spacing</h1>
-          <code class="code">.spacing</code>
-          <p class="text spacing">spacing text spacing text spacing text spacing text</p>
-          <p class="text">text text text text text text text text text text</p>
-        </article>
-      </section><!-- {* /#Typography *} -->
+          <p class="text"><code class="code">.address</code></p>
+          <div class="example">
+            <address class="address">
+              <strong>hackleberry</strong><br>
+              <a href="mailto:#">hackleberry@example.com</a>
+            </address>
+          </div>
+<pre class="prettyprint linenums lang-html">
+&lt;address class=&quot;address&quot;&gt;
+  &lt;strong&gt;hackleberry&lt;/strong&gt;&lt;br&gt;
+  &lt;a href=&quot;mailto:#&quot;&gt;hackleberry@example.com&lt;/a&gt;
+&lt;/address&gt;</pre>
+        </section>
+      </article><!-- {* /#Typography *} -->
       
-      <section class="unit" id="Lists">
-        <div class="header page">
+      <article class="unit" id="Lists">
+        <div class="header">
           <h1 class="lv1">Lists</h1>
         </div><!-- {* /.header.page *} -->
-        <article class="cassette">
+        <section class="cassette" id="Marked">
           <h1 class="lv2">Marked lists</h1>
-          <ul>
-            <li>List element</li>
-            <li>List element
-              <ul>
-                <li>List element</li>
-                <li>List element
-                  <ul>
-                    <li>List element</li>
-                    <li>List element</li>
-                    <li>List element</li>
-                  </ul>
-                </li>
-                <li>List element</li>
-              </ul>
-            </li>
-            <li>List element</li>
-          </ul>
-        </article>
-        <article class="cassette">
+          <p class="text"><code class="code">&lt;ul&gt;</code></p>
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <ul>
+                  <li>List element</li>
+                  <li>List element
+                    <ul>
+                      <li>List element</li>
+                      <li>List element
+                        <ul>
+                          <li>List element</li>
+                          <li>List element</li>
+                          <li>List element</li>
+                        </ul>
+                      </li>
+                      <li>List element</li>
+                    </ul>
+                  </li>
+                  <li>List element</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col8">
+<pre class="prettyprint linenums lang-html">
+&lt;ul&gt;
+  &lt;li&gt;List element&lt;/li&gt;
+  &lt;li&gt;List element
+    &lt;ul&gt;
+      &lt;li&gt;List element&lt;/li&gt;
+      &lt;li&gt;List element
+        &lt;ul&gt;
+          &lt;li&gt;List element&lt;/li&gt;
+          &lt;li&gt;List element&lt;/li&gt;
+          &lt;li&gt;List element&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;List element&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List element&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            </div>
+          </div>
+        </section>
+        <section class="cassette">
           <h1 class="lv2">Numbered lists</h1>
-          <ol>
-            <li>element</li>
-            <li>element
-              <ol>
-                <li>element</li>
-                <li>element
-                  <ol>
-                    <li>element</li>
-                    <li>element</li>
-                    <li>element</li>
-                  </ol>
-                </li>
-                <li>element</li>
-              </ol>
-            </li>
-            <li>element</li>
-          </ol>
-        </article>
-        <article class="cassette">
-          <h1 class="lv2">unstyled lists</h1>
-          <ul class="unstyled">
-            <li>element</li>
-            <li>element
-              <ul class="unstyled">
-                <li>element</li>
-                <li>element
-                  <ul class="unstyled">
-                    <li>element</li>
-                    <li>element</li>
-                    <li>element</li>
-                  </ul>
-                </li>
-                <li>element</li>
-              </ul>
-            </li>
-            <li>element</li>
-          </ul>
-        </article>
-        <article class="cassette">
+          <p class="text"><code class="code">&lt;ol&gt;</code></p>
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <ol>
+                  <li>element</li>
+                  <li>element
+                    <ol>
+                      <li>element</li>
+                      <li>element
+                        <ol>
+                          <li>element</li>
+                          <li>element</li>
+                          <li>element</li>
+                        </ol>
+                      </li>
+                      <li>element</li>
+                    </ol>
+                  </li>
+                  <li>element</li>
+                </ol>
+              </div>
+            </div>
+            <div class="col8">
+<pre class="prettyprint linenums lang-html">
+&lt;ol&gt;
+  &lt;li&gt;element&lt;/li&gt;
+  &lt;li&gt;element
+    &lt;ol&gt;
+      &lt;li&gt;element&lt;/li&gt;
+      &lt;li&gt;element
+        &lt;ol&gt;
+          &lt;li&gt;element&lt;/li&gt;
+          &lt;li&gt;element&lt;/li&gt;
+          &lt;li&gt;element&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;element&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;element&lt;/li&gt;
+&lt;/ol&gt;</pre>
+            </div>
+          </div>
+        </section>
+        <section class="cassette" id="Unstyled">
+          <h1 class="lv2">Unstyled lists</h1>
+          <p class="text"><code class="code">&lt;ul class=&quot;unstyled&quot;&gt;</code><code class="code">&lt;ol class=&quot;unstyled&quot;&gt;</code></p>
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <ul class="unstyled">
+                  <li>element</li>
+                  <li>element
+                    <ul class="unstyled">
+                      <li>element</li>
+                      <li>element
+                        <ul class="unstyled">
+                          <li>element</li>
+                          <li>element</li>
+                          <li>element</li>
+                        </ul>
+                      </li>
+                      <li>element</li>
+                    </ul>
+                  </li>
+                  <li>element</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col8">
+<pre class="prettyprint linenums lang-html">
+&lt;ul class=&quot;unstyled&quot;&gt;
+  &lt;li&gt;element&lt;/li&gt;
+  &lt;li&gt;element
+    &lt;ul class=&quot;unstyled&quot;&gt;
+      &lt;li&gt;element&lt;/li&gt;
+      &lt;li&gt;element
+        &lt;ul class=&quot;unstyled&quot;&gt;
+          &lt;li&gt;element&lt;/li&gt;
+          &lt;li&gt;element&lt;/li&gt;
+          &lt;li&gt;element&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;element&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;element&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <ol class="unstyled">
+                  <li>element</li>
+                  <li>element
+                    <ol class="unstyled">
+                      <li>element</li>
+                      <li>element
+                        <ol class="unstyled">
+                          <li>element</li>
+                          <li>element</li>
+                          <li>element</li>
+                        </ol>
+                      </li>
+                      <li>element</li>
+                    </ol>
+                  </li>
+                  <li>element</li>
+                </ol>
+              </div>
+            </div>
+            <div class="col8">
+<pre class="prettyprint linenums lang-html">
+&lt;ol class=&quot;unstyled&quot;&gt;
+  &lt;li&gt;element&lt;/li&gt;
+  &lt;li&gt;element
+    &lt;ol class=&quot;unstyled&quot;&gt;
+      &lt;li&gt;element&lt;/li&gt;
+      &lt;li&gt;element
+        &lt;ol class=&quot;unstyled&quot;&gt;
+          &lt;li&gt;element&lt;/li&gt;
+          &lt;li&gt;element&lt;/li&gt;
+          &lt;li&gt;element&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;element&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;element&lt;/li&gt;
+&lt;/ol&gt;&lt;/pre&gt;
+            </div>
+          </div>
+        </section>
+        <section class="cassette">
           <h1 class="lv2">Horizontal</h1>
-          <ul class="unstyled horizontal"><!-- inline comment
-            --><li class="text">element</li><!--
-            --><li class="spacing-left text">element</li><!--
-            --><li class="spacing-left text">element</li><!--
-            --><li class="spacing-left text">element</li><!--
-            --><li class="spacing-left text">element</li><!--
-            --><li class="spacing-left text">element</li><!--
-          --></ul>
-        </article>
-        <article class="cassette">
+          <p class="text"><code class="code">&lt;ul class=&quot;unstyled horizontal&quot;&gt;</code></p>
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <ul class="unstyled horizontal"><!-- inline comment
+                  --><li class="text">element</li><!--
+                  --><li class="spacing-left text">element</li><!--
+                  --><li class="spacing-left text">element</li><!--
+                --></ul>
+              </div>
+            </div>
+            <div class="col4">
+<pre class="prettyprint linenums lang-html">
+&lt;ul class=&quot;unstyled horizontal&quot;&gt;&lt;!-- inline comment
+  --&gt;&lt;li class=&quot;text&quot;&gt;element&lt;/li&gt;&lt;!--
+  --&gt;&lt;li class=&quot;spacing-left text&quot;&gt;element&lt;/li&gt;&lt;!--
+  --&gt;&lt;li class=&quot;spacing-left text&quot;&gt;element&lt;/li&gt;&lt;!--
+--&gt;&lt;/ul&gt;</pre>
+            </div>
+          </div>
+        </section>
+        <section class="cassette" id="Descriptions">
           <h1 class="lv2">Descriptions</h1>
-          <dl class="descriptions">
-            <dt>Description lists</dt>
-            <dd>text text text text text text text</dd>
-            <dt>Description lists</dt>
-            <dd>text text text text text text text</dd>
-            <dt>Description lists</dt>
-            <dd>text text text text text text text</dd>
-          </dl>
-        </article>
-        <article class="cassette">
-          <h1 class="lv2">Descriptions</h1>
-          <dl class="descriptions">
-            <dt class="title">Description lists</dt>
-            <dd class="text">text text text text text text text text text text text text text text text text text text text text text</dd>
-            <dt class="title">Description lists</dt>
-            <dd class="text">text text text text text text text text text text text text text text</dd>
-            <dt class="title">Description lists</dt>
-            <dd class="text">text text text text text text text</dd>
-          </dl>
-        </article>
-      </section><!-- {* /#Lists *} -->
+          <div class="example">
+            <dl class="descriptions">
+              <dt>Description lists</dt>
+              <dd>text text text text text text text</dd>
+              <dt>Description lists</dt>
+              <dd>text text text text text text text</dd>
+              <dt>Description lists</dt>
+              <dd>text text text text text text text</dd>
+            </dl>
+          </div>
+<pre class="prettyprint linenums lang-html">
+&lt;dl class=&quot;descriptions&quot;&gt;
+  &lt;dt&gt;Description lists&lt;/dt&gt;
+  &lt;dd&gt;text text text text text text text&lt;/dd&gt;
+  &lt;dt&gt;Description lists&lt;/dt&gt;
+  &lt;dd&gt;text text text text text text text&lt;/dd&gt;
+  &lt;dt&gt;Description lists&lt;/dt&gt;
+  &lt;dd&gt;text text text text text text text&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+        </section>
+        <section class="cassette">
+          <h1 class="lv2">Inline Descriptions</h1>
+          <div class="example">
+            <dl class="descriptions horizontal row">
+              <dt>Description lists</dt>
+              <dd>text text text text text text text</dd>
+            </dl>
+            <dl class="descriptions horizontal row">
+              <dt>Description lists Description lists</dt>
+              <dd>text text text text text text text</dd>
+            </dl>
+            <dl class="descriptions horizontal row">
+              <dt>Description lists</dt>
+              <dd>text text text text text text text</dd>
+            </dl>
+          </div>
+<pre class="prettyprint linenums lang-html">
+&lt;dl class=&quot;descriptions horizontal&quot;&gt;
+  &lt;dt&gt;Description lists&lt;/dt&gt;
+  &lt;dd&gt;text text text text text text text&lt;/dd&gt;
+  &lt;dt&gt;Description lists&lt;/dt&gt;
+  &lt;dd&gt;text text text text text text text&lt;/dd&gt;
+  &lt;dt&gt;Description lists&lt;/dt&gt;
+  &lt;dd&gt;text text text text text text text&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+        </section>
+      </article><!-- {* /#Lists *} -->
+      
+      <article class="unit" id="Spacing">
+        <div class="header">
+          <h1 class="lv1">Spacing</h1>
+          <p class="lead"><code class="code">.spacing</code>で下方向にマージンがあきます。<code class="code">.spacing-left</code>で左方向、<code class="code">.spacing-right</code>で右方向にマージンがあきます。デフォルトで5pxあきます。</p>
+        </div><!-- {* /.header.page *} -->
+        <section class="cassette">
+          <h1 class="lv2">spacing</h1>
+          <div class="example">
+            <p class="text spacing">下方向にマージンがあきます。</p>
+            <p class="text">text text text text text text text text text text text text text text</p>
+          </div>
+<pre class="prettyprint linenums lang-html">
+&lt;p class=&quot;text spacing&quot;&gt;&#19979;&#26041;&#21521;&#12395;&#12510;&#12540;&#12472;&#12531;&#12364;&#12354;&#12365;&#12414;&#12377;&#12290;&lt;/p&gt;
+&lt;p class=&quot;text&quot;&gt;text text text text text text text text text text text text text text&lt;/p&gt;</pre>
+        </section>
+        <section class="cassette">
+          <h1 class="lv2">spacing*</h1>
+          <div class="example">
+            <p class="text spacing10">下方向にマージンが10pxあきます。</p>
+            <p class="text">text text text text text text text text text text text text text text</p>
+          </div>
+<pre class="prettyprint linenums lang-html">
+&lt;p class=&quot;text spacing10&quot;&gt;&#19979;&#26041;&#21521;&#12395;&#12510;&#12540;&#12472;&#12531;&#12364;10px&#12354;&#12365;&#12414;&#12377;&#12290;&lt;/p&gt;
+&lt;p class=&quot;text&quot;&gt;text text text text text text text text text text text text text text&lt;/p&gt;</pre>
+        </section>
+      </article><!-- {* /#Spacing *} -->
     </div><!-- {* /.col9 *} -->
   </div><!-- {* /.row *} -->
 </div><!-- {* /.container *} -->
@@ -408,6 +817,20 @@
     file: ['prettify.css'],
     pure: true
   });
+  // sideMenu changeFixed
+  (function(){
+    var sideMenu = document.getElementById('sideMenu');
+    var flag = false;
+    window.addEventListener('scroll',function(){
+      if(document.body.scrollTop > 100 && !flag){
+        sideMenu.setAttribute('class', 'fixed');
+        flag = true;
+      }else if(document.body.scrollTop < 100 && flag){
+        sideMenu.removeAttribute('class');
+        flag = false;
+      }
+    });
+  })();
 })();
 </script>
 <script src="tmp/google-code-prettify/prettify.js"></script>

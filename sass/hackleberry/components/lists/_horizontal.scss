@@ -1,3 +1,17 @@
 .#{$class_horizontal} {
-  @include horizontal();
+  > li,
+  > dt,
+  > dd {
+    @include horizontal();
+  }
+  dt {
+    @include col(4);
+    @include floatLeft();
+    margin-left: 0;
+    text-overflow: ellipsis;
+  }
+  dd {
+    @include col(8);
+    @include floatLeft();
+  }
 }
