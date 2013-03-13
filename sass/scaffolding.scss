@@ -25,8 +25,12 @@
   position: fixed;
   top: 0;
 }
-.example {
+.example,
+.gist {
   margin: 1em 0;
   padding: 1em 0;
   border-top: solid 1px #f1f2f3;
+  .gist-data {
+    background-color: #f7f8f9 !important;
+  }
 }
