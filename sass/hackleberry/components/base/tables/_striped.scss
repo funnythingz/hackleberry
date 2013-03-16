@@ -1,0 +1,17 @@
+.#{$class_striped} {
+  th,td {
+    border-bottom: solid 1px #{$tableBorderColor};
+  }
+  tbody tr {
+    &:last-child{
+      th,td {
+        border-bottom: 0 none;
+      }
+    }
+    &:nth-child(even) {
+      td {
+        background-color: #{$tableBackgroundColor};
+      }
+    }
+  }
+}

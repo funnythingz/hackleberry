@@ -1,0 +1,7 @@
+.#{$class_hovered} {
+  tbody tr {
+    &:hover td {
+      background-color: #{$tableBackgroundHoverColor};
+    }
+  }
+}

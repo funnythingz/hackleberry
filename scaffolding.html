@@ -24,7 +24,6 @@
       --><li class="spacing-left10"><a href="getting-started.html">Get Started</a></li><!--
       --><li class="spacing-left10 current"><a href="scaffolding.html">Scaffolding</a></li><!--
       --><li class="spacing-left10"><a href="components.html">Components</a></li><!--
-      --><li class="spacing-left10"><a href="custmize.html">Custmize</a></li><!--
     --></ul>
   </nav>
 </section>
@@ -47,6 +46,7 @@
             <li><a href="#Container">Container</a></li>
           </ul>
         </li>
+        <li><a href="#Spacing">Spacing</a></li>
         <li><a href="#Grid">Grid system</a>
           <ul>
             <li><a href="#Basic">Basic grid HTML</a></li>
@@ -68,11 +68,16 @@
             <li><a href="#Descriptions">Descriptions</a></li>
           </ul>
         </li>
-        <li><a href="#Tables">Tables</a></li>
+        <li><a href="#Tables">Tables</a>
+          <ul>
+            <li><a href="#Striped">Striped</li>
+            <li><a href="#Vertical">Vertical</li>
+            <li><a href="#Hovered">& Hovered</li>
+          </ul>
+        </li>
         <li><a href="#Buttons">Buttons</a></li>
         <li><a href="#Images">Images</a></li>
         <li><a href="#Sprites">Sprites</a></li>
-        <li><a href="#Spacing">Spacing</a></li>
       </ul>
     </div><!-- {* /.col3 *} -->
     
@@ -84,12 +89,35 @@
             基本レイアウトを構成する要素は<code class=".container">.container</code>を使います。
           </p>
         </div><!-- {* /.header.page *} -->
-        <section class="cassette">
-          <h1 class="lv2" id="Basic">Container</h1>
+        <section class="cassette" id="Container">
+          <h1 class="lv2">Container</h1>
           <p class="text">基本的なコンテナーをつくります。横幅を最小値/最大値が指定されています。</p>
           <script src="https://gist.github.com/funnythingz/5134416.js"></script>
         </section>
       </article><!-- {* /#Layout *} -->
+
+      <article class="unit" id="Spacing">
+        <div class="header">
+          <h1 class="lv1">Spacing</h1>
+          <p class="lead"><code class="code">.spacing</code>で下方向にマージンがあきます。<code class="code">.spacing-left</code>で左方向、<code class="code">.spacing-right</code>で右方向にマージンがあきます。デフォルトで5pxあきます。</p>
+        </div><!-- {* /.header.page *} -->
+        <section class="cassette">
+          <h1 class="lv2">spacing</h1>
+          <div class="example">
+            <p class="text spacing">下方向にマージンがあきます。</p>
+            <p class="text">text text text text text text text text text text text text text text</p>
+          </div>
+          <script src="https://gist.github.com/funnythingz/5134549.js"></script>
+        </section>
+        <section class="cassette">
+          <h1 class="lv2">spacing*</h1>
+          <div class="example">
+            <p class="text spacing10">下方向にマージンが10pxあきます。</p>
+            <p class="text">text text text text text text text text text text text text text text</p>
+          </div>
+          <script src="https://gist.github.com/funnythingz/5134552.js"></script>
+        </section>
+      </article><!-- {* /#Spacing *} -->
       
       <article class="unit scaffolding" id="Grid">
         <div class="header">
@@ -99,7 +127,7 @@
             <code class="code">.row</code>で枠をつくりその中の<code class="code">.col*</code>でレイアウトします。また、カラムの間にマージンをとりたい場合は<code class="code">.offset*</code>を使います。
           </p>
         </div><!-- {* /.header.page *} -->
-        <section class="cassette">
+        <section class="cassette" id="Basic">
           <h1 class="lv2" id="Basic">Basic grid HTML</h1>
           <p class="text"><code class="code">.col*</code></p>
           <div class="example">
@@ -534,29 +562,161 @@
           <script src="https://gist.github.com/funnythingz/5134543.js"></script>
         </section>
       </article><!-- {* /#Lists *} -->
-      
-      <article class="unit" id="Spacing">
+       
+      <article class="unit" id="Tables">
         <div class="header">
-          <h1 class="lv1">Spacing</h1>
-          <p class="lead"><code class="code">.spacing</code>で下方向にマージンがあきます。<code class="code">.spacing-left</code>で左方向、<code class="code">.spacing-right</code>で右方向にマージンがあきます。デフォルトで5pxあきます。</p>
+          <h1 class="lv1">Tables</h1>
+          <p class="lead"><code class="code">.table</code>で基本テーブルになります。<code class="code">.striped</code>で横シマ、<code class="code">.vertical</code>で縦シマになります。<code class="code">.hovered</code>を追加することでマウスオーバー時の変化を設定できます。</p>
         </div><!-- {* /.header.page *} -->
-        <section class="cassette">
-          <h1 class="lv2">spacing</h1>
-          <div class="example">
-            <p class="text spacing">下方向にマージンがあきます。</p>
-            <p class="text">text text text text text text text text text text text text text text</p>
-          </div>
-          <script src="https://gist.github.com/funnythingz/5134549.js"></script>
+        <section class="cassette" id="Striped">
+          <h1 class="lv2">Striped</h1>
+          <p class="text"><code class="code">&lt;table class="table striped"&gt;</code></p>
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <table class="table striped">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>title</th>
+                      <th>title</th>
+                      <th>title</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>item</td>
+                      <td>item</td>
+                      <td>item</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>item</td>
+                      <td>item</td>
+                      <td>item</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>item</td>
+                      <td>item</td>
+                      <td>item</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>item</td>
+                      <td>item</td>
+                      <td>item</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div><!-- {* /.col4 *} -->
+            <div class="col8">
+              <script src="https://gist.github.com/funnythingz/5177010.js"></script>
+            </div><!-- {* /.col8 *} -->
+          </div><!-- {* /.row *} -->
         </section>
-        <section class="cassette">
-          <h1 class="lv2">spacing*</h1>
-          <div class="example">
-            <p class="text spacing10">下方向にマージンが10pxあきます。</p>
-            <p class="text">text text text text text text text text text text text text text text</p>
-          </div>
-          <script src="https://gist.github.com/funnythingz/5134552.js"></script>
+        <section class="cassette" id="Vertical">
+          <h1 class="lv2">Vertical</h1>
+          <p class="text"><code class="code">&lt;table class="table vertical"&gt;</code></p>
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <table class="table vertical">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>title</th>
+                      <th>title</th>
+                      <th>title</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>item</td>
+                      <td>item</td>
+                      <td>item</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>item</td>
+                      <td>item</td>
+                      <td>item</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>item</td>
+                      <td>item</td>
+                      <td>item</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>item</td>
+                      <td>item</td>
+                      <td>item</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div><!-- {* /.col4 *} -->
+            <div class="col8">
+              <script src="https://gist.github.com/funnythingz/5177023.js"></script>
+            </div><!-- {* /.col8 *} -->
+          </div><!-- {* /.row *} -->
+        </section>
+        <section class="cassette" id="Hovered">
+          <h1 class="lv2">Hovered</h1>
+          <p class="text"><code class="code">&lt;table class="table striped hoverd"&gt;</code></p>
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <table class="table striped hovered">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>title</th>
+                      <th>title</th>
+                      <th>title</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>item</td>
+                      <td>item</td>
+                      <td>item</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>item</td>
+                      <td>item</td>
+                      <td>item</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>item</td>
+                      <td>item</td>
+                      <td>item</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>item</td>
+                      <td>item</td>
+                      <td>item</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div><!-- {* /.col4 *} -->
+            <div class="col8">
+              <script src="https://gist.github.com/funnythingz/5177034.js"></script>
+            </div><!-- {* /.col8 *} -->
+          </div><!-- {* /.row *} -->
         </section>
       </article><!-- {* /#Spacing *} -->
+
     </div><!-- {* /.col9 *} -->
   </div><!-- {* /.row *} -->
 </div><!-- {* /.container *} -->

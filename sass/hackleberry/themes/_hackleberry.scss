@@ -4,6 +4,12 @@
 /* All */
 $boxSizing: 'border-box';
 
+/* font */
+$fontFamily: '"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",Helvetica,Arial,Sans-Serif';
+
+/* background */
+
+
 /**
 * grid
 */
@@ -25,6 +31,9 @@ $spacingInnerTop: 7;
 $spacingInnerRight: 7;
 $spacingInnerLeft: 7;
 $spacingInnerBottom: 7;
+
+/* border */
+$borderColor: #ccc;
 
 /* border-radius base */
 $borderUnit: 'px';
@@ -120,3 +129,33 @@ $class_ellipsis: 'ellipsis';
 $class_descriptions: 'descriptions';
 $class_title: 'title';
 $class_horizontal: 'horizontal';
+
+/*
+* tables
+*/
+$tableBorderColor: #e7e8e9;
+$tableBackgroundColor: #f7f8f9;
+$tableBackgroundHoverColor: #e7e8e9;
+
+
+/* className */
+$class_table: 'table';
+$class_striped: 'striped';
+$class_vertical: 'vertical';
+$class_hovered: 'hovered';
+
+/*
+* buttons
+*/
+/* className */
+$class_btn: 'btn';
+$class_primary: 'primary';
+$class_warning: 'warning';
+$class_success: 'success';
+$class_error: 'error';
+$class_disabled: 'disabled';
+$class_dark: 'dark';
+
+$class_active: 'active';
+$class_loading: 'loading';
+$class_group: 'group';
