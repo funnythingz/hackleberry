@@ -1,2 +1,13 @@
 .#{$class_form} {
+  .field {
+    margin-bottom: #{$spacing}#{$spacingUnit};
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  input[type="text"] {
+    padding: #{($spacingInner/2)}#{$spacingUnit} #{$spacingInner}#{$spacingUnit};
+    @include medium;
+    @include sentence;
+  }
 }

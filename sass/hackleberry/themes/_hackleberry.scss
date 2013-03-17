@@ -149,10 +149,10 @@ $class_tableHovered: 'hovered';
 
 /* className */
 $class_form: 'form';
+$class_formField: 'field';
 $class_formHorizontal: 'horizontal';
 $class_formVertical: 'vertical';
 $class_formHovered: 'hovered';
-
 
 /*
 * buttons
@@ -162,13 +162,86 @@ $class_btn: 'btn';
 $class_group: 'group';
 
 
-
-
 /*
 * status
 */
+/* color */
+$status_normal                  :'';
+$status_primaryColor            :'';
+$status_warningColor            :'';
+$status_successColor            :'';
+$status_errorColor              :'';
+$status_disabledColor           :'';
+$status_darkColor               :'';
+
+$status_activeColor             :'';
+$status_loadingColor            :'';
+
+/* backgroundColor */
+$status_normalBackgroundColor   :'';
+$status_primaryBackgroundColor  :'';
+$status_warningBackgroundColor  :'';
+$status_successBackgroundColor  :'';
+$status_errorBackgroundColor    :'';
+$status_disabledBackgroundColor :'';
+$status_darkBackgroundColor     :'';
+
+$status_activeBackgroundColor   :'';
+$status_loadingBackgroundColor  :'';
+
+/* borderColor */
+$status_normalBorderColor       :'';
+$status_primaryBorderColor      :'';
+$status_warningBorderColor      :'';
+$status_successBorderColor      :'';
+$status_errorBorderColor        :'';
+$status_disabledBorderColor     :'';
+$status_darkBorderColor         :'';
+
+$status_activeBorderColor       :'';
+$status_loadingBorderColor      :'';
+
+/* boxShadow */
+$status_normalBoxShadow         :'';
+$status_normalBoxShadowInset    :'';
+$status_primaryBoxShadow        :'';
+$status_primaryBoxShadowInse    :'';
+$status_warningBoxShadow        :'';
+$status_warningBoxShadowInse    :'';
+$status_successBoxShadow        :'';
+$status_successBoxShadowInse    :'';
+$status_errorBoxShadow          :'';
+$status_errorBoxShadowInset     :'';
+$status_disabledBoxShadow       :'';
+$status_disabledBoxShadowIns    :'';
+$status_darkBoxShadow           :'';
+$status_darkBoxShadowInset      :'';
+
+$status_activeBoxShadow         :'';
+$status_loadingBoxShadowInse    :'';
+
+/* gradient */
+$status_normalGradientTop       :'#e6e6e6';
+$status_normalGradientBottom    :'';
+$status_primaryGradientTop      :'';
+$status_primaryGradientBottom   :'';
+$status_warningGradientTop      :'';
+$status_warningGradientBottom   :'';
+$status_successGradientTop      :'';
+$status_successGradientBottom   :'';
+$status_errorGradientTop        :'';
+$status_errorGradientBottom     :'';
+$status_disabledGradientTop     :'';
+$status_disabledGradientBottom  :'';
+$status_darkGradientTop         :'';
+$status_darkGradientBottom      :'';
+
+$status_activeGradientTop       :'';
+$status_activeGradientBottom    :'';
+$status_loadingGradientTop      :'';
+$status_loadingGradientBottom   :'';
+
 /* className */
-$class_btn: 'btn';
 $class_primary: 'primary';
 $class_warning: 'warning';
 $class_success: 'success';
@@ -178,4 +251,3 @@ $class_dark: 'dark';
 
 $class_active: 'active';
 $class_loading: 'loading';
-$class_group: 'group';
