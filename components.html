@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="hackleberry: HTML5/CSS3/JavaScript Framework">
+  <meta name="keywords" content="hackleberry, sass, compass">
+  <!-- iphone -->
+  <meta name="viewport" content="width=device-width">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <link rel="canonical" href="http://hackleberry.me/scaffolding.html">
+  <link rel="apple-touch-icon-precomposed" href="">
+  <!-- /iphone -->
+  <title>Components | hackleberry: HTML5/CSS3/JavaScript Framework</title>
+  <link rel="shortcut icon" type="image/x-icon" href="">
+</head>
+<body>
+
+<section>
+  <nav class="menu global container center">
+    <ul class="horizontal"><!--
+      --><li class="spacing-left10"><a href="index.html">HOME</a></li><!--
+      --><li class="spacing-left10"><a href="getting-started.html">Get Started</a></li><!--
+      --><li class="spacing-left10"><a href="scaffolding.html">Scaffolding</a></li><!--
+      --><li class="spacing-left10 current"><a href="components.html">Components</a></li><!--
+    --></ul>
+  </nav>
+</section>
+
+<header class="header">
+  <div class="container">
+    <hgroup>
+      <h1 class="lv1">Components</h1>
+      <h2 class="lv2">Components hackleberry</h2>
+    </hgroup>
+  </div><!-- {* /.container *} -->
+</header><!-- {* /.header *} -->
+
+<div class="container">
+  <div class="row">
+    <div class="col3" style="height:10px;">
+      <ul id="sideMenu">
+        <li><a href="#Buttons">Buttons</a></li>
+        <li><a href="#Groups">Groups</a></li>
+        <li><a href="#Tabs">Tabs</a></li>
+        <li><a href="#Images">Images</a></li>
+        <li><a href="#Sprites">Sprites</a></li>
+      </ul>
+    </div><!-- {* /.col3 *} -->
+    
+    <div class="col9">
+      <article class="unit scaffolding" id="Buttons">
+        <div class="header">
+          <h1 class="lv1">Buttons</h1>
+          <p class="lead">
+            ボタンコンポーネントです。基本クラス<code class="code">.btn</code>とステータスクラス<code class="code">.primary</code>などと組み合わせて使います。ボタンの目的に応じてステータスクラスを使い分けます。
+          </p>
+        </div><!-- {* /.header.page *} -->
+        <section class="cassette">
+          <h1 class="lv2">Basic buttons</h1>
+          <p class="text">基本的なボタンです。<code class="code">.btn</code></p>
+          <div class="example">
+            <a class="btn">Basic buttons</a>
+          </div>
+          <script src="https://gist.github.com/funnythingz/5179357.js"></script>
+        </section>
+      </article><!-- {* /#Buttons *} -->
+
+    </div><!-- {* /.col9 *} -->
+  </div><!-- {* /.row *} -->
+</div><!-- {* /.container *} -->
+
+<footer class="footer global">
+  <div class="container center">
+    <p class="text">Made for all good people by <a href="http://www.facebook.com/funnythingz" target="_blank">funnythingz</a> in 2013</p>
+    <p class="text">Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+  </div><!-- {* /.container *} -->
+</footer><!-- {* /.footer *} -->
+
+<script src="js/hackleberry.min.js"></script>
+<script>
+(function(){
+  // hackleberry
+  HACKLEBERRY.changeStylesheet({
+    path: 'css/',
+    file: ['hackleberry.css','scaffolding.css'],
+    pure: true
+  });
+  // sideMenu changeFixed
+  (function(){
+    var sideMenu = document.getElementById('sideMenu');
+    var flag = false;
+    var getScrollTop = function(){
+      var d = document;
+      return (d.documentElement.scrollTop || d.body.scrollTop);
+    }
+    window.addEventListener('scroll',function(){
+      console.log(getScrollTop());
+      if(getScrollTop() > 100 && !flag){
+        sideMenu.setAttribute('class', 'fixed');
+        flag = true;
+      }else if(getScrollTop() < 100 && flag){
+        sideMenu.removeAttribute('class');
+        flag = false;
+      }
+    });
+  })();
+})();
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1882060-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</body>
+</html>

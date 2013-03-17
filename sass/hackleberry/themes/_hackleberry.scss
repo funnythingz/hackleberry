@@ -128,7 +128,7 @@ $class_ellipsis: 'ellipsis';
 */
 $class_descriptions: 'descriptions';
 $class_title: 'title';
-$class_horizontal: 'horizontal';
+$class_listHorizontal: 'horizontal';
 
 /*
 * tables
@@ -137,15 +137,35 @@ $tableBorderColor: #e7e8e9;
 $tableBackgroundColor: #f7f8f9;
 $tableBackgroundHoverColor: #e7e8e9;
 
-
 /* className */
 $class_table: 'table';
-$class_striped: 'striped';
-$class_vertical: 'vertical';
-$class_hovered: 'hovered';
+$class_tableStriped: 'striped';
+$class_tableVertical: 'vertical';
+$class_tableHovered: 'hovered';
+
+/*
+* Forms
+*/
+
+/* className */
+$class_form: 'form';
+$class_formHorizontal: 'horizontal';
+$class_formVertical: 'vertical';
+$class_formHovered: 'hovered';
+
 
 /*
 * buttons
+*/
+/* className */
+$class_btn: 'btn';
+$class_group: 'group';
+
+
+
+
+/*
+* status
 */
 /* className */
 $class_btn: 'btn';

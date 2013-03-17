@@ -75,9 +75,14 @@
             <li><a href="#Hovered">& Hovered</li>
           </ul>
         </li>
-        <li><a href="#Buttons">Buttons</a></li>
+        <li><a href="#Forms">Forms</a>
+          <ul>
+            <li><a href="#Inputs">Inputs</a></li>
+            <li><a href="#VerticalForm">VerticalForm</a></li>
+            <li><a href="#HorizontalForm">HorizontalForm</a></li>
+          </ul>
+        </li>
         <li><a href="#Images">Images</a></li>
-        <li><a href="#Sprites">Sprites</a></li>
       </ul>
     </div><!-- {* /.col3 *} -->
     
@@ -715,7 +720,101 @@
             </div><!-- {* /.col8 *} -->
           </div><!-- {* /.row *} -->
         </section>
-      </article><!-- {* /#Spacing *} -->
+      </article><!-- {* /#Tables *} -->
+
+      <article class="unit" id="Forms">
+        <div class="header">
+          <h1 class="lv1">Forms</h1>
+          <p class="lead"><code class="code">.form</code>で基本フォームになります。<code class="code">.vertical</code>でlabelとフォームが縦並びに<code class="code">.horizontal</code>で横並びになります。</p>
+        </div><!-- {* /.header.page *} -->
+        <section class="cassette" id="Inputs">
+          <h1 class="lv2">Inputs</h1>
+          <p class="text">inputタグにステータスクラスを追加することでそのフォームに意味付けすることができます。例えば<code class="code">&lt;input class="success"&gt;</code>とすると入力完了といった意味付けができます。</p>
+          <div class="row">
+            <div class="col4">
+              <div class="example">
+                <form class="form">
+                  <span class="field">
+                    <input type="text">
+                  </span>
+                  <span class="field">
+                    <input type="text" class="success" placeholder="success">
+                  </span>
+                  <span class="field">
+                    <input type="text" class="error" placeholder="error">
+                  </span>
+                  <span class="field">
+                    <input type="text" class="warning" placeholder="warning">
+                  </span>
+                  <span class="field">
+                    <input type="text" class="disabled" placeholder="disabled" disabled="disabled">
+                  </span>
+                  <span class="field">
+                    <input type="text" class="requierd" placeholder="required">
+                  </span>
+                </form>
+              </div>
+            </div><!-- {* /.col4 *} -->
+            <div class="col8">
+              <script src="https://gist.github.com/funnythingz/5179475.js"></script>
+            </div><!-- {* /.col8 *} -->
+          </div><!-- {* /.row *} -->
+        </section>
+        <section class="cassette" id="verticalForm">
+          <h1 class="lv2">Vertical</h1>
+          <p class="text"><code class="code">&lt;form class="form vertical"&gt;</code></p>
+          <div class="example">
+            <form class="form vertical">
+              <span class="field">
+                <label for="input">input</label><input type="text">
+              </span>
+              <span class="field">
+                <label for="input">input.success</label><input type="text" class="success" placeholder="success">
+              </span>
+              <span class="field">
+                <label for="input">input.error</label><input type="text" class="error" placeholder="error">
+              </span>
+              <span class="field">
+                <label for="input">input.warning</label><input type="text" class="warning" placeholder="warning">
+              </span>
+              <span class="field">
+                <label for="input">input.disabled</label><input type="text" class="disabled" placeholder="disabled" disabled="disabled">
+              </span>
+              <span class="field">
+                <label for="input">input.requierd</label><input type="text" class="requierd" placeholder="requierd">
+              </span>
+            </form>
+          </div>
+          <script src="https://gist.github.com/funnythingz/5179569.js"></script>
+        </section>
+        <section class="cassette" id="horizontalForm">
+          <h1 class="lv2">Horizontal</h1>
+          <p class="text"><code class="code">&lt;form class="form horizontal"&gt;</code></p>
+          <div class="example">
+            <form class="form horizontal">
+              <span class="field">
+                <label for="input">input</label><input type="text">
+              </span>
+              <span class="field">
+                <label for="input">input.success</label><input type="text" class="success" placeholder="success">
+              </span>
+              <span class="field">
+                <label for="input">input.error</label><input type="text" class="error" placeholder="error">
+              </span>
+              <span class="field">
+                <label for="input">input.warning</label><input type="text" class="warning" placeholder="warning">
+              </span>
+              <span class="field">
+                <label for="input">input.disabled</label><input type="text" class="disabled" placeholder="disabled" disabled="disabled">
+              </span>
+              <span class="field">
+                <label for="input">input.requierd</label><input type="text" class="requierd" placeholder="requierd">
+              </span>
+            </form>
+          </div>
+          <script src="https://gist.github.com/funnythingz/5179899.js"></script>
+        </section>
+      </article><!-- {* /#Tables *} -->
 
     </div><!-- {* /.col9 *} -->
   </div><!-- {* /.row *} -->
