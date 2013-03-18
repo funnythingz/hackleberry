@@ -18,7 +18,6 @@ HACKLEBERRY = {
     for(var i = 0, L = args.file.length; i < L; i++){
       var
         b = args.file[i],
-        css_file=document.createElement("link"),
         prefix = (args.pure)? '': a + '_',
         os = ''
       ;
@@ -29,12 +28,7 @@ HACKLEBERRY = {
           os = 'android_';
         }
       }
-      css_file.setAttribute("rel", "stylesheet");
-      css_file.setAttribute("type", "text/css");
-      css_file.setAttribute("href", args.path + prefix + os + b);
-      if (typeof css_file!="undefined"){
-        head.appendChild(css_file);
-      }
+      document.write('<link rel="stylesheet" type="text/css" href="'+ (args.path + prefix + os + b) +'">');
     }
   }
 }

@@ -14,6 +14,17 @@
   <!-- /iphone -->
   <title>Scaffolding | hackleberry: HTML5/CSS3/JavaScript Framework</title>
   <link rel="shortcut icon" type="image/x-icon" href="">
+  <script src="js/hackleberry.min.js"></script>
+  <script>
+  (function(){
+    // hackleberry
+    HACKLEBERRY.changeStylesheet({
+      path: 'css/',
+      file: ['hackleberry.css','scaffolding.css'],
+      pure: true
+    });
+  })();
+  </script>
 </head>
 <body>
 
@@ -827,15 +838,8 @@
   </div><!-- {* /.container *} -->
 </footer><!-- {* /.footer *} -->
 
-<script src="js/hackleberry.min.js"></script>
 <script>
 (function(){
-  // hackleberry
-  HACKLEBERRY.changeStylesheet({
-    path: 'css/',
-    file: ['hackleberry.css','scaffolding.css'],
-    pure: true
-  });
   // sideMenu changeFixed
   (function(){
     var sideMenu = document.getElementById('sideMenu');
