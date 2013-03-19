@@ -73,7 +73,7 @@ $class_col: 'col';
 $class_offset: 'offset';
 $class_spacing: 'spacing';
 
-/*
+/**
 * typography
 */
 /* font-size */
@@ -127,7 +127,7 @@ $class_descriptions: 'descriptions';
 $class_title: 'title';
 $class_listHorizontal: 'horizontal';
 
-/*
+/**
 * tables
 */
 $tableBorderColor: #e7e8e9;
@@ -140,7 +140,7 @@ $class_tableStriped: 'striped';
 $class_tableVertical: 'vertical';
 $class_tableHovered: 'hovered';
 
-/*
+/**
 * Forms
 */
 
@@ -152,13 +152,20 @@ $class_formHorizontal: 'horizontal';
 $class_formVertical: 'vertical';
 $class_formHovered: 'hovered';
 
-/*
+/**
 * buttons
 */
 /* className */
 $class_btn: 'btn';
 $class_group: 'group';
 
+/**
+* Images
+*/
+$imgRoundBorderRadius: $borderInnerRadius;
+$class_imgRound: 'round';
+$class_imgCircle: 'circle';
+$class_imgPolaroid: 'polaroid';
 
 /*
 * status
