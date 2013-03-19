@@ -329,10 +329,12 @@
           <div class="row">
             <div class="col4">
               <div class="example">
-                <p class="text small">small text</p>
-                <p class="text medium">medium text</p>
-                <p class="text large">large text</p>
                 <p class="text jumbo">jumbo text</p>
+                <p class="text large">large text</p>
+                <p class="text medium">medium text</p>
+                <p class="text small">small text</p>
+                <p class="text tiny">tiny text</p>
+                <p class="text micro">micro text</p>
               </div>
             </div>
             <div class="col8">
@@ -771,55 +773,55 @@
             </div><!-- {* /.col8 *} -->
           </div><!-- {* /.row *} -->
         </section>
-        <section class="cassette" id="verticalForm">
+        <section class="cassette" id="VerticalForm">
           <h1 class="lv2">Vertical</h1>
           <p class="text"><code class="code">&lt;form class="form vertical"&gt;</code></p>
           <div class="example">
             <form class="form vertical">
               <span class="field">
-                <label for="input">input</label><input type="text">
+                <label for="input" class="label">input</label><input type="text">
               </span>
               <span class="field">
-                <label for="input">input.success</label><input type="text" class="success" placeholder="success">
+                <label for="input" class="label">input.success</label><input type="text" class="success" placeholder="success">
               </span>
               <span class="field">
-                <label for="input">input.error</label><input type="text" class="error" placeholder="error">
+                <label for="input" class="label">input.error</label><input type="text" class="error" placeholder="error">
               </span>
               <span class="field">
-                <label for="input">input.warning</label><input type="text" class="warning" placeholder="warning">
+                <label for="input" class="label">input.warning</label><input type="text" class="warning" placeholder="warning">
               </span>
               <span class="field">
-                <label for="input">input.disabled</label><input type="text" class="disabled" placeholder="disabled" disabled="disabled">
+                <label for="input" class="label">input.disabled</label><input type="text" class="disabled" placeholder="disabled" disabled="disabled">
               </span>
               <span class="field">
-                <label for="input">input.requierd</label><input type="text" class="requierd" placeholder="requierd">
+                <label for="input" class="label">input.requierd</label><input type="text" class="requierd" placeholder="requierd">
               </span>
             </form>
           </div>
           <script src="https://gist.github.com/funnythingz/5179569.js"></script>
         </section>
-        <section class="cassette" id="horizontalForm">
+        <section class="cassette" id="HorizontalForm">
           <h1 class="lv2">Horizontal</h1>
           <p class="text"><code class="code">&lt;form class="form horizontal"&gt;</code></p>
           <div class="example">
             <form class="form horizontal">
-              <span class="field">
-                <label for="input">input</label><input type="text">
+              <span class="field row">
+                <label for="input" class="label col3">input</label><span class="col9"><input type="text"></span>
               </span>
-              <span class="field">
-                <label for="input">input.success</label><input type="text" class="success" placeholder="success">
+              <span class="field row">
+                <label for="input" class="label col3">input.success</label><span class="col9"><input type="text" class="success" placeholder="success"></span>
               </span>
-              <span class="field">
-                <label for="input">input.error</label><input type="text" class="error" placeholder="error">
+              <span class="field row">
+                <label for="input" class="label col3">input.error</label><span class="col9"><input type="text" class="error" placeholder="error"></span>
               </span>
-              <span class="field">
-                <label for="input">input.warning</label><input type="text" class="warning" placeholder="warning">
+              <span class="field row">
+                <label for="input" class="label col3">input.warning</label><span class="col9"><input type="text" class="warning" placeholder="warning"></span>
               </span>
-              <span class="field">
-                <label for="input">input.disabled</label><input type="text" class="disabled" placeholder="disabled" disabled="disabled">
+              <span class="field row">
+                <label for="input" class="label col3">input.disabled</label><span class="col9"><input type="text" class="disabled" placeholder="disabled" disabled="disabled"></span>
               </span>
-              <span class="field">
-                <label for="input">input.requierd</label><input type="text" class="requierd" placeholder="requierd">
+              <span class="field row">
+                <label for="input" class="label col3">input.requierd</label><span class="col9"><input type="text" class="requierd" placeholder="requierd"></span>
               </span>
             </form>
           </div>

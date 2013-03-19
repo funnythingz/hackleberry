@@ -1,2 +1,11 @@
 .#{$class_formHorizontal} {
+  .#{$class_formField} {
+    display: block;
+    margin-bottom: #{$spacingOuterBottom}#{$spacingUnit};
+  }
+  .#{$class_formLabel} {
+    @include medium;
+    @include right;
+    margin-top: 7px;
+  }
 }

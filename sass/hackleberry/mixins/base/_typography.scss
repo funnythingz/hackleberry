@@ -1,0 +1,53 @@
+@mixin sentence($arg: ''){
+  line-height: #{$textLineHeight}#{$arg};
+}
+@mixin jumbo($arg: ''){
+  font-size: #{$textJumboSize}px#{$arg};
+  line-height: #{($textJumboSize * $textLineHeight)}px#{$arg};
+}
+@mixin large($arg: ''){
+  font-size: #{$textLargeSize}px#{$arg};
+  line-height: #{($textLargeSize * $textLineHeight)}px#{$arg};
+}
+@mixin medium($arg: ''){
+  font-size: #{$textMediumSize}px#{$arg};
+  line-height: #{($textMediumSize * $textLineHeight)}px#{$arg};
+}
+@mixin small($arg: ''){
+  font-size: #{$textSmallSize}px#{$arg};
+  line-height: #{($textSmallSize * $textLineHeight)}px#{$arg};
+}
+@mixin tiny($arg: ''){
+  font-size: #{$textTinySize}px#{$arg};
+  line-height: #{($textTinySize * $textLineHeight)}px#{$arg};
+}
+@mixin micro($arg: ''){
+  font-size: #{$textMicroSize}px#{$arg};
+  line-height: #{($textMicroSize * $textLineHeight)}px#{$arg};
+}
+
+@mixin normal($arg: ''){
+  font-weight: normal#{$arg};
+}
+@mixin bold($arg: ''){
+  font-weight: bold#{$arg};
+}
+@mixin italic($arg: ''){
+  font-style: italic#{$arg};
+}
+
+@mixin left($arg: ''){
+  text-align: left#{$arg};
+}
+@mixin center($arg: ''){
+  text-align: center#{$arg};
+}
+@mixin right($arg: ''){
+  text-align: right#{$arg};
+}
+
+@mixin ellipsis($arg: ''){
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis#{$arg};
+}

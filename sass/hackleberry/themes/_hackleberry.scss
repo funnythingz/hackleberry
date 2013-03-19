@@ -82,15 +82,10 @@ $textJumboSize: ($textDefaultSize + 4);
 $textLargeSize: ($textDefaultSize + 2);
 $textMediumSize: $textDefaultSize;
 $textSmallSize: ($textDefaultSize - 2);
+$textTinySize: ($textDefaultSize - 4);
+$textMicroSize: ($textDefaultSize - 6);
 /* line-height */
 $textLineHeight: 1.5;
-/* color */
-$textMutedColor: '#e1e2e3';
-$textWarningColor: '#c09853';
-$textErrorColor: '#d14';
-$textPrimaryColor: '#187abf';
-$textDisabledColor: '#f7f7f9';
-$textSuccessColor: '#34b842';
 
 /* className */
 $class_lv1: 'lv1';
@@ -104,10 +99,12 @@ $class_text: 'text';
 $class_lead: 'lead';
 
 $class_sentence: 'sentence';
-$class_small: 'small';
-$class_medium: 'medium';
-$class_large: 'large';
 $class_jumbo: 'jumbo';
+$class_large: 'large';
+$class_medium: 'medium';
+$class_small: 'small';
+$class_tiny: 'tiny';
+$class_micro: 'micro';
 
 $class_normal: 'normal';
 $class_bold: 'bold';
@@ -150,6 +147,7 @@ $class_tableHovered: 'hovered';
 /* className */
 $class_form: 'form';
 $class_formField: 'field';
+$class_formLabel: 'label';
 $class_formHorizontal: 'horizontal';
 $class_formVertical: 'vertical';
 $class_formHovered: 'hovered';
@@ -166,19 +164,21 @@ $class_group: 'group';
 * status
 */
 /* color */
-$status_normal                  :'';
-$status_primaryColor            :'';
-$status_warningColor            :'';
-$status_successColor            :'';
-$status_errorColor              :'';
-$status_disabledColor           :'';
-$status_darkColor               :'';
+$status_normalColor             :'#e7e8e9';
+$status_minorColor              :'#e1e2e3';
+$status_primaryColor            :'#187abf';
+$status_warningColor            :'#c09853';
+$status_successColor            :'#34b842';
+$status_errorColor              :'#d14';
+$status_disabledColor           :'#f7f7f9';
+$status_darkColor               :'#123';
 
 $status_activeColor             :'';
 $status_loadingColor            :'';
 
 /* backgroundColor */
 $status_normalBackgroundColor   :'';
+$status_minorBackgroundColor    :'';
 $status_primaryBackgroundColor  :'';
 $status_warningBackgroundColor  :'';
 $status_successBackgroundColor  :'';
@@ -191,6 +191,7 @@ $status_loadingBackgroundColor  :'';
 
 /* borderColor */
 $status_normalBorderColor       :'';
+$status_minorBorderColor        :'';
 $status_primaryBorderColor      :'';
 $status_warningBorderColor      :'';
 $status_successBorderColor      :'';
@@ -204,6 +205,8 @@ $status_loadingBorderColor      :'';
 /* boxShadow */
 $status_normalBoxShadow         :'';
 $status_normalBoxShadowInset    :'';
+$status_minorBoxShadow          :'';
+$status_minorBoxShadowInset     :'';
 $status_primaryBoxShadow        :'';
 $status_primaryBoxShadowInse    :'';
 $status_warningBoxShadow        :'';
@@ -223,6 +226,8 @@ $status_loadingBoxShadowInse    :'';
 /* gradient */
 $status_normalGradientTop       :'#e6e6e6';
 $status_normalGradientBottom    :'';
+$status_minorGradientTop        :'';
+$status_minorGradientBottom     :'';
 $status_primaryGradientTop      :'';
 $status_primaryGradientBottom   :'';
 $status_warningGradientTop      :'';
@@ -242,12 +247,13 @@ $status_loadingGradientTop      :'';
 $status_loadingGradientBottom   :'';
 
 /* className */
-$class_primary: 'primary';
-$class_warning: 'warning';
-$class_success: 'success';
-$class_error: 'error';
+$class_primary:  'primary';
+$class_minor:    'minor';
+$class_warning:  'warning';
+$class_success:  'success';
+$class_error:    'error';
 $class_disabled: 'disabled';
-$class_dark: 'dark';
+$class_dark:     'dark';
 
-$class_active: 'active';
-$class_loading: 'loading';
+$class_active:   'active';
+$class_loading:  'loading';

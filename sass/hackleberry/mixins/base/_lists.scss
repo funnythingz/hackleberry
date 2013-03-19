@@ -1,11 +1,9 @@
 @mixin descriptions(){
   dt {
-    @include sentence;
     @include large;
     @include bold;
   }
   dd {
-    @include sentence;
     @include medium;
   }
 }

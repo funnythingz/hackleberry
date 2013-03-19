@@ -1,2 +1,11 @@
 .#{$class_formVertical} {
+  .#{$class_formField} {
+    display: block;
+    margin-bottom: #{$spacingOuterBottom}#{$spacingUnit};
+  }
+  .#{$class_formLabel} {
+    display: block;
+    @include medium;
+    margin-bottom: #{$spacing}#{$spacingUnit};
+  }
 }

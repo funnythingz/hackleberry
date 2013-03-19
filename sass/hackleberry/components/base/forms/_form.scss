@@ -8,6 +8,5 @@
   input[type="text"] {
     padding: #{($spacingInner/2)}#{$spacingUnit} #{$spacingInner}#{$spacingUnit};
     @include medium;
-    @include sentence;
   }
 }
