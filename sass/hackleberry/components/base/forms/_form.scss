@@ -5,8 +5,25 @@
       margin-bottom: 0;
     }
   }
-  input[type="text"] {
+  input[type="text"],
+  input[type="password"],
+  textarea {
     padding: #{($spacingInner/2)}#{$spacingUnit} #{$spacingInner}#{$spacingUnit};
     @include medium;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: #{$spacing}px;
+  }
+  select {
+    border: solid 1px #{$borderColor};
+    @include medium;
+    font-family: none;
+  }
+  select:not([multiple="multiple"]) {
+    height: #{floor(($textMediumSize * $textLineHeight) * 1.2)}px
+  }
+  select[multiple="multiple"] {
+    padding: #{($spacingInner/2)}#{$spacingUnit};
   }
 }
