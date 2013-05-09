@@ -28,9 +28,9 @@
 </head>
 <body>
 
-<section>
+<section id="globalMenu">
   <nav class="menu global container center">
-    <ul class="horizontal"><!--
+    <ul class="horizontal" style="background-color: rgba(255,255,255,0.8)"><!--
       --><li class="spacing-left10"><a href="index.html">HOME</a></li><!--
       --><li class="spacing-left10"><a href="getting-started.html">Get Started</a></li><!--
       --><li class="spacing-left10"><a href="scaffolding.html">Scaffolding</a></li><!--
@@ -91,25 +91,17 @@
 
 <script>
 (function(){
-  // sideMenu changeFixed
-  (function(){
-    var sideMenu = document.getElementById('sideMenu');
-    var flag = false;
-    var getScrollTop = function(){
-      var d = document;
-      return (d.documentElement.scrollTop || d.body.scrollTop);
-    }
-    window.addEventListener('scroll',function(){
-      console.log(getScrollTop());
-      if(getScrollTop() > 100 && !flag){
-        sideMenu.setAttribute('class', 'fixed');
-        flag = true;
-      }else if(getScrollTop() < 100 && flag){
-        sideMenu.removeAttribute('class');
-        flag = false;
-      }
-    });
-  })();
+  // sideMenu scrollFixed
+  HACKLEBERRY.scrollFixed({
+    id: 'sideMenu',
+    position: 100
+  });
+
+  // globalMenu scrollFixed
+  HACKLEBERRY.scrollFixed({
+    id: 'globalMenu',
+    position: 40
+  });
 })();
 </script>
 <script type="text/javascript">

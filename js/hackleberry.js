@@ -3,6 +3,9 @@ if(typeof(HACKLEBERRY) == 'undefined' || !HACKLEBERRY ){
   window.HACKLEBERRY = {}
 }
 HACKLEBERRY = {
+  /*
+    StyleSheetをベンダープレフィックスつけて切り替える
+  */
   changeStylesheet: function(args){
     var
       ua = navigator.userAgent,
@@ -30,6 +33,23 @@ HACKLEBERRY = {
       }
       document.write('<link rel="stylesheet" type="text/css" href="'+ (args.path + prefix + os + b) +'">');
     }
+  },
+  scrollFixed: function(args){
+    var d = document;
+    var sideMenu = d.getElementById(args.id);
+    var flag = false;
+    var getScrollTop = function(){
+      return (d.documentElement.scrollTop || d.body.scrollTop);
+    }
+    window.addEventListener('scroll',function(){
+      if(getScrollTop() > args.position && !flag){
+        sideMenu.setAttribute('class', 'fixed');
+        flag = true;
+      }else if(getScrollTop() < args.position && flag){
+        sideMenu.removeAttribute('class');
+        flag = false;
+      }
+    });
   }
 }
 })(window);
