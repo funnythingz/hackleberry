@@ -1,0 +1,7 @@
+img {
+  &.#{$class_imgPolaroid} {
+    padding: #{floor($spacingInner/2)}px;
+    border: solid 1px #{$borderColor};
+    @include box-shadow(0 0 3px 0 #e7e8e9);
+  }
+}

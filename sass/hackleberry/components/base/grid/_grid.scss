@@ -1,0 +1,14 @@
+@for $i from 1 through $rowGridLength {
+  .#{$class_col}#{$i} {
+    @include col($i);
+  }
+}
+@for $i from 1 through $rowGridLength {
+  .#{$class_offset}#{$i} {
+    @include offset($i,!important);
+  }
+}
+.#{$class_row} {
+  @include legacy-pie-clearfix();
+  width: #{$rowBaseWidth}#{$rowBaseUnit};
+}

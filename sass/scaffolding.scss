@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+@import "compass/css3";
+
+@import "hackleberry/themes/hackleberry";
+
+@import "hackleberry/functions/all";
+
+@import "hackleberry/mixins/all";
+
+.scaffolding {
+  @for $i from 1 through $rowGridLength {
+    .#{$class_col}#{$i} {
+      background-color: #eee;
+      border: solid 1px #ccc;
+      padding: 4px;
+      text-align: center;
+    }
+  }
+  .#{$class_row} {
+    margin-bottom: 5px;
+  }
+}
+.fixed {
+  position: fixed;
+  top: 0;
+}
+.example,
+.gist {
+  margin: 1em 0;
+  padding: 1em 0;
+  border-top: solid 1px #f1f2f3;
+  .gist-data {
+    background-color: #f7f8f9 !important;
+  }
+  .line,
+  .line-number {
+    line-height: 1.5 !important;
+  }
+}
+
+#globalMenu {
+  width: 100%;
+}

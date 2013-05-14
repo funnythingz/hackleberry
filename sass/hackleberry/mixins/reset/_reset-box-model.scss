@@ -1,0 +1,6 @@
+@mixin reset-box-model {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  @include box-sizing($boxSizing);
+}
