@@ -8,7 +8,7 @@
 
 @import "hackleberry/mixins/all";
 
-.scaffolding {
+.reference {
   @for $i from 1 through $rowGridLength {
     .#{$class_col}#{$i} {
       background-color: #eee;
