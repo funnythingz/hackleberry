@@ -317,27 +317,59 @@
 .form input[type="text"],
 .form input[type="password"],
 .form textarea {
-  padding: 3.5px 7px;
   font-size: 14px;
   line-height: 21px;
+  padding: 3.5px 7px;
+  border: solid 1px #e6e6e6;
+  /* status */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000316}}
+.form input[type="text"].success,
+.form input[type="password"].success,
+.form textarea.success {
+  border: solid 1px #8ddce3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000319}}
+.form input[type="text"].error,
+.form input[type="password"].error,
+.form textarea.error {
+  border: solid 1px #d96464;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000322}}
+.form input[type="text"].warning,
+.form input[type="password"].warning,
+.form textarea.warning {
+  border: solid 1px #e3c18d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000325}}
+.form input[type="text"].disabled,
+.form input[type="password"].disabled,
+.form textarea.disabled {
+  border: solid 1px #e7e8e9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000328}}
+.form input[type="text"].requierd,
+.form input[type="password"].requierd,
+.form textarea.requierd {
+  border: solid 1px #e3c18d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000333}}
 .form input[type="checkbox"],
 .form input[type="radio"] {
   margin-right: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000336}}
 .form select {
-  border: solid 1px #cccccc;
+  border: solid 1px #e6e6e6;
   font-size: 14px;
   line-height: 21px;
   font-family: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000341}}
 .form select:not([multiple="multiple"]) {
   height: 25px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/hiroki\.oiwa\/github\/hackleberry\/sass\/partial\/base\/forms\/_form\.scss}line{font-family:\0000344}}
 .form select[multiple="multiple"] {
   padding: 3.5px;
 }
