@@ -3,12 +3,12 @@
 /* params */
 @import "compass/css3";
 
-@import "hackleberry/themes/hackleberry";
+@import "partial/themes/hackleberry";
 
-@import "hackleberry/functions/all";
+@import "partial/functions/all";
 
-@import "hackleberry/mixins/all";
+@import "partial/mixins/all";
 
 
 /* instance */
-@import "hackleberry/scaffolding/all";
+@import "partial/scaffolding/all";
