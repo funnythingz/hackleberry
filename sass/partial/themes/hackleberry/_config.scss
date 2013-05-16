@@ -7,8 +7,6 @@ $boxSizing: 'border-box';
 /* font */
 $fontFamily: '"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",Helvetica,Arial,Sans-Serif';
 
-/* background */
-
 
 /**
 * grid
@@ -88,9 +86,9 @@ $textLineHeight: 1.5;
 /**
 * tables
 */
-$tableBorderColor: #e7e8e9;
-$tableBackgroundColor: #f7f8f9;
-$tableBackgroundHoverColor: #e7e8e9;
+$tableBorderColor           : #e7e8e9;
+$tableBackgroundColor       : #f7f8f9;
+$tableBackgroundHoverColor  : #e7e8e9;
 
 
 /**
@@ -107,95 +105,168 @@ $tableBackgroundHoverColor: #e7e8e9;
 */
 $imgRoundBorderRadius: $borderInnerRadius;
 
-/*
+/**
 * status
 */
 /* color */
-$status_normalColor             :'#789';
-$status_minorColor              :'#e1e2e3';
-$status_primaryColor            :'#187abf';
-$status_warningColor            :'#c09853';
-$status_successColor            :'#34b842';
-$status_errorColor              :'#d14';
-$status_disabledColor           :'#f7f7f9';
-$status_requierdColor           :'#c09853';
-$status_darkColor               :'#123';
+// default
+$status_normalColor                  :'#789';
+$status_minorColor                   :'#e1e2e3';
+$status_primaryColor                 :'#187abf';
+$status_warningColor                 :'#c09853';
+$status_successColor                 :'#34b842';
+$status_errorColor                   :'#d14';
+$status_disabledColor                :'#f7f7f9';
+$status_requierdColor                :'#c09853';
+$status_darkColor                    :'#123';
+// active
+$status_activeNormalColor            :'#789';
+$status_activeMinorColor             :'#e1e2e3';
+$status_activePrimaryColor           :'#187abf';
+$status_activeWarningColor           :'#c09853';
+$status_activeSuccessColor           :'#34b842';
+$status_activeErrorColor             :'#d14';
+$status_activeDisabledColor          :'#f7f7f9';
+$status_activeRequierdColor          :'#c09853';
+$status_activeDarkColor              :'#123';
 
-$status_activeColor             :'';
-$status_loadingColor            :'';
+$status_activeColor                  :'';
+$status_loadingColor                 :'';
 
 /* backgroundColor */
-$status_normalBackgroundColor   :'';
-$status_minorBackgroundColor    :'';
-$status_primaryBackgroundColor  :'';
-$status_warningBackgroundColor  :'';
-$status_successBackgroundColor  :'';
-$status_errorBackgroundColor    :'';
-$status_disabledBackgroundColor :'';
-$status_requierdBackgroundColor :'';
-$status_darkBackgroundColor     :'';
+// default
+$status_normalBackgroundColor        :'';
+$status_minorBackgroundColor         :'';
+$status_primaryBackgroundColor       :'';
+$status_warningBackgroundColor       :'';
+$status_successBackgroundColor       :'';
+$status_errorBackgroundColor         :'';
+$status_disabledBackgroundColor      :'';
+$status_requierdBackgroundColor      :'';
+$status_darkBackgroundColor          :'';
+// active
+$status_activeNormalBackgroundColor  :'';
+$status_activeMinorBackgroundColor   :'';
+$status_activePrimaryBackgroundColor :'';
+$status_activeWarningBackgroundColor :'';
+$status_activeSuccessBackgroundColor :'';
+$status_activeErrorBackgroundColor   :'';
+$status_activeDisabledBackgroundColor:'';
+$status_activeRequierdBackgroundColor:'';
+$status_activeDarkBackgroundColor    :'';
 
-$status_activeBackgroundColor   :'';
-$status_loadingBackgroundColor  :'';
+$status_activeBackgroundColor        :'';
+$status_loadingBackgroundColor       :'';
 
 /* borderColor */
-$status_normalBorderColor       :'#e6e6e6';
-$status_minorBorderColor        :'#f6f6f6';
-$status_primaryBorderColor      :'#8ddce3';
-$status_warningBorderColor      :'#e3c18d';
-$status_successBorderColor      :'#66d371';
-$status_errorBorderColor        :'#d96464';
-$status_disabledBorderColor     :'#e7e8e9';
-$status_requierdBorderColor     :'#e3c18d';
-$status_darkBorderColor         :'';
+// default
+$status_normalBorderColor            :'#e6e6e6';
+$status_minorBorderColor             :'#f6f6f6';
+$status_primaryBorderColor           :'#8ddce3';
+$status_warningBorderColor           :'#e3c18d';
+$status_successBorderColor           :'#66d371';
+$status_errorBorderColor             :'#d96464';
+$status_disabledBorderColor          :'#e7e8e9';
+$status_requierdBorderColor          :'#e3c18d';
+$status_darkBorderColor              :'';
+// active
+$status_activeNormalBorderColor      :'#e6e6e6';
+$status_activeMinorBorderColor       :'#f6f6f6';
+$status_activePrimaryBorderColor     :'#8ddce3';
+$status_activeWarningBorderColor     :'#e3c18d';
+$status_activeSuccessBorderColor     :'#66d371';
+$status_activeErrorBorderColor       :'#d96464';
+$status_activeDisabledBorderColor    :'#e7e8e9';
+$status_activeRequierdBorderColor    :'#e3c18d';
+$status_activeDarkBorderColor        :'';
 
-$status_activeBorderColor       :'';
-$status_loadingBorderColor      :'';
+$status_activeBorderColor            :'';
+$status_loadingBorderColor           :'';
 
 /* boxShadow */
-$status_normalBoxShadow         :'';
-$status_normalBoxShadowInset    :'';
-$status_minorBoxShadow          :'';
-$status_minorBoxShadowInset     :'';
-$status_primaryBoxShadow        :'';
-$status_primaryBoxShadowInse    :'';
-$status_warningBoxShadow        :'';
-$status_warningBoxShadowInse    :'';
-$status_successBoxShadow        :'';
-$status_successBoxShadowInse    :'';
-$status_errorBoxShadow          :'';
-$status_errorBoxShadowInset     :'';
-$status_disabledBoxShadow       :'';
-$status_disabledBoxShadowIns    :'';
-$status_requierdShadow          :'';
-$status_requierdShadowIns       :'';
-$status_darkBoxShadow           :'';
-$status_darkBoxShadowInset      :'';
+// default
+$status_normalBoxShadow              :'';
+$status_normalBoxShadowInset         :'';
+$status_minorBoxShadow               :'';
+$status_minorBoxShadowInset          :'';
+$status_primaryBoxShadow             :'';
+$status_primaryBoxShadowInset        :'';
+$status_warningBoxShadow             :'';
+$status_warningBoxShadowInset        :'';
+$status_successBoxShadow             :'';
+$status_successBoxShadowInset        :'';
+$status_errorBoxShadow               :'';
+$status_errorBoxShadowInset          :'';
+$status_disabledBoxShadow            :'';
+$status_disabledBoxShadowInset       :'';
+$status_requierdShadow               :'';
+$status_requierdShadowInset          :'';
+$status_darkBoxShadow                :'';
+$status_darkBoxShadowInset           :'';
+// active
+$status_activeNormalBoxShadow        :'';
+$status_activeNormalBoxShadowInset   :'';
+$status_activeMinorBoxShadow         :'';
+$status_activeMinorBoxShadowInset    :'';
+$status_activePrimaryBoxShadow       :'';
+$status_activePrimaryBoxShadowInset  :'';
+$status_activeWarningBoxShadow       :'';
+$status_activeWarningBoxShadowInset  :'';
+$status_activeSuccessBoxShadow       :'';
+$status_activeSuccessBoxShadowInset  :'';
+$status_activeErrorBoxShadow         :'';
+$status_activeErrorBoxShadowInset    :'';
+$status_activeDisabledBoxShadow      :'';
+$status_activeDisabledBoxShadowInset :'';
+$status_activeRequierdShadow         :'';
+$status_activeRequierdShadowInset    :'';
+$status_activeDarkBoxShadow          :'';
+$status_activeDarkBoxShadowInset     :'';
 
-$status_activeBoxShadow         :'';
-$status_loadingBoxShadowInse    :'';
+$status_activeBoxShadow              :'';
+$status_loadingBoxShadowInset        :'';
 
 /* gradient */
-$status_normalGradientTop       :'#e6e6e6';
-$status_normalGradientBottom    :'';
-$status_minorGradientTop        :'';
-$status_minorGradientBottom     :'';
-$status_primaryGradientTop      :'';
-$status_primaryGradientBottom   :'';
-$status_warningGradientTop      :'';
-$status_warningGradientBottom   :'';
-$status_successGradientTop      :'';
-$status_successGradientBottom   :'';
-$status_errorGradientTop        :'';
-$status_errorGradientBottom     :'';
-$status_disabledGradientTop     :'';
-$status_disabledGradientBottom  :'';
-$status_requierdGradientTop     :'';
-$status_requierdGradientBottom  :'';
-$status_darkGradientTop         :'';
-$status_darkGradientBottom      :'';
+// default
+$status_normalGradientTop            :'#e6e6e6';
+$status_normalGradientBottom         :'';
+$status_minorGradientTop             :'';
+$status_minorGradientBottom          :'';
+$status_primaryGradientTop           :'';
+$status_primaryGradientBottom        :'';
+$status_warningGradientTop           :'';
+$status_warningGradientBottom        :'';
+$status_successGradientTop           :'';
+$status_successGradientBottom        :'';
+$status_errorGradientTop             :'';
+$status_errorGradientBottom          :'';
+$status_disabledGradientTop          :'';
+$status_disabledGradientBottom       :'';
+$status_requierdGradientTop          :'';
+$status_requierdGradientBottom       :'';
+$status_darkGradientTop              :'';
+$status_darkGradientBottom           :'';
+// active
+$status_activeNormalGradientTop      :'#e6e6e6';
+$status_activeNormalGradientBottom   :'';
+$status_activeMinorGradientTop       :'';
+$status_activeMinorGradientBottom    :'';
+$status_activePrimaryGradientTop     :'';
+$status_activePrimaryGradientBottom  :'';
+$status_activeWarningGradientTop     :'';
+$status_activeWarningGradientBottom  :'';
+$status_activeSuccessGradientTop     :'';
+$status_activeSuccessGradientBottom  :'';
+$status_activeErrorGradientTop       :'';
+$status_activeErrorGradientBottom    :'';
+$status_activeDisabledGradientTop    :'';
+$status_activeDisabledGradientBottom :'';
+$status_activeRequierdGradientTop    :'';
+$status_activeRequierdGradientBottom :'';
+$status_activeDarkGradientTop        :'';
+$status_activeDarkGradientBottom     :'';
 
-$status_activeGradientTop       :'';
-$status_activeGradientBottom    :'';
-$status_loadingGradientTop      :'';
-$status_loadingGradientBottom   :'';
+$status_activeGradientTop            :'';
+$status_activeGradientBottom         :'';
+$status_loadingGradientTop           :'';
+$status_loadingGradientBottom        :'';
