@@ -1,14 +1,17 @@
 @charset "utf-8";
 
+/* params */
 @import "compass/css3";
 
-@import "hackleberry/themes/hackleberry";
+@import "partial/themes/hackleberry";
 
-@import "hackleberry/functions/all";
+@import "partial/functions/all";
 
-@import "hackleberry/mixins/all";
+@import "partial/mixins/all";
 
-.scaffolding {
+
+/* instance */
+.reference {
   @for $i from 1 through $rowGridLength {
     .#{$class_col}#{$i} {
       background-color: #eee;
