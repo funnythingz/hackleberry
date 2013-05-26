@@ -83,9 +83,8 @@ hackleberryが独自に定義しているUIコンポーネント集です。ナ�
 
 <ul id="sideMenu">
   <li>Buttons</li>
-  <li>ListItem</li>
-  <li>ListCassette</li>
-  <li>Tabs</li>
+  <li>Headline</li>
+  <li>Cassette</li>
   <li>Sprites</li>
 </ul>
 
