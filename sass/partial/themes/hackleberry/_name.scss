@@ -2,10 +2,9 @@
 * ClassName
 */
 
-/* Layout */
-$class_unit: 'unit';
-$class_cassette: 'cassette';
-
+/**
+* Scaffolding
+*/
 /* Glid */
 $class_container: 'container';
 $class_row: 'row';
@@ -14,6 +13,9 @@ $class_offset: 'offset';
 $class_spacing: 'spacing';
 
 
+/**
+* Base
+*/
 /* typography */
 $class_lv1: 'lv1';
 $class_lv2: 'lv2';
@@ -22,16 +24,16 @@ $class_lv4: 'lv4';
 $class_lv5: 'lv5';
 $class_lv6: 'lv6';
 
-$class_text: 'text';
-$class_lead: 'lead';
-
 $class_sentence: 'sentence';
+$class_lead: 'lead';
+$class_line: 'line';
+
+$class_huge: 'huge';
 $class_jumbo: 'jumbo';
 $class_large: 'large';
 $class_medium: 'medium';
 $class_small: 'small';
 $class_tiny: 'tiny';
-$class_micro: 'micro';
 
 $class_normal: 'normal';
 $class_bold: 'bold';
@@ -67,10 +69,6 @@ $class_formHorizontal: 'horizontal';
 $class_formVertical: 'vertical';
 $class_formHovered: 'hovered';
 
-/* buttons */
-$class_btn: 'btn';
-$class_group: 'group';
-
 /* Images */
 $class_imgRound: 'round';
 $class_imgCircle: 'circle';
@@ -88,3 +86,14 @@ $class_dark:     'dark';
 
 $class_active:   'active';
 $class_loading:  'loading';
+
+
+/**
+* Components
+*/
+$class_unit: 'unit';
+$class_cassette: 'cassette';
+
+/* buttons */
+$class_btn: 'btn';
+$class_group: 'group';

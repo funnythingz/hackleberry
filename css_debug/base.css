@@ -6,15 +6,23 @@
 /**
 * ClassName
 */
-/* Layout */
+/**
+* Scaffolding
+*/
 /* Glid */
+/**
+* Base
+*/
 /* typography */
 /* Lists */
 /* tables */
 /* Forms */
-/* buttons */
 /* Images */
 /* status */
+/**
+* Components
+*/
+/* buttons */
 /**
 * Config
 */
@@ -66,44 +74,38 @@
 */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_lv1\.scss}line{font-family:\000031}}
 .lv1 {
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_lv2\.scss}line{font-family:\000031}}
 .lv2 {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_lv3\.scss}line{font-family:\000031}}
 .lv3 {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_lv4\.scss}line{font-family:\000031}}
 .lv4 {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_lv5\.scss}line{font-family:\000031}}
 .lv5 {
-  font-size: 10px;
-  line-height: 15px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_lv6\.scss}line{font-family:\000031}}
 .lv6 {
-  font-size: 8px;
-  line-height: 12px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_text\.scss}line{font-family:\000031}}
-.text {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 10px;
+  line-height: 15px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_lead\.scss}line{font-family:\000031}}
@@ -114,7 +116,19 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_sentence\.scss}line{font-family:\000031}}
 .sentence {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_line\.scss}line{font-family:\000031}}
+.line {
   line-height: 1.5!important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_huge\.scss}line{font-family:\000031}}
+.huge {
+  font-size: 20px!important;
+  line-height: 30px!important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_jumbo\.scss}line{font-family:\000031}}
@@ -145,12 +159,6 @@
 .tiny {
   font-size: 10px!important;
   line-height: 15px!important;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_micro\.scss}line{font-family:\000031}}
-.micro {
-  font-size: 8px!important;
-  line-height: 12px!important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/base\/typography\/_normal\.scss}line{font-family:\000031}}
@@ -430,3 +438,8 @@ img.polaroid {
 * components
 */
 /* buttons */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/funnythingz\/github\/hackleberry\/sass\/partial\/components\/buttons\/_btn\.scss}line{font-family:\000031}}
+.btn {
+  font-size: 14px;
+  line-height: 21px;
+}
