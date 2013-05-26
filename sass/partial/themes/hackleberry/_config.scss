@@ -67,12 +67,12 @@ $rowGridLength: 12;
 */
 /* font-size */
 $textDefaultSize: 14;
+$textHugeSize:  ($textDefaultSize + 6);
 $textJumboSize: ($textDefaultSize + 4);
 $textLargeSize: ($textDefaultSize + 2);
 $textMediumSize: $textDefaultSize;
 $textSmallSize: ($textDefaultSize - 2);
-$textTinySize: ($textDefaultSize - 4);
-$textMicroSize: ($textDefaultSize - 6);
+$textTinySize:  ($textDefaultSize - 4);
 
 /* line-height */
 $textLineHeight: 1.5;

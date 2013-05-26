@@ -1,5 +1,9 @@
-@mixin sentence($arg: ''){
+@mixin line($arg: ''){
   line-height: #{$textLineHeight}#{$arg};
+}
+@mixin huge($arg: ''){
+  font-size: #{$textHugeSize}px#{$arg};
+  line-height: #{($textHugeSize * $textLineHeight)}px#{$arg};
 }
 @mixin jumbo($arg: ''){
   font-size: #{$textJumboSize}px#{$arg};
@@ -20,10 +24,6 @@
 @mixin tiny($arg: ''){
   font-size: #{$textTinySize}px#{$arg};
   line-height: #{($textTinySize * $textLineHeight)}px#{$arg};
-}
-@mixin micro($arg: ''){
-  font-size: #{$textMicroSize}px#{$arg};
-  line-height: #{($textMicroSize * $textLineHeight)}px#{$arg};
 }
 
 @mixin normal($arg: ''){
