@@ -36,20 +36,29 @@ HACKLEBERRY = {
   },
   scrollFixed: function(args){
     var d = document;
-    var sideMenu = d.getElementById(args.id);
+    var elmObj = d.getElementById(args.id);
     var flag = false;
+    var minWidth = (typeof args.responsiveMinWidth !== 'undefined')? args.responsiveMinWidth: false;
+    var adjustment = (typeof args.adjustment !== 'undefined')? args.adjustment: false;
     var getScrollTop = function(){
       return (d.documentElement.scrollTop || d.body.scrollTop);
     }
-    window.addEventListener('scroll',function(){
-      if(getScrollTop() > args.position && !flag){
-        sideMenu.setAttribute('class', 'fixed');
-        flag = true;
-      }else if(getScrollTop() < args.position && flag){
-        sideMenu.removeAttribute('class');
-        flag = false;
-      }
-    });
+    var fixed = function(){
+      elmObj.setAttribute('class', 'fixed');
+      if(adjustment) elmObj.parentNode.style.height = adjustment + 'px';
+      flag = true;
+    }
+    var normal = function(){
+      elmObj.removeAttribute('class');
+      if(adjustment) elmObj.parentNode.removeAttribute('style');
+      flag = false;
+    }
+    var scrollFunc = function(){
+      if(getScrollTop() > args.position && !flag && window.innerWidth > minWidth) fixed();
+      else if(getScrollTop() < args.position && flag) normal();
+      else if(window.innerWidth <= minWidth) normal();
+    }
+    window.addEventListener('scroll', scrollFunc);
   }
 }
 })(window);

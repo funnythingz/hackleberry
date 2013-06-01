@@ -91,6 +91,10 @@
 * Cassette
 */
 /* instance */
+.header {
+  margin-top: 50px;
+}
+
 .reference .col1 {
   background-color: #eee;
   border: solid 1px #cccccc;
