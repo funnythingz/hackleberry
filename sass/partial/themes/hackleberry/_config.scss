@@ -1,15 +1,31 @@
-/**
+/*****
 * Config
+*/
+
+/**
+* Scaffolding
 */
 /* All */
 $boxSizing: 'border-box';
 
-/* font */
+/* Font */
 $fontFamily: '"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",Helvetica,Arial,Sans-Serif';
 
+/* Responsive */
+$responsive: true; //true, false
+$responsiveMinWidth: 580;
 
-/**
-* grid
+/*
+* Layout
+*/
+/* container */
+$containerUnit: 'px';
+$containerMaxWidth: 960;
+$containerMinWidth: 320;
+$containerPosition: 'center';
+
+/*
+* Spacing
 */
 /* spacing base */
 $spacing: 5;
@@ -24,11 +40,11 @@ $spacingOuterLeft: 10;
 $spacingOuterBottom: 10;
 
 /* spacingInner */
-$spacingInner: 7;
-$spacingInnerTop: 7;
-$spacingInnerRight: 7;
-$spacingInnerLeft: 7;
-$spacingInnerBottom: 7;
+$spacingInner: 8;
+$spacingInnerTop: 8;
+$spacingInnerRight: 8;
+$spacingInnerLeft: 8;
+$spacingInnerBottom: 8;
 
 /* border */
 $borderColor: #ccc;
@@ -49,12 +65,10 @@ $borderInnerRadiusRight: 3;
 $borderInnerRadiusLeft: 3;
 $borderInnerRadiusBottom: 3;
 
-/* container */
-$containerUnit: 'px';
-$containerMaxWidth: 960;
-$containerMinWidth: 320;
-$containerPosition: 'center';
 
+/*
+* Grid
+*/
 /* row */
 $rowBaseUnit: '%';
 $rowBaseWidth: 100;
@@ -63,6 +77,10 @@ $rowGridLength: 12;
 
 
 /**
+* Base Elements
+*/
+
+/*
 * typography
 */
 /* font-size */
@@ -78,12 +96,12 @@ $textTinySize:  ($textDefaultSize - 4);
 $textLineHeight: 1.5;
 
 
-/**
+/*
 * Lists
 */
 
 
-/**
+/*
 * tables
 */
 $tableBorderColor           : #e7e8e9;
@@ -91,27 +109,23 @@ $tableBackgroundColor       : #f7f8f9;
 $tableBackgroundHoverColor  : #e7e8e9;
 
 
-/**
+/*
 * Forms
 */
 
 
-/**
-* buttons
-*/
-
-/**
+/*
 * Images
 */
 $imgRoundBorderRadius: $borderInnerRadius;
 
-/**
+/*
 * status
 */
 /* color */
 // default
-$status_normalColor                  :'#789';
-$status_minorColor                   :'#e1e2e3';
+$status_normalColor                  :'#345';
+$status_minorColor                   :'#789';
 $status_primaryColor                 :'#187abf';
 $status_warningColor                 :'#c09853';
 $status_successColor                 :'#34b842';
@@ -130,7 +144,7 @@ $status_activeDisabledColor          :'#f7f7f9';
 $status_activeRequierdColor          :'#c09853';
 $status_activeDarkColor              :'#123';
 
-$status_activeColor                  :'';
+$status_tappedColor                  :'#345';
 $status_loadingColor                 :'';
 
 /* backgroundColor */
@@ -155,12 +169,12 @@ $status_activeDisabledBackgroundColor:'';
 $status_activeRequierdBackgroundColor:'';
 $status_activeDarkBackgroundColor    :'';
 
-$status_activeBackgroundColor        :'';
+$status_tappedBackgroundColor        :'#f2e0fe';
 $status_loadingBackgroundColor       :'';
 
 /* borderColor */
 // default
-$status_normalBorderColor            :'#e6e6e6';
+$status_normalBorderColor            :'#e1e2e3';
 $status_minorBorderColor             :'#f6f6f6';
 $status_primaryBorderColor           :'#8ddce3';
 $status_warningBorderColor           :'#e3c18d';
@@ -180,7 +194,7 @@ $status_activeDisabledBorderColor    :'#e7e8e9';
 $status_activeRequierdBorderColor    :'#e3c18d';
 $status_activeDarkBorderColor        :'';
 
-$status_activeBorderColor            :'';
+$status_tappedBorderColor            :'';
 $status_loadingBorderColor           :'';
 
 /* boxShadow */
@@ -223,7 +237,7 @@ $status_activeRequierdShadowInset    :'';
 $status_activeDarkBoxShadow          :'';
 $status_activeDarkBoxShadowInset     :'';
 
-$status_activeBoxShadow              :'';
+$status_tappedBoxShadow              :'';
 $status_loadingBoxShadowInset        :'';
 
 /* gradient */
@@ -266,7 +280,21 @@ $status_activeRequierdGradientBottom :'';
 $status_activeDarkGradientTop        :'';
 $status_activeDarkGradientBottom     :'';
 
-$status_activeGradientTop            :'';
-$status_activeGradientBottom         :'';
+$status_tappedGradientTop            :'';
+$status_tappedGradientBottom         :'';
 $status_loadingGradientTop           :'';
 $status_loadingGradientBottom        :'';
+
+
+/**
+* Components
+*/
+
+/*
+* Cassette
+*/
+$cassette_borderColor:            $status_normalBorderColor;
+$cassette_backgroundColor:        '#fff';
+
+$cassette_tappedColor:            $status_tappedColor;
+$cassette_tappedBackgroundColor:  $status_tappedBackgroundColor;

@@ -15,6 +15,13 @@
   &:first-child {
     margin-left: 0;
   }
+  @if($responsive){
+    @media screen and (max-width: #{$responsiveMinWidth}px){
+      width: 100%;
+      float: none;
+      margin-left: 0;
+    }
+  }
 }
 @mixin offset($num:0, $arg:''){
   margin-left: #{getColWidth($num) + ($rowBaseMargin * 2)}#{$rowBaseUnit}#{$arg};

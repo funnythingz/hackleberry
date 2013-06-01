@@ -1,0 +1,6 @@
+@mixin reset-anchor {
+  a, a:link, a:hover, a:visited {
+    color: #{$status_normalColor};
+    text-decoration: none;
+  }
+}

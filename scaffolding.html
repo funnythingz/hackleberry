@@ -2,24 +2,23 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="hackleberry: HTML5/CSS3/JavaScript Framework">
-  <meta name="keywords" content="hackleberry, sass, compass">
-  <!-- iphone -->
+  <meta name="description" content="Hackleberry: HTML5/CSS3/JavaScript UI Framework">
+  <meta name="keywords" content="Hackleberry, sass, compass">
+  <!-- {* .iOS *} -->
   <meta name="viewport" content="width=device-width">
   <meta name="apple-mobile-web-app-capable" content="no">
   <meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="address=no">
   <link rel="apple-touch-icon-precomposed" href="">
-  <!-- /iphone -->
-  <title>Scaffolding | hackleberry: HTML5/CSS3/JavaScript Framework</title>
+  <!-- {* /.iOS *} -->
+  <title>Scaffolding | Hackleberry: HTML5/CSS3/JavaScript UI Framework</title>
   <link rel="shortcut icon" type="image/x-icon" href="">
   <script src="js/hackleberry.min.js"></script>
   <script>
   (function(){
-    // hackleberry
     HACKLEBERRY.changeStylesheet({
       path: 'css/',
-      file: ['core.css','base.css','reference.css'],
+      file: ['hackleberry.css','reference.css'],
       pure: true
     });
   })();
@@ -30,10 +29,11 @@
 <section id="globalMenu">
   <nav class="menu global container center">
     <ul class="horizontal" style="background-color: rgba(255,255,255,0.8)"><!--
-      --><li class="spacing-left10"><a href="index.html">HOME</a></li><!--
+      --><li class="spacing-left10"><a href="index.html">Get Started</a></li><!--
       --><li class="spacing-left10 current"><a href="scaffolding.html">Scaffolding</a></li><!--
       --><li class="spacing-left10"><a href="base.html">Base Elements</a></li><!--
       --><li class="spacing-left10"><a href="components.html">Components</a></li><!--
+      --><li class="spacing-left10"><a href="icons.html">Icons</a></li><!--
     --></ul>
   </nav>
 </section>
@@ -41,7 +41,7 @@
 <header class="header">
   <div class="container">
     <h1 class="lv1">Scaffolding</h1>
-    <p class="lead">基本レイアウトやスタイルのリセット、余白、グリッドシステムを含んでいます。hackleberryを使う上では読み込み必須になります。</p>
+    <p class="lead">基本レイアウトやスタイルのリセット、余白、グリッドシステムを含んでいます。Hackleberryを使う上では読み込み必須になります。</p>
   </div><!-- {* /.container *} -->
 </header><!-- {* /.header *} -->
 
@@ -73,7 +73,7 @@
             基本レイアウトを構成する要素は<code class=".container">.container</code>を使います。
           </p>
         </div><!-- {* /.header.page *} -->
-        <section class="cassette" id="Container">
+        <section class="unit" id="Container">
           <h1 class="lv2">Container</h1>
           <p class="sentence">基本的なコンテナーをつくります。横幅を最小値/最大値が指定されています。</p>
           <script src="https://gist.github.com/funnythingz/5134416.js"></script>
@@ -85,7 +85,7 @@
           <h1 class="lv1">Spacing</h1>
           <p class="lead"><code class="code">.spacing</code>で下方向にマージンがあきます。<code class="code">.spacing-left</code>で左方向、<code class="code">.spacing-right</code>で右方向にマージンがあきます。デフォルトで5pxあきます。</p>
         </div><!-- {* /.header.page *} -->
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2">spacing</h1>
           <div class="example">
             <p class="sentence spacing">下方向にマージンがあきます。</p>
@@ -93,7 +93,7 @@
           </div>
           <script src="https://gist.github.com/funnythingz/5134549.js"></script>
         </section>
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2">spacing*</h1>
           <div class="example">
             <p class="sentence spacing10">下方向にマージンが10pxあきます。</p>
@@ -107,11 +107,11 @@
         <div class="header">
           <h1 class="lv1">Grid system</h1>
           <p class="lead">
-            hackleberryでは100%幅のカラムを12カラムで分割したグリッドでレイアウトしています。1~12のカラムを使ってさまざまなレイアウトを構築できます。<br>
+            Hackleberryでは100%幅のカラムを12カラムで分割したグリッドでレイアウトしています。1~12のカラムを使ってさまざまなレイアウトを構築できます。<br>
             <code class="code">.row</code>で枠をつくりその中の<code class="code">.col*</code>でレイアウトします。また、カラムの間にマージンをとりたい場合は<code class="code">.offset*</code>を使います。
           </p>
         </div><!-- {* /.header.page *} -->
-        <section class="cassette" id="Basic">
+        <section class="unit" id="Basic">
           <h1 class="lv2" id="Basic">Basic grid HTML</h1>
           <p class="sentence"><code class="code">.col*</code></p>
           <div class="example">
@@ -158,7 +158,7 @@
           </div>
           <script src="https://gist.github.com/funnythingz/5134428.js"></script>
         </section>
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2" id="Offset">Offsetting columns</h1>
           <p class="sentence"><code class="code">.col*.offset*</code></p>
           <div class="example">
@@ -191,7 +191,7 @@
           </div>
           <script src="https://gist.github.com/funnythingz/5134435.js"></script>
         </section>
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2" id="Nest">Nesting columns</h1>
           <div class="example">
             <div class="row">

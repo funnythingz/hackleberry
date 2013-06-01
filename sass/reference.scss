@@ -38,7 +38,7 @@
   }
   .line,
   .line-number {
-    line-height: 1.5 !important;
+    @include small();
   }
 }
 

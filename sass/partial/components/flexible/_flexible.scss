@@ -1,0 +1,25 @@
+@mixin wrap-icon($_size){
+  > .#{$class_wrap-icon}#{$_size} {
+    width: #{$_size + $spacingInner}px;
+    display: table-cell;
+    @include left;
+  }
+}
+
+.#{$class_flexible} {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  > .#{$class_item} {
+    display: table-cell;
+    vertical-align: top;
+    @include left;
+  }
+  @include wrap-icon(84);
+  @include wrap-icon(72);
+  @include wrap-icon(60);
+  @include wrap-icon(48);
+  @include wrap-icon(36);
+  @include wrap-icon(24);
+}

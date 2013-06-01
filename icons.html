@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Hackleberry: HTML5/CSS3/JavaScript UI Framework">
+  <meta name="keywords" content="Hackleberry, sass, compass">
+  <!-- {* .iOS *} -->
+  <meta name="viewport" content="width=device-width">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <link rel="apple-touch-icon-precomposed" href="">
+  <!-- {* /.iOS *} -->
+  <title>Hackleberry::HTML5/CSS3/JavaScript UI Framework</title>
+  <link rel="shortcut icon" type="image/x-icon" href="">
+  <script src="js/hackleberry.min.js"></script>
+  <script>
+  (function(){
+    HACKLEBERRY.changeStylesheet({
+      path: 'css/',
+      file: ['hackleberry.css','reference.css'],
+      pure: true
+    });
+  })();
+  </script>
+</head>
+<body>
+
+<section id="globalMenu">
+  <nav class="menu global container center">
+    <ul class="horizontal" style="background-color: rgba(255,255,255,0.8)"><!--
+      --><li class="spacing-left10"><a href="index.html">Get Started</a></li><!--
+      --><li class="spacing-left10"><a href="scaffolding.html">Scaffolding</a></li><!--
+      --><li class="spacing-left10"><a href="base.html">Base Elements</a></li><!--
+      --><li class="spacing-left10"><a href="components.html">Components</a></li><!--
+      --><li class="spacing-left10 current"><a href="icons.html">Icons</a></li><!--
+    --></ul>
+  </nav>
+</section>
+
+<header class="header">
+  <div class="container">
+    <h1 class="lv1">Icons</h1>
+    <p class="lead">Hackleberryで使用されるアイコンです。</p>
+  </div><!-- {* /.container *} -->
+</header><!-- {* /.header *} -->
+
+<div class="container">
+  <div class="row">
+    <div class="col3" style="height:10px;">
+      <ul id="sideMenu">
+        <li><a href="#Icons">Icons</a>
+          <ul>
+            <li><a href="#IconsDefault">icon*</a></li>
+            <li><a href="#IconsTap">tap</a></li>
+            <li><a href="#IconsTapped">tapped</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- {* /.col3 *} -->
+    
+    <div class="col9">
+      <article class="unit" id="Icons">
+        <div class="header">
+          <h1 class="lv1">Icons</h1>
+          <p class="lead">
+            Iconsです。<code class="code">.icon*</code>は*の部分に数字が入ります。アイコンサイズは84px, 72px, 60px, 48px, 36px, 24pxになります。
+          </p>
+        </div><!-- {* /.header.page *} -->
+        <section class="unit" id="IconsDefault">
+          <h1 class="lv2">icon*</h1>
+          <p class="sentence"><code class="code">.icon</code>リンクも何もない一番シンプルなアイコンです。</p>
+          <div class="example">
+            <div class="icon84" style="background-image:url(imgs/2x/dummy/84x84.png)"></div>
+            <div class="icon72" style="background-image:url(imgs/2x/dummy/72x72.png)"></div>
+            <div class="icon48" style="background-image:url(imgs/2x/dummy/48x48.png)"></div>
+            <div class="icon36" style="background-image:url(imgs/2x/dummy/36x36.png)"></div>
+            <div class="icon24" style="background-image:url(imgs/2x/dummy/24x24.png)"></div>
+            <script src="https://gist.github.com/funnythingz/5689252.js"></script>
+          </div><!-- {* /example *} -->
+        </section>
+        <section class="unit" id="IconsTap">
+          <h1 class="lv2">tap</h1>
+          <p class="sentence"><code class="code">.icon.tap</code>リンク付のアイコンです。</p>
+          <div class="example">
+            <div class="icon84 tap" style="background-image:url(imgs/2x/dummy/84x84.png)"></div>
+            <div class="icon72 tap" style="background-image:url(imgs/2x/dummy/72x72.png)"></div>
+            <div class="icon48 tap" style="background-image:url(imgs/2x/dummy/48x48.png)"></div>
+            <div class="icon36 tap" style="background-image:url(imgs/2x/dummy/36x36.png)"></div>
+            <div class="icon24 tap" style="background-image:url(imgs/2x/dummy/24x24.png)"></div>
+            <script src="https://gist.github.com/funnythingz/5689253.js"></script>
+          </div><!-- {* /example *} -->
+        </section>
+        <section class="unit" id="IconsTapped">
+          <h1 class="lv2">tapped</h1>
+          <p class="sentence"><code class="code">.icon.tap.tapped</code>リンクが押されたときのスタイルです。</p>
+          <div class="example">
+            <div class="icon84 tap tapped" style="background-image:url(imgs/2x/dummy/84x84.png)"></div>
+            <div class="icon72 tap tapped" style="background-image:url(imgs/2x/dummy/72x72.png)"></div>
+            <div class="icon48 tap tapped" style="background-image:url(imgs/2x/dummy/48x48.png)"></div>
+            <div class="icon36 tap tapped" style="background-image:url(imgs/2x/dummy/36x36.png)"></div>
+            <div class="icon24 tap tapped" style="background-image:url(imgs/2x/dummy/24x24.png)"></div>
+            <script src="https://gist.github.com/funnythingz/5689254.js"></script>
+          </div><!-- {* /example *} -->
+        </section>
+      </article><!-- {* /#Unit *} -->
+
+
+    </div><!-- {* /.col9 *} -->
+  </div><!-- {* /.row *} -->
+</div><!-- {* /.container *} -->
+
+<script>
+(function(){
+  // sideMenu scrollFixed
+  HACKLEBERRY.scrollFixed({
+    id: 'sideMenu',
+    position: 100
+  });
+
+  // globalMenu scrollFixed
+  HACKLEBERRY.scrollFixed({
+    id: 'globalMenu',
+    position: 40
+  });
+})();
+</script>
+
+</body>
+</html>

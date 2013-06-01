@@ -1,0 +1,30 @@
+@mixin _icon($_size, $_radius){
+  width:  #{$_size}px;
+  height: #{$_size}px;
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  @include background-size(#{$_size}px);
+  @include border-radius(#{$_radius}px);
+  &.#{$class_tap} {
+    cursor: pointer;
+    &.#{$class_tapped} {
+      &::after {
+        content: "";
+        display: inline-block;
+        vertical-align: top;
+        width:  100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        @include border-radius(#{$_radius}px);
+      }
+    }
+  }
+}
+
+.#{$class_icon}84 {@include _icon(84,12);}
+.#{$class_icon}72 {@include _icon(72,12);}
+.#{$class_icon}48 {@include _icon(48,8);}
+.#{$class_icon}36 {@include _icon(36,6);}
+.#{$class_icon}24 {@include _icon(24,4);}

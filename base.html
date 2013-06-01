@@ -2,24 +2,23 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="hackleberry: HTML5/CSS3/JavaScript Framework">
-  <meta name="keywords" content="hackleberry, sass, compass">
-  <!-- iphone -->
+  <meta name="description" content="Hackleberry: HTML5/CSS3/JavaScript UI Framework">
+  <meta name="keywords" content="Hackleberry, sass, compass">
+  <!-- {* .iOS *} -->
   <meta name="viewport" content="width=device-width">
   <meta name="apple-mobile-web-app-capable" content="no">
   <meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="address=no">
   <link rel="apple-touch-icon-precomposed" href="">
-  <!-- /iphone -->
-  <title>Base Elements | hackleberry: HTML5/CSS3/JavaScript Framework</title>
+  <!-- {* /.iOS *} -->
+  <title>Base Elements | Hackleberry: HTML5/CSS3/JavaScript UI Framework</title>
   <link rel="shortcut icon" type="image/x-icon" href="">
   <script src="js/hackleberry.min.js"></script>
   <script>
   (function(){
-    // hackleberry
     HACKLEBERRY.changeStylesheet({
       path: 'css/',
-      file: ['core.css','base.css','reference.css'],
+      file: ['hackleberry.css','reference.css'],
       pure: true
     });
   })();
@@ -30,10 +29,11 @@
 <section id="globalMenu">
   <nav class="menu global container center">
     <ul class="horizontal" style="background-color: rgba(255,255,255,0.8)"><!--
-      --><li class="spacing-left10"><a href="index.html">HOME</a></li><!--
+      --><li class="spacing-left10"><a href="index.html">Get Started</a></li><!--
       --><li class="spacing-left10"><a href="scaffolding.html">Scaffolding</a></li><!--
       --><li class="spacing-left10 current"><a href="base.html">Base Elements</a></li><!--
       --><li class="spacing-left10"><a href="components.html">Components</a></li><!--
+      --><li class="spacing-left10"><a href="icons.html">Icons</a></li><!--
     --></ul>
   </nav>
 </section>
@@ -94,7 +94,7 @@
         <div class="header">
           <h1 class="lv1">Typography</h1>
         </div><!-- {* /.header.page *} -->
-        <section class="cassette" id="Text">
+        <section class="unit" id="Text">
           <h1 class="lv2">Headings</h1>
           <p class="sentence">All HTML headings, <code class="code">&lt;h1&gt;</code> ~ <code class="code">&lt;h6&gt;.</code></p>
           <div class="row">
@@ -113,7 +113,7 @@
             </div>
           </div>
         </section>
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2">Body copy</h1>
           <p class="sentence"><code class="code">.sentence</code></p>
           <div class="example">
@@ -122,7 +122,7 @@
           </div>
           <script src="https://gist.github.com/funnythingz/5134456.js"></script>
         </section>
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2">Lead body copy</h1>
           <p class="sentence"><code class="code">.lead</code></p>
           <div class="example">
@@ -131,7 +131,7 @@
           </div>
           <script src="https://gist.github.com/funnythingz/5134461.js"></script>
         </section>
-        <section class="cassette" id="Font">
+        <section class="unit" id="Font">
           <h1 class="lv2">Font size</h1>
           <p class="sentence">Default font-size on <code class="code">.medium</code></p>
           <div class="row">
@@ -150,7 +150,7 @@
             </div>
           </div>
         </section>
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2">Ellipsis</h1>
           <p class="sentence"><code class="code">.ellipsis</code></p>
           <div class="row">
@@ -164,7 +164,7 @@
             </div>
           </div>
         </section>
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2">Font style/weight</h1>
           <p class="sentence">Default font style/weight on <code class="code">.normal</code></p>
           <div class="row">
@@ -180,7 +180,7 @@
             </div>
           </div>
         </section>
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2">Alignment</h1>
           <p class="sentence">Default text-align on <code class="code">.left</code></p>
           <div class="row">
@@ -196,7 +196,7 @@
             </div>
           </div>
         </section>
-        <section class="cassette" id="Block">
+        <section class="unit" id="Block">
           <h1 class="lv2">Blockquote</h1>
           <p class="sentence"><code class="code">.blockquote</code></p>
           <div class="example">
@@ -208,12 +208,12 @@
           </div>
           <script src="https://gist.github.com/funnythingz/5134489.js"></script>
         </section>
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2">Address</h1>
           <p class="sentence"><code class="code">.address</code></p>
           <div class="example">
             <address class="address">
-              <strong>hackleberry</strong><br>
+              <strong>Hackleberry</strong><br>
               <a href="mailto:#">hackleberry@example.com</a>
             </address>
           </div>
@@ -225,7 +225,7 @@
         <div class="header">
           <h1 class="lv1">Lists</h1>
         </div><!-- {* /.header.page *} -->
-        <section class="cassette" id="Marked">
+        <section class="unit" id="Marked">
           <h1 class="lv2">Marked lists</h1>
           <p class="sentence"><code class="code">&lt;ul&gt;</code></p>
           <div class="row">
@@ -255,7 +255,7 @@
             </div>
           </div>
         </section>
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2">Numbered lists</h1>
           <p class="sentence"><code class="code">&lt;ol&gt;</code></p>
           <div class="row">
@@ -285,7 +285,7 @@
             </div>
           </div>
         </section>
-        <section class="cassette" id="Unstyled">
+        <section class="unit" id="Unstyled">
           <h1 class="lv2">Unstyled lists</h1>
           <p class="sentence"><code class="code">&lt;ul class=&quot;unstyled&quot;&gt;</code><code class="code">&lt;ol class=&quot;unstyled&quot;&gt;</code></p>
           <div class="row">
@@ -341,7 +341,7 @@
             </div>
           </div>
         </section>
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2">Horizontal</h1>
           <p class="sentence"><code class="code">&lt;ul class=&quot;unstyled horizontal&quot;&gt;</code></p>
           <div class="row">
@@ -359,7 +359,7 @@
             </div>
           </div>
         </section>
-        <section class="cassette" id="Descriptions">
+        <section class="unit" id="Descriptions">
           <h1 class="lv2">Descriptions</h1>
           <div class="example">
             <dl class="descriptions">
@@ -373,7 +373,7 @@
           </div>
           <script src="https://gist.github.com/funnythingz/5134537.js"></script>
         </section>
-        <section class="cassette">
+        <section class="unit">
           <h1 class="lv2">Inline Descriptions</h1>
           <div class="example">
             <dl class="descriptions horizontal row">
@@ -394,7 +394,7 @@
           <h1 class="lv1">Tables</h1>
           <p class="lead"><code class="code">.table</code>で基本テーブルになります。<code class="code">.striped</code>で横シマ、<code class="code">.vertical</code>で縦シマになります。<code class="code">.hovered</code>を追加することでマウスオーバー時の変化を設定できます。</p>
         </div><!-- {* /.header.page *} -->
-        <section class="cassette" id="Striped">
+        <section class="unit" id="Striped">
           <h1 class="lv2">Striped</h1>
           <p class="sentence"><code class="code">&lt;table class="table striped"&gt;</code></p>
           <div class="row">
@@ -443,7 +443,7 @@
             </div><!-- {* /.col8 *} -->
           </div><!-- {* /.row *} -->
         </section>
-        <section class="cassette" id="Vertical">
+        <section class="unit" id="Vertical">
           <h1 class="lv2">Vertical</h1>
           <p class="sentence"><code class="code">&lt;table class="table vertical"&gt;</code></p>
           <div class="row">
@@ -492,7 +492,7 @@
             </div><!-- {* /.col8 *} -->
           </div><!-- {* /.row *} -->
         </section>
-        <section class="cassette" id="Bordered">
+        <section class="unit" id="Bordered">
           <h1 class="lv2">Bordered</h1>
           <p class="sentence"><code class="code">&lt;table class="table bordered"&gt;</code></p>
           <div class="row">
@@ -541,7 +541,7 @@
             </div><!-- {* /.col8 *} -->
           </div><!-- {* /.row *} -->
         </section>
-        <section class="cassette" id="Hovered">
+        <section class="unit" id="Hovered">
           <h1 class="lv2">Hovered</h1>
           <p class="sentence"><code class="code">&lt;table class="table striped hoverd"&gt;</code></p>
           <div class="row">
@@ -597,7 +597,7 @@
           <h1 class="lv1">Forms</h1>
           <p class="lead"><code class="code">.form</code>で基本フォームになります。<code class="code">.vertical</code>でlabelとフォームが縦並びに<code class="code">.horizontal</code>で横並びになります。</p>
         </div><!-- {* /.header.page *} -->
-        <section class="cassette" id="FormStandard">
+        <section class="unit" id="FormStandard">
           <h1 class="lv2">Standard</h1>
           <p class="sentence">フォームの基本的なレイアウトです。基本レイアウトとして<code class=".vertical">.form.vertical</code>でレイアウトを組みます。</p>
           <div class="example">
@@ -651,7 +651,7 @@
           </div>
           <script src="https://gist.github.com/funnythingz/5205420.js"></script>
         </section>
-        <section class="cassette" id="Inputs">
+        <section class="unit" id="Inputs">
           <h1 class="lv2">Inputs</h1>
           <p class="sentence">inputタグにステータスクラスを追加することでそのフォームに意味付けすることができます。例えば<code class="code">&lt;input class="success"&gt;</code>とすると入力完了といった意味付けができます。</p>
           <div class="row">
@@ -684,7 +684,7 @@
             </div><!-- {* /.col8 *} -->
           </div><!-- {* /.row *} -->
         </section>
-        <section class="cassette" id="VerticalForm">
+        <section class="unit" id="VerticalForm">
           <h1 class="lv2">Vertical</h1>
           <p class="sentence"><code class="code">&lt;form class="form vertical"&gt;</code></p>
           <div class="example">
@@ -711,7 +711,7 @@
           </div>
           <script src="https://gist.github.com/funnythingz/5179569.js"></script>
         </section>
-        <section class="cassette" id="HorizontalForm">
+        <section class="unit" id="HorizontalForm">
           <h1 class="lv2">Horizontal</h1>
           <p class="sentence"><code class="code">&lt;form class="form horizontal"&gt;</code></p>
           <div class="example">
@@ -745,7 +745,7 @@
           <h1 class="lv1">Images</h1>
           <p class="lead"><code class="code">img.round</code>,<code class="code">img.circle</code>,<code class="code">img.polaroid</code>で<code class="code">&lt;img&gt;</code>に装飾をつけることができます。</p>
         </div><!-- {* /.header.page *} -->
-        <section class="cassette" id="ImgRound">
+        <section class="unit" id="ImgRound">
           <h1 class="lv2">ImgRound</h1>
           <p class="sentence"><code class="code">&lt;img class="round"&gt;</code></p>
           <div class="row">
@@ -759,7 +759,7 @@
             </div>
           </div>
         </section>
-        <section class="cassette" id="ImgCircle">
+        <section class="unit" id="ImgCircle">
           <h1 class="lv2">ImgCircle</h1>
           <p class="sentence"><code class="code">&lt;img class="circle"&gt;</code></p>
           <div class="row">
@@ -773,7 +773,7 @@
             </div>
           </div>
         </section>
-        <section class="cassette" id="ImgPolaroid">
+        <section class="unit" id="ImgPolaroid">
           <h1 class="lv2">ImgPolaroid</h1>
           <p class="sentence"><code class="code">&lt;img class="polaroid"&gt;</code></p>
           <div class="row">

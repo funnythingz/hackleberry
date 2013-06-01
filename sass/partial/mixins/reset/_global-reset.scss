@@ -44,5 +44,6 @@
   a img {
     @include reset-image-anchor-border;
   }
+  @include reset-anchor;
   @include reset-html5;
 }
