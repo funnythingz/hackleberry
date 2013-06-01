@@ -127,6 +127,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",Helvetica,Arial,Sans-Serif;
   font-size: 14px;
+  font-style: normal;
   vertical-align: baseline;
 }
 
