@@ -79,13 +79,17 @@ hackleberryの概要と、基本テンプレートを使ったチュートリア
 
 ### <a href="http://funnythingz.github.io/hackleberry/components.html">Components</a>
 
-hackleberryが独自に定義しているUIコンポーネント集です。ナビゲーション、タブ、ボタンなどを含みます。
+hackleberryが独自に定義しているUIコンポーネント集です。
 
 <ul id="sideMenu">
+  <li>Unit
+    <ul>
+      <li>Cassette</li>
+    </ul>
+  </li>
+  <li>Flexible</li>
   <li>Buttons</li>
   <li>Headline</li>
-  <li>Cassette</li>
-  <li>Sprites</li>
 </ul>
 
 &copy; hiroki.oiwa - funnythingz
