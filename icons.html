@@ -26,7 +26,7 @@
 </head>
 <body>
 
-<section id="globalMenu">
+<section id="globalMenu" class="global-menu fixed">
   <nav class="menu global container center">
     <ul class="horizontal" style="background-color: rgba(255,255,255,0.8)"><!--
       --><li class="spacing-left10"><a href="index.html">Get Started</a></li><!--
@@ -47,7 +47,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col3" style="height:10px;">
+    <div class="col3">
       <ul id="sideMenu">
         <li><a href="#Icons">Icons</a>
           <ul>
@@ -115,13 +115,9 @@
   // sideMenu scrollFixed
   HACKLEBERRY.scrollFixed({
     id: 'sideMenu',
-    position: 100
-  });
-
-  // globalMenu scrollFixed
-  HACKLEBERRY.scrollFixed({
-    id: 'globalMenu',
-    position: 40
+    position: 100,
+    responsiveMinWidth: 560,
+    adjustment: 10
   });
 })();
 </script>

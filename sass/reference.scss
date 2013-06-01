@@ -11,6 +11,9 @@
 
 
 /* instance */
+.header {
+  margin-top: 50px;
+}
 .reference {
   @for $i from 1 through $rowGridLength {
     .#{$class_col}#{$i} {
