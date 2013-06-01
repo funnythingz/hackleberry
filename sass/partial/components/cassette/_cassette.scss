@@ -1,0 +1,25 @@
+.#{$class_unit} {
+  margin: #{$spacingOuter}px;
+}
+.#{$class_cassette} {
+  border-top:   solid 1px #{$status_normalBorderColor};
+  border-left:  solid 1px #{$status_normalBorderColor};
+  border-right: solid 1px #{$status_normalBorderColor};
+  background-color: #{$cassette_backgroundColor};
+  .#{$class_inner}{
+    padding: #{$spacingInner}px;
+  }
+  &.first,
+  &:first-child {
+    @include border-top-radius(#{$borderOuterRadiusTop}px);
+  }
+  &.last,
+  &:last-child {
+    @include border-bottom-radius(#{$borderOuterRadiusBottom}px);
+    border-bottom:   solid 1px #{$status_normalBorderColor};
+  }
+  &:only-child,
+  &.only {
+    @include border-radius(#{$borderOuterRadius}px);
+  }
+}

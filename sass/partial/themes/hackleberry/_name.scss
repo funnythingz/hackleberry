@@ -5,8 +5,10 @@
 /**
 * Scaffolding
 */
-/* Glid */
+/* Layout */
 $class_container: 'container';
+
+/* Glid */
 $class_row: 'row';
 $class_col: 'col';
 $class_offset: 'offset';
@@ -91,9 +93,24 @@ $class_loading:  'loading';
 /**
 * Components
 */
+/* Cassette */
 $class_unit: 'unit';
 $class_cassette: 'cassette';
+$class_inner: 'inner';
 
-/* buttons */
-$class_btn: 'btn';
+$class_tap: 'tap';
+$class_tapped: 'tapped';
+
+/* Flexible */
+$class_flexible: 'flexible';
+$class_item: 'item';
+$class_wrap-icon: 'wrap-icon';
+
+/* Buttons */
+$class_button: 'btn';
 $class_group: 'group';
+
+/**
+* Icons
+*/
+$class_icon: 'icon';

@@ -1,0 +1,11 @@
+.#{$class_cassette} {
+  > .#{$class_tap} {
+    display: block;
+    cursor: pointer;
+    @include border-radius(#{$borderOuterRadius - 1}px);
+    &.#{$class_tapped} {
+      color: #{$cassette_tappedColor};
+      background-color: #{$cassette_tappedBackgroundColor};
+    }
+  }
+}
