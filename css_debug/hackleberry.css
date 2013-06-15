@@ -36,6 +36,7 @@
 * Scaffolding
 */
 /* All */
+/* Body */
 /* Font */
 /* Responsive */
 /*
@@ -570,6 +571,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /**
 * base
 */
+body {
+  background-color: transparent;
+}
+
 .lv1 {
   font-size: 20px;
   line-height: 30px;
