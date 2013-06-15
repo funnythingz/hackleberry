@@ -957,6 +957,12 @@ img.polaroid {
   vertical-align: top;
   text-align: left;
 }
+.flexible > .item-caret {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  width: 18px;
+}
 .flexible > .wrap-icon84 {
   width: 92px;
   display: table-cell;
