@@ -6,13 +6,15 @@
 * Scaffolding
 */
 /* All */
-$boxSizing: 'border-box';
-
-/* Body */
-$bodyBackgroundColor: 'transparent';
+$boxSizing:      'border-box';
+$textSizeAdjust: 'none';
+$tapHighlight: rgba(0,0,0,0);
 
 /* Font */
-$fontFamily: '"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",Helvetica,Arial,Sans-Serif';
+$fontFamily: 'Helvetica,Arial,Sans-Serif,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic"';
+
+/* Body */
+$bodyBackgroundColor: '#f1f2f3';
 
 /* Responsive */
 $responsive: true; //true, false
@@ -36,18 +38,18 @@ $spacingUnit: 'px';
 $spacingLength: 5;
 
 /* spacing outer */
-$spacingOuter: 10;
-$spacingOuterTop: 0;
-$spacingOuterRight: 10;
-$spacingOuterLeft: 10;
-$spacingOuterBottom: 10;
+$spacingOuter:       8;
+$spacingOuterTop:    0;
+$spacingOuterRight:  8;
+$spacingOuterLeft:   8;
+$spacingOuterBottom: 8;
 
 /* spacingInner */
-$spacingInner: 8;
-$spacingInnerTop: 8;
-$spacingInnerRight: 8;
-$spacingInnerLeft: 8;
-$spacingInnerBottom: 8;
+$spacingInner: 6;
+$spacingInnerTop: 6;
+$spacingInnerRight: 6;
+$spacingInnerLeft: 6;
+$spacingInnerBottom: 6;
 
 /* border */
 $borderColor: #ccc;
@@ -147,7 +149,7 @@ $status_activeDisabledColor          :'#f7f7f9';
 $status_activeRequierdColor          :'#c09853';
 $status_activeDarkColor              :'#123';
 
-$status_tappedColor                  :'#345';
+$status_tappedColor                  :'';
 $status_loadingColor                 :'';
 
 /* backgroundColor */
@@ -172,7 +174,7 @@ $status_activeDisabledBackgroundColor:'';
 $status_activeRequierdBackgroundColor:'';
 $status_activeDarkBackgroundColor    :'';
 
-$status_tappedBackgroundColor        :'#f2e0fe';
+$status_tappedBackgroundColor        :'';
 $status_loadingBackgroundColor       :'';
 
 /* borderColor */
@@ -200,94 +202,6 @@ $status_activeDarkBorderColor        :'';
 $status_tappedBorderColor            :'';
 $status_loadingBorderColor           :'';
 
-/* boxShadow */
-// default
-$status_normalBoxShadow              :'';
-$status_normalBoxShadowInset         :'';
-$status_minorBoxShadow               :'';
-$status_minorBoxShadowInset          :'';
-$status_primaryBoxShadow             :'';
-$status_primaryBoxShadowInset        :'';
-$status_warningBoxShadow             :'';
-$status_warningBoxShadowInset        :'';
-$status_successBoxShadow             :'';
-$status_successBoxShadowInset        :'';
-$status_errorBoxShadow               :'';
-$status_errorBoxShadowInset          :'';
-$status_disabledBoxShadow            :'';
-$status_disabledBoxShadowInset       :'';
-$status_requierdShadow               :'';
-$status_requierdShadowInset          :'';
-$status_darkBoxShadow                :'';
-$status_darkBoxShadowInset           :'';
-// active
-$status_activeNormalBoxShadow        :'';
-$status_activeNormalBoxShadowInset   :'';
-$status_activeMinorBoxShadow         :'';
-$status_activeMinorBoxShadowInset    :'';
-$status_activePrimaryBoxShadow       :'';
-$status_activePrimaryBoxShadowInset  :'';
-$status_activeWarningBoxShadow       :'';
-$status_activeWarningBoxShadowInset  :'';
-$status_activeSuccessBoxShadow       :'';
-$status_activeSuccessBoxShadowInset  :'';
-$status_activeErrorBoxShadow         :'';
-$status_activeErrorBoxShadowInset    :'';
-$status_activeDisabledBoxShadow      :'';
-$status_activeDisabledBoxShadowInset :'';
-$status_activeRequierdShadow         :'';
-$status_activeRequierdShadowInset    :'';
-$status_activeDarkBoxShadow          :'';
-$status_activeDarkBoxShadowInset     :'';
-
-$status_tappedBoxShadow              :'';
-$status_loadingBoxShadowInset        :'';
-
-/* gradient */
-// default
-$status_normalGradientTop            :'#e6e6e6';
-$status_normalGradientBottom         :'';
-$status_minorGradientTop             :'';
-$status_minorGradientBottom          :'';
-$status_primaryGradientTop           :'';
-$status_primaryGradientBottom        :'';
-$status_warningGradientTop           :'';
-$status_warningGradientBottom        :'';
-$status_successGradientTop           :'';
-$status_successGradientBottom        :'';
-$status_errorGradientTop             :'';
-$status_errorGradientBottom          :'';
-$status_disabledGradientTop          :'';
-$status_disabledGradientBottom       :'';
-$status_requierdGradientTop          :'';
-$status_requierdGradientBottom       :'';
-$status_darkGradientTop              :'';
-$status_darkGradientBottom           :'';
-// active
-$status_activeNormalGradientTop      :'#e6e6e6';
-$status_activeNormalGradientBottom   :'';
-$status_activeMinorGradientTop       :'';
-$status_activeMinorGradientBottom    :'';
-$status_activePrimaryGradientTop     :'';
-$status_activePrimaryGradientBottom  :'';
-$status_activeWarningGradientTop     :'';
-$status_activeWarningGradientBottom  :'';
-$status_activeSuccessGradientTop     :'';
-$status_activeSuccessGradientBottom  :'';
-$status_activeErrorGradientTop       :'';
-$status_activeErrorGradientBottom    :'';
-$status_activeDisabledGradientTop    :'';
-$status_activeDisabledGradientBottom :'';
-$status_activeRequierdGradientTop    :'';
-$status_activeRequierdGradientBottom :'';
-$status_activeDarkGradientTop        :'';
-$status_activeDarkGradientBottom     :'';
-
-$status_tappedGradientTop            :'';
-$status_tappedGradientBottom         :'';
-$status_loadingGradientTop           :'';
-$status_loadingGradientBottom        :'';
-
 
 /**
 * Components
@@ -296,8 +210,116 @@ $status_loadingGradientBottom        :'';
 /*
 * Cassette
 */
-$cassette_borderColor:            $status_normalBorderColor;
+/* headline */
+$headline_fontSize: $textMediumSize;
+$headline_fontColor: '#fff';
+$headline_spacingInnerTop:    7;
+$headline_spacingInnerBottom: 7;
+$headline_spacingInnerLeft:   7;
+$headline_spacingInnerRight:  7;
+$headline_iconSpacing:  4;
+
+// skin
+$headline_textShadow_skinBlue:   '#';
+$headline_textShadow_skinPurple: '#';
+$headline_textShadow_skinRed:    '#';
+$headline_textShadow_skinOrange: '#';
+$headline_textShadow_skinYellow: '#';
+$headline_textShadow_skinGreen:  '#';
+$headline_textShadow_skinGray:   '#';
+$headline_textShadow_skinSilver: '#';
+
+$headline_borderColor_skinBlue:   '#';
+$headline_borderColor_skinPurple: '#';
+$headline_borderColor_skinRed:    '#';
+$headline_borderColor_skinOrange: '#';
+$headline_borderColor_skinYellow: '#';
+$headline_borderColor_skinGreen:  '#';
+$headline_borderColor_skinGray:   '#';
+$headline_borderColor_skinSilver: '#';
+
+$headline_backgroundColor_skinBlue:   '#3498DB';
+$headline_backgroundColor_skinPurple: '#9B59B6';
+$headline_backgroundColor_skinRed:    '#E74C3C';
+$headline_backgroundColor_skinOrange: '#E67E22';
+$headline_backgroundColor_skinYellow: '#F1C40F';
+$headline_backgroundColor_skinGreen:  '#1ABC9C';
+$headline_backgroundColor_skinGray:   '#95A5A6';
+$headline_backgroundColor_skinSilver: '#ECF0F1';
+
+$headline_backgroundGradientTop_skinBlue:      #3498DB;
+$headline_backgroundGradientBottom_skinBlue:   #3498DB;
+$headline_backgroundGradientTop_skinPurple:    #9B59B6;
+$headline_backgroundGradientBottom_skinPurple: #9B59B6;
+$headline_backgroundGradientTop_skinRed:       #E74C3C;
+$headline_backgroundGradientBottom_skinRed:    #E74C3C;
+$headline_backgroundGradientTop_skinOrange:    #E67E22;
+$headline_backgroundGradientBottom_skinOrange: #E67E22;
+$headline_backgroundGradientTop_skinYellow:    #F1C40F;
+$headline_backgroundGradientBottom_skinYellow: #F1C40F;
+$headline_backgroundGradientTop_skinGreen:     #1ABC9C;
+$headline_backgroundGradientBottom_skinGreen:  #1ABC9C;
+$headline_backgroundGradientTop_skinGray:      #95A5A6;
+$headline_backgroundGradientBottom_skinGray:   #95A5A6;
+$headline_backgroundGradientTop_skinSilver:    #BDC3C7;
+$headline_backgroundGradientBottom_skinSilver: #BDC3C7;
+
+
+/* headline-lv2 */
+$headline-lv2_backgroundColor_skinBlue:   '#d7e1ed';
+$headline-lv2_backgroundColor_skinPurple: '#e7dceb';
+$headline-lv2_backgroundColor_skinRed:    '#f8dfe2';
+$headline-lv2_backgroundColor_skinOrange: '#ffdfb6';
+$headline-lv2_backgroundColor_skinYellow: '#efeec9';
+$headline-lv2_backgroundColor_skinGreen:  '#cde3e0';
+$headline-lv2_backgroundColor_skinGray:   '#e4e2dc';
+$headline-lv2_backgroundColor_skinSilver: '#f7f8f9';
+
+
+/* cassette */
+$cassette_borderColor:       $status_normalBorderColor;
+
+$cassette_borderColorTop:    $status_normalBorderColor; 
+$cassette_borderColorRight:  $status_normalBorderColor; 
+$cassette_borderColorBottom: $status_normalBorderColor; 
+$cassette_borderColorLeft:   $status_normalBorderColor; 
+
+
 $cassette_backgroundColor:        '#fff';
 
-$cassette_tappedColor:            $status_tappedColor;
-$cassette_tappedBackgroundColor:  $status_tappedBackgroundColor;
+$cassette_tappedColor:            '';
+$cassette_tappedBackgroundColor:  '#d7e1ed';
+
+
+/* Buttons */
+$button_backgroundGradientTop_skinBlue:      #3498DB;
+$button_backgroundGradientBottom_skinBlue:   #2980B9;
+$button_backgroundGradientTop_skinRed:       #E74C3C;
+$button_backgroundGradientBottom_skinRed:    #C0392B;
+$button_backgroundGradientTop_skinPurple:    #9B59B6;
+$button_backgroundGradientBottom_skinPurple: #8E44AD;
+$button_backgroundGradientTop_skinOrange:    #E67E22;
+$button_backgroundGradientBottom_skinOrange: #D35400;
+$button_backgroundGradientTop_skinYellow:    #F1C40F;
+$button_backgroundGradientBottom_skinYellow: #F39C12;
+$button_backgroundGradientTop_skinGreen:     #1ABC9C;
+$button_backgroundGradientBottom_skinGreen:  #16A085;
+$button_backgroundGradientTop_skinGray:      #95A5A6;
+$button_backgroundGradientBottom_skinGray:   #7F8C8D;
+$button_backgroundGradientTop_skinSilver:    #ECF0F1;
+$button_backgroundGradientBottom_skinSilver: #BDC3C7;
+
+
+
+/*
+* Icons
+*/
+$icon-ranking_fontSize: $textSmallSize;
+$icon-ranking_fontColor: '#fff';
+
+
+/*
+* Visible
+*/
+//$fadein_:;
+//$fadeout_:;

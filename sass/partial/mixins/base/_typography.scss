@@ -46,8 +46,25 @@
   text-align: right#{$arg};
 }
 
+@mixin top($arg: ''){
+  vertical-align: top#{$arg};
+}
+@mixin middle($arg: ''){
+  vertical-align: middle#{$arg};
+}
+@mixin bottom($arg: ''){
+  vertical-align: bottom#{$arg};
+}
+@mixin baseline($arg: ''){
+  vertical-align: baseline#{$arg};
+}
+
 @mixin ellipsis($arg: ''){
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis#{$arg};
+}
+
+@mixin minor($arg: ''){
+  color: #{$status_minorColor}#{$arg};
 }

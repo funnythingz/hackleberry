@@ -1,0 +1,44 @@
+.#{$class_headline-lv2} {
+  padding: #{$headline_spacingInnerTop/2}px #{$headline_spacingInnerRight}px #{$headline_spacingInnerBottom/2}px #{$headline_spacingInnerLeft}px;
+  background-color: #{$headline-lv2_backgroundColor_skinBlue};
+  border-top:   solid 1px #{$cassette_borderColorTop};
+  border-left:  solid 1px #{$cassette_borderColorLeft};
+  border-right: solid 1px #{$cassette_borderColorRight};
+  @include medium;
+  @include bold;
+
+  &:first-child{
+    @include border-top-radius(5px);
+  }
+  &:last-child{
+    @include border-bottom-radius(5px);
+    border-bottom: solid 1px #{$cassette_borderColorBottom};
+  }
+  &.only-child {
+    @include border-top-radius(5px);
+    @include border-bottom-radius(5px);
+  }
+
+  /* 帯のカラーが変わる場合 */
+  &.#{$class_skin-purple} {
+    background-color: #{$headline-lv2_backgroundColor_skinPurple};
+  }
+  &.#{$class_skin-red} {
+    background-color: #{$headline-lv2_backgroundColor_skinRed};
+  }
+  &.#{$class_skin-orange} {
+    background-color: #{$headline-lv2_backgroundColor_skinOrange};
+  }
+  &.#{$class_skin-yellow} {
+    background-color: #{$headline-lv2_backgroundColor_skinYellow};
+  }
+  &.#{$class_skin-green} {
+    background-color: #{$headline-lv2_backgroundColor_skinGreen};
+  }
+  &.#{$class_skin-gray} {
+    background-color: #{$headline-lv2_backgroundColor_skinGray};
+  }
+  &.#{$class_skin-silver} {
+    background-color: #{$headline-lv2_backgroundColor_skinSilver};
+  }
+}

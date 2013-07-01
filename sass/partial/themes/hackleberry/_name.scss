@@ -1,4 +1,4 @@
-/**
+/*****
 * ClassName
 */
 
@@ -6,6 +6,7 @@
 * Scaffolding
 */
 /* Layout */
+$class_global-container: 'global-container';
 $class_container: 'container';
 
 /* Glid */
@@ -45,6 +46,11 @@ $class_left: 'left';
 $class_center: 'center';
 $class_right: 'right';
 
+$class_top: 'top';
+$class_middle: 'middle';
+$class_bottom: 'bottom';
+$class_baseline: 'baseline';
+
 $class_blockquote: 'blockquote';
 $class_address: 'address';
 $class_code: 'code';
@@ -56,7 +62,7 @@ $class_descriptions: 'descriptions';
 $class_title: 'title';
 $class_listHorizontal: 'horizontal';
 
-/* tables */
+/* Tables */
 $class_table: 'table';
 $class_tableStriped: 'striped';
 $class_tableVertical: 'vertical';
@@ -76,7 +82,7 @@ $class_imgRound: 'round';
 $class_imgCircle: 'circle';
 $class_imgPolaroid: 'polaroid';
 
-/* status */
+/* Status */
 $class_primary:  'primary';
 $class_minor:    'minor';
 $class_warning:  'warning';
@@ -89,29 +95,61 @@ $class_dark:     'dark';
 $class_active:   'active';
 $class_loading:  'loading';
 
+/* Skin */
+$class_skin-blue:   'skin-blue';
+$class_skin-purple: 'skin-purple';
+$class_skin-red:    'skin-red';
+$class_skin-orange: 'skin-orange';
+$class_skin-yellow: 'skin-yellow';
+$class_skin-green:  'skin-green';
+$class_skin-gray:   'skin-gray';
+$class_skin-silver: 'skin-silver';
 
 /**
 * Components
 */
 /* Cassette */
 $class_unit: 'unit';
+$class_headline: 'headline';
+$class_headline-lv2: 'headline-lv2';
 $class_cassette: 'cassette';
 $class_inner: 'inner';
 
 $class_tap: 'tap';
 $class_tapped: 'tapped';
 
+$class_seemore: 'seemore';
+
 /* Flexible */
 $class_flexible: 'flexible';
+$class_wrap-icon: 'wrap-icon';
 $class_item: 'item';
 $class_item-caret: 'item-caret';
-$class_wrap-icon: 'wrap-icon';
+$class_item-button: 'item-button';
 
 /* Buttons */
-$class_button: 'btn';
+$class_button: 'button';
 $class_group: 'group';
 
 /**
 * Icons
 */
 $class_icon: 'icon';
+
+/*
+* Visible
+*/
+$class_show:    'show';
+$class_hide:    'hide';
+$class_fadein:  'fadein';
+$class_fadeout: 'fadeout';
+$class_zoomin:  'zoomin';
+$class_zoomout: 'zoomout';
+
+/*
+* Position
+*/
+$class_static:   'static';
+$class_relative: 'relative';
+$class_absolute: 'absolute';
+$class_fixed:    'fixed';
