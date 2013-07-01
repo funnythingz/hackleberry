@@ -16,12 +16,17 @@
     vertical-align: top;
     @include left;
   }
-
   > .#{$class_item-caret} {
     display: table-cell;
     vertical-align: middle;
     @include right;
     width: 18px;
+  }
+  > .#{$class_item-btn} {
+    display: table-cell;
+    vertical-align: middle;
+    @include right;
+    width: 6em;
   }
   @include wrap-icon(84);
   @include wrap-icon(72);

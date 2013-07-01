@@ -3,7 +3,7 @@
 /**
 * @theme: hackleberry
 */
-/**
+/*****
 * ClassName
 */
 /**
@@ -16,10 +16,11 @@
 */
 /* typography */
 /* Lists */
-/* tables */
+/* Tables */
 /* Forms */
 /* Images */
-/* status */
+/* Status */
+/* Skin */
 /**
 * Components
 */
@@ -29,6 +30,12 @@
 /**
 * Icons
 */
+/*
+* Visible
+*/
+/*
+* Position
+*/
 /*****
 * Config
 */
@@ -36,8 +43,8 @@
 * Scaffolding
 */
 /* All */
-/* Body */
 /* Font */
+/* Body */
 /* Responsive */
 /*
 * Layout
@@ -83,14 +90,102 @@
 /* color */
 /* backgroundColor */
 /* borderColor */
-/* boxShadow */
-/* gradient */
 /**
 * Components
 */
 /*
 * Cassette
 */
+/* headline */
+/* headline-lv2 */
+/* cassette */
+/*
+* Icons
+*/
+/*
+* Visible
+*/
+/**
+* Reset Module
+*/
+@-webkit-keyframes _tapped {
+  0% {
+    color: #345;
+    background-color: transparent;
+  }
+
+  100% {
+    color: #fff;
+    background-color: #00a7e8;
+  }
+}
+
+@-webkit-keyframes _fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes _fadeout {
+  0% {
+    opacity: 1.0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    display: none;
+  }
+}
+
+@-webkit-keyframes _zoomin {
+  0% {
+    -webkit--webkit-transform: scale(0.9);
+    -moz--webkit-transform: scale(0.9);
+    -ms--webkit-transform: scale(0.9);
+    -o--webkit-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    opacity: 0.5;
+  }
+
+  100% {
+    -webkit--webkit-transform: scale(1);
+    -moz--webkit-transform: scale(1);
+    -ms--webkit-transform: scale(1);
+    -o--webkit-transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes _zoomout {
+  0% {
+    -webkit--webkit-transform: scale(1);
+    -moz--webkit-transform: scale(1);
+    -ms--webkit-transform: scale(1);
+    -o--webkit-transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+
+  99% {
+    -webkit--webkit-transform: scale(0.5);
+    -moz--webkit-transform: scale(0.5);
+    -ms--webkit-transform: scale(0.5);
+    -o--webkit-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+
+  100% {
+    display: none;
+  }
+}
+
 /* instance */
 /**
 * scaffolding/all
@@ -126,10 +221,10 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",Helvetica,Arial,Sans-Serif;
+  font-family: Helvetica,Arial,Sans-Serif,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic";
   font-size: 14px;
-  font-style: normal;
   vertical-align: baseline;
+  -webkit-text-size-adjust: none;
 }
 
 html {
@@ -176,6 +271,10 @@ a img {
   border: none;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 a, a:link, a:hover, a:visited {
   color: #345;
   text-decoration: none;
@@ -183,6 +282,10 @@ a, a:link, a:hover, a:visited {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
+}
+
+.global-container {
+  padding-bottom: 45px;
 }
 
 .container {
@@ -572,7 +675,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 * base
 */
 body {
-  background-color: transparent;
+  background-color: #f1f2f3;
 }
 
 .lv1 {
@@ -673,13 +776,29 @@ body {
   text-align: right!important;
 }
 
+.top {
+  vertical-align: top!important;
+}
+
+.middle {
+  vertical-align: middle!important;
+}
+
+.bottom {
+  vertical-align: bottom!important;
+}
+
+.baseline {
+  vertical-align: baseline!important;
+}
+
 .blockquote {
-  padding: 8px;
+  padding: 6px;
   background-color: #eee;
 }
 
 .address {
-  padding: 8px;
+  padding: 6px;
 }
 
 .code {
@@ -702,6 +821,10 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.minor {
+  color: #789;
 }
 
 .descriptions dt {
@@ -760,7 +883,7 @@ body {
   table-layout: fixed;
 }
 .table th, .table td {
-  padding: 8px;
+  padding: 6px;
 }
 
 .striped th, .striped td {
@@ -799,7 +922,7 @@ body {
 .form textarea {
   font-size: 14px;
   line-height: 21px;
-  padding: 4px 8px;
+  padding: 3px 6px;
   border: solid 1px #e1e2e3;
   /* status */
 }
@@ -842,12 +965,12 @@ body {
   height: 25px;
 }
 .form select[multiple="multiple"] {
-  padding: 4px;
+  padding: 3px;
 }
 
 .vertical .field {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .vertical .label {
   display: block;
@@ -858,7 +981,7 @@ body {
 
 .horizontal .field {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .horizontal .label {
   font-size: 14px;
@@ -884,7 +1007,7 @@ img.circle {
 }
 
 img.polaroid {
-  padding: 4px;
+  padding: 3px;
   border: solid 1px #cccccc;
   -webkit-box-shadow: 0 0 3px 0 #e7e8e9;
   -moz-box-shadow: 0 0 3px 0 #e7e8e9;
@@ -894,8 +1017,151 @@ img.polaroid {
 /**
 * components
 */
+.headline {
+  padding: 7px 7px 7px 7px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 -1px 0 #00a0dc;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00b4f0), color-stop(100%, #00aae6));
+  background-image: -webkit-linear-gradient(#00b4f0, #00aae6);
+  background-image: -moz-linear-gradient(#00b4f0, #00aae6);
+  background-image: -o-linear-gradient(#00b4f0, #00aae6);
+  background-image: linear-gradient(#00b4f0, #00aae6);
+  /* last-childの場合 */
+  /* 帯のカラーが変わる場合 */
+}
+.headline:last-child {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.headline.only-child {
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.headline.skin-pink {
+  text-shadow: 0 -1px 0 #ff5a64;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff6e78), color-stop(100%, #ff646e));
+  background-image: -webkit-linear-gradient(#ff6e78, #ff646e);
+  background-image: -moz-linear-gradient(#ff6e78, #ff646e);
+  background-image: -o-linear-gradient(#ff6e78, #ff646e);
+  background-image: linear-gradient(#ff6e78, #ff646e);
+}
+.headline.skin-orange {
+  text-shadow: 0 -1px 0 #ff6e00;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8200), color-stop(100%, #ff7800));
+  background-image: -webkit-linear-gradient(#ff8200, #ff7800);
+  background-image: -moz-linear-gradient(#ff8200, #ff7800);
+  background-image: -o-linear-gradient(#ff8200, #ff7800);
+  background-image: linear-gradient(#ff8200, #ff7800);
+}
+.headline.skin-yellow {
+  text-shadow: 0 -1px 0 #ffa000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffb400), color-stop(100%, #ffaf00));
+  background-image: -webkit-linear-gradient(#ffb400, #ffaf00);
+  background-image: -moz-linear-gradient(#ffb400, #ffaf00);
+  background-image: -o-linear-gradient(#ffb400, #ffaf00);
+  background-image: linear-gradient(#ffb400, #ffaf00);
+}
+.headline.skin-green {
+  text-shadow: 0 -1px 0 #32be00;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #46d200), color-stop(100%, #3cc800));
+  background-image: -webkit-linear-gradient(#46d200, #3cc800);
+  background-image: -moz-linear-gradient(#46d200, #3cc800);
+  background-image: -o-linear-gradient(#46d200, #3cc800);
+  background-image: linear-gradient(#46d200, #3cc800);
+}
+.headline.skin-gray {
+  text-shadow: 0 -1px 0 #6e7882;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #828c96), color-stop(100%, #78828c));
+  background-image: -webkit-linear-gradient(#828c96, #78828c);
+  background-image: -moz-linear-gradient(#828c96, #78828c);
+  background-image: -o-linear-gradient(#828c96, #78828c);
+  background-image: linear-gradient(#828c96, #78828c);
+}
+
+.headline-lv2 {
+  padding: 3.5px 7px 3.5px 7px;
+  background-color: #f0faff;
+  border-top: solid 1px #e1e2e3;
+  border-left: solid 1px #e1e2e3;
+  border-right: solid 1px #e1e2e3;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  /* 帯のカラーが変わる場合 */
+}
+.headline-lv2:first-child {
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.headline-lv2:last-child {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: solid 1px #e1e2e3;
+}
+.headline-lv2.only-child {
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.headline-lv2.skin-pink {
+  background-color: #fff5f5;
+}
+.headline-lv2.skin-orange {
+  background-color: #fff5f0;
+}
+.headline-lv2.skin-yellow {
+  background-color: #fffaf0;
+}
+.headline-lv2.skin-green {
+  background-color: #f5faf0;
+}
+.headline-lv2.skin-gray {
+  background-color: #f7f8f9;
+}
+
 .unit {
-  margin: 10px;
+  margin: 8px;
 }
 
 .cassette {
@@ -905,7 +1171,7 @@ img.polaroid {
   background-color: #fff;
 }
 .cassette .inner {
-  padding: 8px;
+  padding: 6px;
 }
 .cassette.first, .cassette:first-child {
   -moz-border-radius-topleft: 5px;
@@ -932,18 +1198,77 @@ img.polaroid {
   border-radius: 5px;
 }
 
-.cassette > .tap {
+.headline + .cassette {
+  border-top: 0 none;
+}
+
+.tap {
   display: block;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.cassette > .tap.tapped {
+  background-color: #00a7e8;
+  -webkit-animation-name: _tapped;
+  -moz-animation-name: _tapped;
+  -ms-animation-name: _tapped;
+  -o-animation-name: _tapped;
+  animation-name: _tapped;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-duration: 0.1s;
+  -moz-animation-duration: 0.1s;
+  -ms-animation-duration: 0.1s;
+  -o-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -ms-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  color: #fff;
+}
+.cassette > .tap.tapped .minor {
+  color: #fff;
+}
+.cassette.first-child > .tap.tapped, .cassette:first-child > .tap.tapped {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.cassette.last-child > .tap.tapped, .cassette:last-child > .tap.tapped {
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.cassette.only-child > .tap.tapped, .cassette:only-child > .tap.tapped {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-.cassette > .tap.tapped {
-  color: #345;
-  background-color: #f2e0fe;
+
+.seemore {
+  font-size: 14px;
+  line-height: 21px;
+  color: #789;
+  text-align: right;
 }
 
 .flexible {
@@ -963,33 +1288,39 @@ img.polaroid {
   text-align: right;
   width: 18px;
 }
+.flexible > .item-btn {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  width: 6em;
+}
 .flexible > .wrap-icon84 {
-  width: 92px;
+  width: 90px;
   display: table-cell;
   text-align: left;
 }
 .flexible > .wrap-icon72 {
-  width: 80px;
+  width: 78px;
   display: table-cell;
   text-align: left;
 }
 .flexible > .wrap-icon60 {
-  width: 68px;
+  width: 66px;
   display: table-cell;
   text-align: left;
 }
 .flexible > .wrap-icon48 {
-  width: 56px;
+  width: 54px;
   display: table-cell;
   text-align: left;
 }
 .flexible > .wrap-icon36 {
-  width: 44px;
+  width: 42px;
   display: table-cell;
   text-align: left;
 }
 .flexible > .wrap-icon24 {
-  width: 32px;
+  width: 30px;
   display: table-cell;
   text-align: left;
 }
@@ -1005,7 +1336,7 @@ img.polaroid {
   display: inline-block;
   vertical-align: top;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center center;
   -webkit-background-size: 84px;
   -moz-background-size: 84px;
   -o-background-size: 84px;
@@ -1015,6 +1346,7 @@ img.polaroid {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
   border-radius: 12px;
+  /* tap */
 }
 .icon84.tap {
   cursor: pointer;
@@ -1039,7 +1371,7 @@ img.polaroid {
   display: inline-block;
   vertical-align: top;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center center;
   -webkit-background-size: 72px;
   -moz-background-size: 72px;
   -o-background-size: 72px;
@@ -1049,6 +1381,7 @@ img.polaroid {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
   border-radius: 12px;
+  /* tap */
 }
 .icon72.tap {
   cursor: pointer;
@@ -1067,13 +1400,48 @@ img.polaroid {
   border-radius: 12px;
 }
 
+.icon60 {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 60px;
+  -moz-background-size: 60px;
+  -o-background-size: 60px;
+  background-size: 60px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  /* tap */
+}
+.icon60.tap {
+  cursor: pointer;
+}
+.icon60.tap.tapped::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
 .icon48 {
   width: 48px;
   height: 48px;
   display: inline-block;
   vertical-align: top;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center center;
   -webkit-background-size: 48px;
   -moz-background-size: 48px;
   -o-background-size: 48px;
@@ -1083,6 +1451,7 @@ img.polaroid {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   border-radius: 8px;
+  /* tap */
 }
 .icon48.tap {
   cursor: pointer;
@@ -1107,7 +1476,7 @@ img.polaroid {
   display: inline-block;
   vertical-align: top;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center center;
   -webkit-background-size: 36px;
   -moz-background-size: 36px;
   -o-background-size: 36px;
@@ -1117,6 +1486,7 @@ img.polaroid {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
+  /* tap */
 }
 .icon36.tap {
   cursor: pointer;
@@ -1141,7 +1511,7 @@ img.polaroid {
   display: inline-block;
   vertical-align: top;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center center;
   -webkit-background-size: 24px;
   -moz-background-size: 24px;
   -o-background-size: 24px;
@@ -1151,6 +1521,7 @@ img.polaroid {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  /* tap */
 }
 .icon24.tap {
   cursor: pointer;
@@ -1167,4 +1538,151 @@ img.polaroid {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+}
+
+.hide {
+  display: none;
+}
+
+.fadein {
+  -webkit-animation-name: _fadein;
+  -moz-animation-name: _fadein;
+  -ms-animation-name: _fadein;
+  -o-animation-name: _fadein;
+  animation-name: _fadein;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-duration: 0.1s;
+  -moz-animation-duration: 0.1s;
+  -ms-animation-duration: 0.1s;
+  -o-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -ms-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  opacity: 1.0;
+}
+
+.fadeout {
+  -webkit-animation-name: _fadeout;
+  -moz-animation-name: _fadeout;
+  -ms-animation-name: _fadeout;
+  -o-animation-name: _fadeout;
+  animation-name: _fadeout;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-duration: 0.1s;
+  -moz-animation-duration: 0.1s;
+  -ms-animation-duration: 0.1s;
+  -o-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  opacity: 1.0;
+  display: none;
+}
+
+.zoomin {
+  -webkit-animation-name: _zoomin;
+  -moz-animation-name: _zoomin;
+  -ms-animation-name: _zoomin;
+  -o-animation-name: _zoomin;
+  animation-name: _zoomin;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-duration: 0.1s;
+  -moz-animation-duration: 0.1s;
+  -ms-animation-duration: 0.1s;
+  -o-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -ms-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit--webkit-transform: scale(1);
+  -moz--webkit-transform: scale(1);
+  -ms--webkit-transform: scale(1);
+  -o--webkit-transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1.0;
+}
+
+.zoomout {
+  -webkit-animation-name: _zoomout;
+  -moz-animation-name: _zoomout;
+  -ms-animation-name: _zoomout;
+  -o-animation-name: _zoomout;
+  animation-name: _zoomout;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-duration: 0.1s;
+  -moz-animation-duration: 0.1s;
+  -ms-animation-duration: 0.1s;
+  -o-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit--webkit-transform: scale(1);
+  -moz--webkit-transform: scale(1);
+  -ms--webkit-transform: scale(1);
+  -o--webkit-transform: scale(1);
+  -webkit-transform: scale(1);
+  display: none;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.static {
+  position: static !important;
+}
+
+.fixed {
+  position: fixed !important;
 }

@@ -3,7 +3,7 @@
 /**
 * @theme: hackleberry
 */
-/**
+/*****
 * ClassName
 */
 /**
@@ -16,10 +16,11 @@
 */
 /* typography */
 /* Lists */
-/* tables */
+/* Tables */
 /* Forms */
 /* Images */
-/* status */
+/* Status */
+/* Skin */
 /**
 * Components
 */
@@ -29,6 +30,12 @@
 /**
 * Icons
 */
+/*
+* Visible
+*/
+/*
+* Position
+*/
 /*****
 * Config
 */
@@ -36,8 +43,8 @@
 * Scaffolding
 */
 /* All */
-/* Body */
 /* Font */
+/* Body */
 /* Responsive */
 /*
 * Layout
@@ -83,14 +90,102 @@
 /* color */
 /* backgroundColor */
 /* borderColor */
-/* boxShadow */
-/* gradient */
 /**
 * Components
 */
 /*
 * Cassette
 */
+/* headline */
+/* headline-lv2 */
+/* cassette */
+/*
+* Icons
+*/
+/*
+* Visible
+*/
+/**
+* Reset Module
+*/
+@-webkit-keyframes _tapped {
+  0% {
+    color: #345;
+    background-color: transparent;
+  }
+
+  100% {
+    color: #fff;
+    background-color: #00a7e8;
+  }
+}
+
+@-webkit-keyframes _fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes _fadeout {
+  0% {
+    opacity: 1.0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    display: none;
+  }
+}
+
+@-webkit-keyframes _zoomin {
+  0% {
+    -webkit--webkit-transform: scale(0.9);
+    -moz--webkit-transform: scale(0.9);
+    -ms--webkit-transform: scale(0.9);
+    -o--webkit-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    opacity: 0.5;
+  }
+
+  100% {
+    -webkit--webkit-transform: scale(1);
+    -moz--webkit-transform: scale(1);
+    -ms--webkit-transform: scale(1);
+    -o--webkit-transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes _zoomout {
+  0% {
+    -webkit--webkit-transform: scale(1);
+    -moz--webkit-transform: scale(1);
+    -ms--webkit-transform: scale(1);
+    -o--webkit-transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+
+  99% {
+    -webkit--webkit-transform: scale(0.5);
+    -moz--webkit-transform: scale(0.5);
+    -ms--webkit-transform: scale(0.5);
+    -o--webkit-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+
+  100% {
+    display: none;
+  }
+}
+
 /* instance */
 .header {
   margin-top: 50px;

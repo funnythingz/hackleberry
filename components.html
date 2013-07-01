@@ -2,13 +2,11 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <!-- {* .iOS *} -->
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=10">
   <meta name="apple-mobile-web-app-capable" content="no">
   <meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="address=no">
   <link rel="apple-touch-icon-precomposed" href="">
-  <!-- {* /.iOS *} -->
   <title>Components | Hackleberry: HTML5/CSS3/JavaScript UI Framework</title>
   <link rel="shortcut icon" type="image/x-icon" href="">
   <script src="js/hackleberry.min.js"></script>
@@ -49,12 +47,14 @@
       <ul id="sideMenu">
         <li><a href="#Unit">Unit</a>
           <ul>
+            <li><a href="#Headline">Headline</a></li>
+            <li><a href="#Headline-lv2">Headline-lv2</a></li>
             <li><a href="#Cassette">Cassette</a></li>
+            <li><a href="#Seemore">Seemore</a></li>
           </ul>
         </li>
         <li><a href="#Flexible">Flexible</a></li>
         <li><a href="#Buttons">Buttons</a></li>
-        <li><a href="#Headline">Headline</a></li>
       </ul>
     </div><!-- {* /.col3 *} -->
     
@@ -63,10 +63,132 @@
         <div class="header">
           <h1 class="lv1">Unit</h1>
           <p class="lead">
-            Unitコンポーネントです。Unitは<code class="code">.unit</code>, <code class="code">.cassette</code>, <code class="code">.inner</code>を組み合わせて使います。
-            <code class="code">.cassette</code>は単体では機能せず、<code class="code">.unit</code>の中で使います。グループ化して使う場合はUnit単位で<code class="code">.cassette</code>をグループ化してください。Cassette内には内側の余白は設定されていないため、<code class="code">.inner</code>を併用して使います。
+            Unitコンポーネントです。Unitは<code class="code">.headline</code>, <code class="code">.headline-lv2</code>, <code class="code">.unit</code>, <code class="code">.cassette</code>, <code class="code">.inner</code>を組み合わせて使います。
+            <code class="code">.cassette</code>は単体では機能せず、<code class="code">.unit</code>の中で使います。グループ化して使う場合はUnit単位で<code class="code">.cassette</code>をグループ化してください。
+            Cassette内には内側の余白は設定されていないため、<code class="code">.inner</code>を併用して使います。
           </p>
         </div><!-- {* /.header.page *} -->
+        <section class="unit scaffolding">
+          <h1 class="lv2" id="Headline">Headline</h1>
+          <p class="sentence">
+            <code class="code">headline</code>
+          </p>
+          <div class="row">
+            <div class="col6">
+              <div class="example">
+                <section class="unit">
+                  <h1 class="headline">Headline</h1>
+                  <article class="cassette">
+                    <div class="inner">
+                      <p class="sentence">Cassette</p>
+                    </div>
+                  </article><!-- {* /.cassette *} -->
+                </section><!-- {* /.unit *} -->
+              </div><!-- {* /example *} -->
+            </div><!-- {* /.col6 *} -->
+            <div class="col6">
+              <script src="https://gist.github.com/funnythingz/5802820.js"></script>
+            </div><!-- {* /.col6 *} -->
+          </div><!-- {* /.row *} -->
+        </section>
+        <section class="unit scaffolding">
+          <p class="sentence">
+            <code class="code">.headline.skin-{$color}</code>とすることでHeadlineの色を変更することができます。
+          </p>
+          <div class="row">
+            <div class="col6">
+              <div class="example">
+                <section class="unit">
+                  <h1 class="headline">default</h1>
+                </section><!-- {* /.unit *} -->
+                <section class="unit">
+                  <h1 class="headline skin-pink">pink</h1>
+                </section><!-- {* /.unit *} -->
+                <section class="unit">
+                  <h1 class="headline skin-orange">orange</h1>
+                </section><!-- {* /.unit *} -->
+                <section class="unit">
+                  <h1 class="headline skin-yellow">yellow</h1>
+                </section><!-- {* /.unit *} -->
+                <section class="unit">
+                  <h1 class="headline skin-green">green</h1>
+                </section><!-- {* /.unit *} -->
+                <section class="unit">
+                  <h1 class="headline skin-gray">gray</h1>
+                </section><!-- {* /.unit *} -->
+              </div><!-- {* /example *} -->
+            </div><!-- {* /.col6 *} -->
+            <div class="col6">
+              <script src="https://gist.github.com/funnythingz/5802822.js"></script>
+            </div><!-- {* /.col6 *} -->
+          </div><!-- {* /.row *} -->
+        </section>
+        <section class="unit scaffolding">
+          <h1 class="lv2" id="Headline-lv2">Headline-lv2</h1>
+          <p class="sentence">
+            <code class="code">headline-lv2</code> headlineはUnitの一番上で使う大見出しですが、headline-v2は中間で使う中見出しになります。
+          </p>
+          <div class="row">
+            <div class="col6">
+              <div class="example">
+                <section class="unit">
+                  <h1 class="headline">Headline</h1>
+                  <article class="cassette">
+                    <div class="inner">
+                      <p class="sentence">Cassette</p>
+                    </div>
+                  </article><!-- {* /.cassette *} -->
+                  <h2 class="headline-lv2">Headline</h2>
+                  <article class="cassette">
+                    <div class="inner">
+                      <p class="sentence">Cassette</p>
+                    </div>
+                  </article><!-- {* /.cassette *} -->
+                  <article class="cassette">
+                    <div class="inner">
+                      <p class="sentence">Cassette</p>
+                    </div>
+                  </article><!-- {* /.cassette *} -->
+                </section><!-- {* /.unit *} -->
+              </div><!-- {* /example *} -->
+            </div><!-- {* /.col6 *} -->
+            <div class="col6">
+              <script src="https://gist.github.com/funnythingz/5820415.js"></script>
+            </div><!-- {* /.col6 *} -->
+          </div><!-- {* /.row *} -->
+        </section>
+        <section class="unit scaffolding">
+          <p class="sentence">
+            <code class="code">.headline-lv2.skin-{$color}</code>とすることでHeadline-lv2の色を変更することができます。
+          </p>
+          <div class="row">
+            <div class="col6">
+              <div class="example">
+                <section class="unit">
+                  <h1 class="headline-lv2">default</h1>
+                </section><!-- {* /.unit *} -->
+                <section class="unit">
+                  <h1 class="headline-lv2 skin-pink">pink</h1>
+                </section><!-- {* /.unit *} -->
+                <section class="unit">
+                  <h1 class="headline-lv2 skin-orange">orange</h1>
+                </section><!-- {* /.unit *} -->
+                <section class="unit">
+                  <h1 class="headline-lv2 skin-yellow">yellow</h1>
+                </section><!-- {* /.unit *} -->
+                <section class="unit">
+                  <h1 class="headline-lv2 skin-green">green</h1>
+                </section><!-- {* /.unit *} -->
+                <section class="unit">
+                  <h1 class="headline-lv2 skin-gray">gray</h1>
+                </section><!-- {* /.unit *} -->
+              </div><!-- {* /example *} -->
+            </div><!-- {* /.col6 *} -->
+            <div class="col6">
+              <script src="https://gist.github.com/funnythingz/5820418.js"></script>
+            </div><!-- {* /.col6 *} -->
+          </div><!-- {* /.row *} -->
+        </section>
         <section class="unit scaffolding">
           <h1 class="lv2" id="Cassette">Cassette</h1>
           <p class="sentence">
@@ -75,14 +197,14 @@
           <div class="row">
             <div class="col6">
               <div class="example">
-                <div class="unit">
+                <section class="unit">
                   <article class="cassette">
                     <div class="inner">
                       <p class="sentence">Cassette</p>
                     </div>
                   </article><!-- {* /.cassette *} -->
-                </div><!-- {* /.unit *} -->
-              </div><!-- {* /cassette *} -->
+                </section><!-- {* /.unit *} -->
+              </div><!-- {* /example *} -->
             </div><!-- {* /.col6 *} -->
             <div class="col6">
               <script src="https://gist.github.com/funnythingz/5684450.js"></script>
@@ -96,7 +218,7 @@
           <div class="row">
             <div class="col6">
               <div class="example">
-                <div class="unit">
+                <section class="unit">
                   <article class="cassette">
                     <div class="inner">
                       <p class="sentence">Cassette 1</p>
@@ -112,7 +234,7 @@
                       <p class="sentence">Cassette 3</p>
                     </div>
                   </article><!-- {* /.cassette *} -->
-                </div><!-- {* /.unit *} -->
+                </section><!-- {* /.unit *} -->
               </div><!-- {* /.example *} -->
             </div><!-- {* /.col6 *} -->
             <div class="col6">
@@ -127,15 +249,15 @@
           <div class="row">
             <div class="col6">
               <div class="example">
-                <div class="unit">
+                <section class="unit">
                   <article class="cassette">
                     <div class="inner">
                       <p class="sentence">Cassette 1-1</p>
                     </div>
                   </article><!-- {* /.cassette *} -->
-                </div><!-- {* /.unit *} -->
+                </section><!-- {* /.unit *} -->
 
-                <div class="unit">
+                <section class="unit">
                   <article class="cassette">
                     <div class="inner">
                       <p class="sentence">Cassette 2-1</p>
@@ -146,9 +268,9 @@
                       <p class="sentence">Cassette 2-2</p>
                     </div>
                   </article><!-- {* /.cassette *} -->
-                </div><!-- {* /.unit *} -->
+                </section><!-- {* /.unit *} -->
 
-                <div class="unit">
+                <section class="unit">
                   <article class="cassette">
                     <div class="inner">
                       <p class="sentence">Cassette 3-1</p>
@@ -164,7 +286,7 @@
                       <p class="sentence">Cassette 3-3</p>
                     </div>
                   </article><!-- {* /.cassette *} -->
-                </div><!-- {* /.unit *} -->
+                </section><!-- {* /.unit *} -->
               </div><!-- {* /.example *} -->
             </div><!-- {* /.col6 *} -->
             <div class="col6">
@@ -179,7 +301,7 @@
           <div class="row">
             <div class="col6">
               <div class="example">
-                <div class="unit">
+                <section class="unit">
                   <article class="cassette">
                     <a class="tap" href="">
                       <div class="inner">
@@ -192,8 +314,8 @@
                       </div>
                     </a><!-- {* /.tap *} -->
                   </article><!-- {* /.cassette *} -->
-                </div><!-- {* /.unit *} -->
-              </div><!-- {* /cassette *} -->
+                </section><!-- {* /.unit *} -->
+              </div><!-- {* /example *} -->
             </div><!-- {* /.col6 *} -->
             <div class="col6">
               <script src="https://gist.github.com/funnythingz/5689355.js"></script>
@@ -207,7 +329,7 @@
           <div class="row">
             <div class="col6">
               <div class="example">
-                <div class="unit">
+                <section class="unit">
                   <article class="cassette">
                     <a class="tap tapped" href="">
                       <div class="inner">
@@ -220,11 +342,50 @@
                       </div>
                     </a><!-- {* /.tap *} -->
                   </article><!-- {* /.cassette *} -->
-                </div><!-- {* /.unit *} -->
-              </div><!-- {* /cassette *} -->
+                </section><!-- {* /.unit *} -->
+              </div><!-- {* /example *} -->
             </div><!-- {* /.col6 *} -->
             <div class="col6">
               <script src="https://gist.github.com/funnythingz/5689353.js"></script>
+            </div><!-- {* /.col6 *} -->
+          </div><!-- {* /.row *} -->
+        </section>
+        <section class="unit scaffolding">
+          <h1 class="lv2" id="Seemore">Seemore</h1>
+          <p class="sentence">
+            <code class="code">.seemore</code>
+          </p>
+          <div class="row">
+            <div class="col6">
+              <div class="example">
+                <section class="unit">
+                  <article class="cassette">
+                    <div class="inner">
+                      <p class="sentence">Cassette</p>
+                    </div>
+                  </article><!-- {* /.cassette *} -->
+                  <article class="cassette">
+                    <div class="inner">
+                      <p class="sentence">Cassette</p>
+                    </div>
+                  </article><!-- {* /.cassette *} -->
+                  <section class="cassette">
+                    <div class="inner">
+                      <div class="flexible">
+                        <div class="item">
+                          <p class="seemore">もっと見る</p>
+                        </div>
+                        <div class="item-caret">
+                          <div class="item-caret">&gt;</div>
+                        </div>
+                      </div><!-- {* /.flexible *} -->
+                    </div>
+                  </section><!-- {* /.cassette *} -->
+                </section><!-- {* /.unit *} -->
+              </div><!-- {* /example *} -->
+            </div><!-- {* /.col6 *} -->
+            <div class="col6">
+              <script src="https://gist.github.com/funnythingz/5820678.js"></script>
             </div><!-- {* /.col6 *} -->
           </div><!-- {* /.row *} -->
         </section>
@@ -245,7 +406,7 @@
           <div class="row">
             <div class="col6">
               <div class="example">
-                <div class="unit">
+                <section class="unit">
                   <article class="cassette">
                     <a class="tap" href="">
                       <div class="inner">
@@ -262,8 +423,8 @@
                       </div>
                     </a>
                   </article><!-- {* /.cassette *} -->
-                </div><!-- {* /.unit *} -->
-              </div><!-- {* /cassette *} -->
+                </section><!-- {* /.unit *} -->
+              </div><!-- {* /example *} -->
             </div><!-- {* /.col6 *} -->
             <div class="col6">
               <script src="https://gist.github.com/funnythingz/5689357.js"></script>
@@ -277,7 +438,7 @@
           <div class="row">
             <div class="col6">
               <div class="example">
-                <div class="unit">
+                <section class="unit">
                   <article class="cassette">
                     <a class="tap tapped" href="">
                       <div class="inner">
@@ -294,8 +455,8 @@
                       </div>
                     </a>
                   </article><!-- {* /.cassette *} -->
-                </div><!-- {* /.unit *} -->
-              </div><!-- {* /cassette *} -->
+                </section><!-- {* /.unit *} -->
+              </div><!-- {* /example *} -->
             </div><!-- {* /.col6 *} -->
             <div class="col6">
               <script src="https://gist.github.com/funnythingz/5689359.js"></script>
@@ -309,7 +470,7 @@
           <div class="row">
             <div class="col6">
               <div class="example">
-                <div class="unit">
+                <section class="unit">
                   <article class="cassette">
                     <a class="tap" href="">
                       <div class="inner">
@@ -326,8 +487,8 @@
                       </div>
                     </a>
                   </article><!-- {* /.cassette *} -->
-                </div><!-- {* /.unit *} -->
-              </div><!-- {* /cassette *} -->
+                </section><!-- {* /.unit *} -->
+              </div><!-- {* /example *} -->
             </div><!-- {* /.col6 *} -->
             <div class="col6">
               <script src="https://gist.github.com/funnythingz/5689361.js"></script>
@@ -371,6 +532,9 @@
     responsiveMinWidth: 560,
     adjustment: 10
   });
+})();
+(function(){
+  TOOLKIT.tapped('tap');
 })();
 </script>
 
