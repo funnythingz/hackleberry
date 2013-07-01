@@ -20,8 +20,11 @@
   }
 
   /* 帯のカラーが変わる場合 */
-  &.#{$class_skin-pink} {
-    background-color: #{$headline-lv2_backgroundColor_skinPink};
+  &.#{$class_skin-purple} {
+    background-color: #{$headline-lv2_backgroundColor_skinPurple};
+  }
+  &.#{$class_skin-red} {
+    background-color: #{$headline-lv2_backgroundColor_skinRed};
   }
   &.#{$class_skin-orange} {
     background-color: #{$headline-lv2_backgroundColor_skinOrange};
@@ -34,5 +37,8 @@
   }
   &.#{$class_skin-gray} {
     background-color: #{$headline-lv2_backgroundColor_skinGray};
+  }
+  &.#{$class_skin-silver} {
+    background-color: #{$headline-lv2_backgroundColor_skinSilver};
   }
 }

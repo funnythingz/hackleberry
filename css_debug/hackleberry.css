@@ -99,6 +99,7 @@
 /* headline */
 /* headline-lv2 */
 /* cassette */
+/* Buttons */
 /*
 * Icons
 */
@@ -110,13 +111,11 @@
 */
 @-webkit-keyframes _tapped {
   0% {
-    color: #345;
     background-color: transparent;
   }
 
   100% {
-    color: #fff;
-    background-color: #00a7e8;
+    background-color: #d7e1ed;
   }
 }
 
@@ -1024,18 +1023,17 @@ img.polaroid {
   line-height: 18px;
   font-weight: bold;
   color: #fff;
-  text-shadow: 0 -1px 0 #00a0dc;
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
   -moz-border-radius-topright: 5px;
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00b4f0), color-stop(100%, #00aae6));
-  background-image: -webkit-linear-gradient(#00b4f0, #00aae6);
-  background-image: -moz-linear-gradient(#00b4f0, #00aae6);
-  background-image: -o-linear-gradient(#00b4f0, #00aae6);
-  background-image: linear-gradient(#00b4f0, #00aae6);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3498db), color-stop(100%, #3498db));
+  background-image: -webkit-linear-gradient(#3498db, #3498db);
+  background-image: -moz-linear-gradient(#3498db, #3498db);
+  background-image: -o-linear-gradient(#3498db, #3498db);
+  background-image: linear-gradient(#3498db, #3498db);
   /* last-childの場合 */
   /* 帯のカラーが変わる場合 */
 }
@@ -1061,50 +1059,59 @@ img.polaroid {
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.headline.skin-pink {
-  text-shadow: 0 -1px 0 #ff5a64;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff6e78), color-stop(100%, #ff646e));
-  background-image: -webkit-linear-gradient(#ff6e78, #ff646e);
-  background-image: -moz-linear-gradient(#ff6e78, #ff646e);
-  background-image: -o-linear-gradient(#ff6e78, #ff646e);
-  background-image: linear-gradient(#ff6e78, #ff646e);
+.headline.skin-purple {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9b59b6), color-stop(100%, #9b59b6));
+  background-image: -webkit-linear-gradient(#9b59b6, #9b59b6);
+  background-image: -moz-linear-gradient(#9b59b6, #9b59b6);
+  background-image: -o-linear-gradient(#9b59b6, #9b59b6);
+  background-image: linear-gradient(#9b59b6, #9b59b6);
+}
+.headline.skin-red {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e74c3c), color-stop(100%, #e74c3c));
+  background-image: -webkit-linear-gradient(#e74c3c, #e74c3c);
+  background-image: -moz-linear-gradient(#e74c3c, #e74c3c);
+  background-image: -o-linear-gradient(#e74c3c, #e74c3c);
+  background-image: linear-gradient(#e74c3c, #e74c3c);
 }
 .headline.skin-orange {
-  text-shadow: 0 -1px 0 #ff6e00;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8200), color-stop(100%, #ff7800));
-  background-image: -webkit-linear-gradient(#ff8200, #ff7800);
-  background-image: -moz-linear-gradient(#ff8200, #ff7800);
-  background-image: -o-linear-gradient(#ff8200, #ff7800);
-  background-image: linear-gradient(#ff8200, #ff7800);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e67e22), color-stop(100%, #e67e22));
+  background-image: -webkit-linear-gradient(#e67e22, #e67e22);
+  background-image: -moz-linear-gradient(#e67e22, #e67e22);
+  background-image: -o-linear-gradient(#e67e22, #e67e22);
+  background-image: linear-gradient(#e67e22, #e67e22);
 }
 .headline.skin-yellow {
-  text-shadow: 0 -1px 0 #ffa000;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffb400), color-stop(100%, #ffaf00));
-  background-image: -webkit-linear-gradient(#ffb400, #ffaf00);
-  background-image: -moz-linear-gradient(#ffb400, #ffaf00);
-  background-image: -o-linear-gradient(#ffb400, #ffaf00);
-  background-image: linear-gradient(#ffb400, #ffaf00);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f1c40f), color-stop(100%, #f1c40f));
+  background-image: -webkit-linear-gradient(#f1c40f, #f1c40f);
+  background-image: -moz-linear-gradient(#f1c40f, #f1c40f);
+  background-image: -o-linear-gradient(#f1c40f, #f1c40f);
+  background-image: linear-gradient(#f1c40f, #f1c40f);
 }
 .headline.skin-green {
-  text-shadow: 0 -1px 0 #32be00;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #46d200), color-stop(100%, #3cc800));
-  background-image: -webkit-linear-gradient(#46d200, #3cc800);
-  background-image: -moz-linear-gradient(#46d200, #3cc800);
-  background-image: -o-linear-gradient(#46d200, #3cc800);
-  background-image: linear-gradient(#46d200, #3cc800);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1abc9c), color-stop(100%, #1abc9c));
+  background-image: -webkit-linear-gradient(#1abc9c, #1abc9c);
+  background-image: -moz-linear-gradient(#1abc9c, #1abc9c);
+  background-image: -o-linear-gradient(#1abc9c, #1abc9c);
+  background-image: linear-gradient(#1abc9c, #1abc9c);
 }
 .headline.skin-gray {
-  text-shadow: 0 -1px 0 #6e7882;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #828c96), color-stop(100%, #78828c));
-  background-image: -webkit-linear-gradient(#828c96, #78828c);
-  background-image: -moz-linear-gradient(#828c96, #78828c);
-  background-image: -o-linear-gradient(#828c96, #78828c);
-  background-image: linear-gradient(#828c96, #78828c);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #95a5a6), color-stop(100%, #95a5a6));
+  background-image: -webkit-linear-gradient(#95a5a6, #95a5a6);
+  background-image: -moz-linear-gradient(#95a5a6, #95a5a6);
+  background-image: -o-linear-gradient(#95a5a6, #95a5a6);
+  background-image: linear-gradient(#95a5a6, #95a5a6);
+}
+.headline.skin-silver {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bdc3c7), color-stop(100%, #bdc3c7));
+  background-image: -webkit-linear-gradient(#bdc3c7, #bdc3c7);
+  background-image: -moz-linear-gradient(#bdc3c7, #bdc3c7);
+  background-image: -o-linear-gradient(#bdc3c7, #bdc3c7);
+  background-image: linear-gradient(#bdc3c7, #bdc3c7);
 }
 
 .headline-lv2 {
   padding: 3.5px 7px 3.5px 7px;
-  background-color: #f0faff;
+  background-color: #d7e1ed;
   border-top: solid 1px #e1e2e3;
   border-left: solid 1px #e1e2e3;
   border-right: solid 1px #e1e2e3;
@@ -1144,19 +1151,25 @@ img.polaroid {
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.headline-lv2.skin-pink {
-  background-color: #fff5f5;
+.headline-lv2.skin-purple {
+  background-color: #e7dceb;
+}
+.headline-lv2.skin-red {
+  background-color: #f8dfe2;
 }
 .headline-lv2.skin-orange {
-  background-color: #fff5f0;
+  background-color: #ffdfb6;
 }
 .headline-lv2.skin-yellow {
-  background-color: #fffaf0;
+  background-color: #efeec9;
 }
 .headline-lv2.skin-green {
-  background-color: #f5faf0;
+  background-color: #cde3e0;
 }
 .headline-lv2.skin-gray {
+  background-color: #e4e2dc;
+}
+.headline-lv2.skin-silver {
   background-color: #f7f8f9;
 }
 
@@ -1209,7 +1222,7 @@ img.polaroid {
 }
 
 .cassette > .tap.tapped {
-  background-color: #00a7e8;
+  background-color: #d7e1ed;
   -webkit-animation-name: _tapped;
   -moz-animation-name: _tapped;
   -ms-animation-name: _tapped;
@@ -1235,10 +1248,6 @@ img.polaroid {
   -ms-animation-delay: 0s;
   -o-animation-delay: 0s;
   animation-delay: 0s;
-  color: #fff;
-}
-.cassette > .tap.tapped .minor {
-  color: #fff;
 }
 .cassette.first-child > .tap.tapped, .cassette:first-child > .tap.tapped {
   -moz-border-radius-topleft: 4px;
@@ -1288,7 +1297,7 @@ img.polaroid {
   text-align: right;
   width: 18px;
 }
-.flexible > .item-btn {
+.flexible > .item-button {
   display: table-cell;
   vertical-align: middle;
   text-align: right;
@@ -1325,7 +1334,7 @@ img.polaroid {
   text-align: left;
 }
 
-.btn {
+.button {
   font-size: 14px;
   line-height: 21px;
 }

@@ -149,7 +149,7 @@ $status_activeDisabledColor          :'#f7f7f9';
 $status_activeRequierdColor          :'#c09853';
 $status_activeDarkColor              :'#123';
 
-$status_tappedColor                  :'#fff';
+$status_tappedColor                  :'';
 $status_loadingColor                 :'';
 
 /* backgroundColor */
@@ -220,48 +220,60 @@ $headline_spacingInnerRight:  7;
 $headline_iconSpacing:  4;
 
 // skin
-$headline_textShadow_skinBlue:   '#00a0dc';
-$headline_textShadow_skinPink:   '#ff5a64';
-$headline_textShadow_skinOrange: '#ff6e00';
-$headline_textShadow_skinYellow: '#ffa000';
-$headline_textShadow_skinGreen:  '#32be00';
-$headline_textShadow_skinGray:   '#6e7882';
+$headline_textShadow_skinBlue:   '#';
+$headline_textShadow_skinPurple: '#';
+$headline_textShadow_skinRed:    '#';
+$headline_textShadow_skinOrange: '#';
+$headline_textShadow_skinYellow: '#';
+$headline_textShadow_skinGreen:  '#';
+$headline_textShadow_skinGray:   '#';
+$headline_textShadow_skinSilver: '#';
 
 $headline_borderColor_skinBlue:   '#';
-$headline_borderColor_skinPink:   '#';
+$headline_borderColor_skinPurple: '#';
+$headline_borderColor_skinRed:    '#';
 $headline_borderColor_skinOrange: '#';
 $headline_borderColor_skinYellow: '#';
 $headline_borderColor_skinGreen:  '#';
 $headline_borderColor_skinGray:   '#';
+$headline_borderColor_skinSilver: '#';
 
-$headline_backgroundColor_skinBlue:   '#';
-$headline_backgroundColor_skinPink:   '#';
-$headline_backgroundColor_skinOrange: '#';
-$headline_backgroundColor_skinYellow: '#';
-$headline_backgroundColor_skinGreen:  '#';
-$headline_backgroundColor_skinGray:   '#';
+$headline_backgroundColor_skinBlue:   '#3498DB';
+$headline_backgroundColor_skinPurple: '#9B59B6';
+$headline_backgroundColor_skinRed:    '#E74C3C';
+$headline_backgroundColor_skinOrange: '#E67E22';
+$headline_backgroundColor_skinYellow: '#F1C40F';
+$headline_backgroundColor_skinGreen:  '#1ABC9C';
+$headline_backgroundColor_skinGray:   '#95A5A6';
+$headline_backgroundColor_skinSilver: '#ECF0F1';
 
-$headline_backgroundGradientTop_skinBlue:      #00b4f0;
-$headline_backgroundGradientBottom_skinBlue:   #00aae6;
-$headline_backgroundGradientTop_skinPink:      #ff6e78;
-$headline_backgroundGradientBottom_skinPink:   #ff646e;
-$headline_backgroundGradientTop_skinOrange:    #ff8200;
-$headline_backgroundGradientBottom_skinOrange: #ff7800;
-$headline_backgroundGradientTop_skinYellow:    #ffb400;
-$headline_backgroundGradientBottom_skinYellow: #ffaf00;
-$headline_backgroundGradientTop_skinGreen:     #46d200;
-$headline_backgroundGradientBottom_skinGreen:  #3cc800;
-$headline_backgroundGradientTop_skinGray:      #828c96;
-$headline_backgroundGradientBottom_skinGray:   #78828c;
+$headline_backgroundGradientTop_skinBlue:      #3498DB;
+$headline_backgroundGradientBottom_skinBlue:   #3498DB;
+$headline_backgroundGradientTop_skinPurple:    #9B59B6;
+$headline_backgroundGradientBottom_skinPurple: #9B59B6;
+$headline_backgroundGradientTop_skinRed:       #E74C3C;
+$headline_backgroundGradientBottom_skinRed:    #E74C3C;
+$headline_backgroundGradientTop_skinOrange:    #E67E22;
+$headline_backgroundGradientBottom_skinOrange: #E67E22;
+$headline_backgroundGradientTop_skinYellow:    #F1C40F;
+$headline_backgroundGradientBottom_skinYellow: #F1C40F;
+$headline_backgroundGradientTop_skinGreen:     #1ABC9C;
+$headline_backgroundGradientBottom_skinGreen:  #1ABC9C;
+$headline_backgroundGradientTop_skinGray:      #95A5A6;
+$headline_backgroundGradientBottom_skinGray:   #95A5A6;
+$headline_backgroundGradientTop_skinSilver:    #BDC3C7;
+$headline_backgroundGradientBottom_skinSilver: #BDC3C7;
 
 
 /* headline-lv2 */
-$headline-lv2_backgroundColor_skinBlue:   '#f0faff';
-$headline-lv2_backgroundColor_skinPink:   '#fff5f5';
-$headline-lv2_backgroundColor_skinOrange: '#fff5f0';
-$headline-lv2_backgroundColor_skinYellow: '#fffaf0';
-$headline-lv2_backgroundColor_skinGreen:  '#f5faf0';
-$headline-lv2_backgroundColor_skinGray:   '#f7f8f9';
+$headline-lv2_backgroundColor_skinBlue:   '#d7e1ed';
+$headline-lv2_backgroundColor_skinPurple: '#e7dceb';
+$headline-lv2_backgroundColor_skinRed:    '#f8dfe2';
+$headline-lv2_backgroundColor_skinOrange: '#ffdfb6';
+$headline-lv2_backgroundColor_skinYellow: '#efeec9';
+$headline-lv2_backgroundColor_skinGreen:  '#cde3e0';
+$headline-lv2_backgroundColor_skinGray:   '#e4e2dc';
+$headline-lv2_backgroundColor_skinSilver: '#f7f8f9';
 
 
 /* cassette */
@@ -275,8 +287,28 @@ $cassette_borderColorLeft:   $status_normalBorderColor;
 
 $cassette_backgroundColor:        '#fff';
 
-$cassette_tappedColor:            $status_tappedColor;
-$cassette_tappedBackgroundColor:  '#00a7e8';
+$cassette_tappedColor:            '';
+$cassette_tappedBackgroundColor:  '#d7e1ed';
+
+
+/* Buttons */
+$button_backgroundGradientTop_skinBlue:      #3498DB;
+$button_backgroundGradientBottom_skinBlue:   #2980B9;
+$button_backgroundGradientTop_skinRed:       #E74C3C;
+$button_backgroundGradientBottom_skinRed:    #C0392B;
+$button_backgroundGradientTop_skinPurple:    #9B59B6;
+$button_backgroundGradientBottom_skinPurple: #8E44AD;
+$button_backgroundGradientTop_skinOrange:    #E67E22;
+$button_backgroundGradientBottom_skinOrange: #D35400;
+$button_backgroundGradientTop_skinYellow:    #F1C40F;
+$button_backgroundGradientBottom_skinYellow: #F39C12;
+$button_backgroundGradientTop_skinGreen:     #1ABC9C;
+$button_backgroundGradientBottom_skinGreen:  #16A085;
+$button_backgroundGradientTop_skinGray:      #95A5A6;
+$button_backgroundGradientBottom_skinGray:   #7F8C8D;
+$button_backgroundGradientTop_skinSilver:    #ECF0F1;
+$button_backgroundGradientBottom_skinSilver: #BDC3C7;
+
 
 
 /*

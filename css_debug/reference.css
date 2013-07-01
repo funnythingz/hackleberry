@@ -99,6 +99,7 @@
 /* headline */
 /* headline-lv2 */
 /* cassette */
+/* Buttons */
 /*
 * Icons
 */
@@ -110,13 +111,11 @@
 */
 @-webkit-keyframes _tapped {
   0% {
-    color: #345;
     background-color: transparent;
   }
 
   100% {
-    color: #fff;
-    background-color: #00a7e8;
+    background-color: #d7e1ed;
   }
 }
 

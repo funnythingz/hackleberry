@@ -5,7 +5,7 @@
   line-height: 18px;
   @include bold;
   color: #{$headline_fontColor};
-  text-shadow: 0 -1px 0 #{$headline_textShadow_skinBlue};
+  //text-shadow: 0 -1px 0 #{$headline_textShadow_skinBlue};
   //border: solid 1px #{$headline_borderColor_skinBlue};
   @include border-top-radius(5px);
   @include background-image(linear-gradient($headline_backgroundGradientTop_skinBlue,$headline_backgroundGradientBottom_skinBlue));
@@ -20,29 +20,39 @@
   }
 
   /* 帯のカラーが変わる場合 */
-  &.#{$class_skin-pink} {
-    text-shadow: 0 -1px 0 #{$headline_textShadow_skinPink};
-    //border: solid 1px #{$headline_borderColor_skinPink};
-    @include background-image(linear-gradient($headline_backgroundGradientTop_skinPink,$headline_backgroundGradientBottom_skinPink));
+  &.#{$class_skin-purple} {
+    //text-shadow: 0 -1px 0 #{$headline_textShadow_skinPurple};
+    //border: solid 1px #{$headline_borderColor_skinPurple};
+    @include background-image(linear-gradient($headline_backgroundGradientTop_skinPurple,$headline_backgroundGradientBottom_skinPurple));
+  }
+  &.#{$class_skin-red} {
+    //text-shadow: 0 -1px 0 #{$headline_textShadow_skinRed};
+    //border: solid 1px #{$headline_borderColor_skinRed};
+    @include background-image(linear-gradient($headline_backgroundGradientTop_skinRed,$headline_backgroundGradientBottom_skinRed));
   }
   &.#{$class_skin-orange} {
-    text-shadow: 0 -1px 0 #{$headline_textShadow_skinOrange};
+    //text-shadow: 0 -1px 0 #{$headline_textShadow_skinOrange};
     //border: solid 1px #{$headline_borderColor_skinOrange};
     @include background-image(linear-gradient($headline_backgroundGradientTop_skinOrange,$headline_backgroundGradientBottom_skinOrange));
   }
   &.#{$class_skin-yellow} {
-    text-shadow: 0 -1px 0 #{$headline_textShadow_skinYellow};
+    //text-shadow: 0 -1px 0 #{$headline_textShadow_skinYellow};
     //border: solid 1px #{$headline_borderColor_skinYellow};
     @include background-image(linear-gradient($headline_backgroundGradientTop_skinYellow,$headline_backgroundGradientBottom_skinYellow));
   }
   &.#{$class_skin-green} {
-    text-shadow: 0 -1px 0 #{$headline_textShadow_skinGreen};
+    //text-shadow: 0 -1px 0 #{$headline_textShadow_skinGreen};
     //border: solid 1px #{$headline_borderColor_skinGreen};
     @include background-image(linear-gradient($headline_backgroundGradientTop_skinGreen,$headline_backgroundGradientBottom_skinGreen));
   }
   &.#{$class_skin-gray} {
-    text-shadow: 0 -1px 0 #{$headline_textShadow_skinGray};
+    //text-shadow: 0 -1px 0 #{$headline_textShadow_skinGray};
     //border: solid 1px #{$headline_borderColor_skinGray};
     @include background-image(linear-gradient($headline_backgroundGradientTop_skinGray,$headline_backgroundGradientBottom_skinGray));
+  }
+  &.#{$class_skin-silver} {
+    //text-shadow: 0 -1px 0 #{$headline_textShadow_skinSilver};
+    //border: solid 1px #{$headline_borderColor_skinSilver};
+    @include background-image(linear-gradient($headline_backgroundGradientTop_skinSilver,$headline_backgroundGradientBottom_skinSilver));
   }
 }

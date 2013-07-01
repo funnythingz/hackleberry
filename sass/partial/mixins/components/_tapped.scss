@@ -1,10 +1,10 @@
 @-webkit-keyframes _tapped {
   0% {
-    color: #{$status_normalColor};
+    //color: #{$status_normalColor};
     background-color: transparent;
   }
   100% {
-    color: #{$cassette_tappedColor};
+    //color: #{$cassette_tappedColor};
     background-color: #{$cassette_tappedBackgroundColor};
   }
 }
@@ -16,8 +16,8 @@
   @include experimental(animation-duration, 0.1s);
   @include experimental(animation-timing-function, ease-in);
   @include experimental(animation-delay, 0s);
-  color: #{$cassette_tappedColor};
-  .minor {
-    color: #{$cassette_tappedColor};
-  }
+  //color: #{$cassette_tappedColor};
+  //.minor {
+  //  color: #{$cassette_tappedColor};
+  //}
 }
