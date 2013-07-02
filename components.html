@@ -48,7 +48,7 @@
         <li><a href="#Unit">Unit</a>
           <ul>
             <li><a href="#Headline">Headline</a></li>
-            <li><a href="#Headline-lv2">Headline-lv2</a></li>
+            <li><a href="#Caution">Caution</a></li>
             <li><a href="#Cassette">Cassette</a></li>
             <li><a href="#Seemore">Seemore</a></li>
           </ul>
@@ -63,7 +63,7 @@
         <div class="header">
           <h1 class="lv1">Unit</h1>
           <p class="lead">
-            Unitコンポーネントです。Unitは<code class="code">.headline</code>, <code class="code">.headline-lv2</code>, <code class="code">.unit</code>, <code class="code">.cassette</code>, <code class="code">.inner</code>を組み合わせて使います。
+            Unitコンポーネントです。Unitは<code class="code">.headline</code>, <code class="code">.caution</code>, <code class="code">.unit</code>, <code class="code">.cassette</code>, <code class="code">.inner</code>を組み合わせて使います。
             <code class="code">.cassette</code>は単体では機能せず、<code class="code">.unit</code>の中で使います。グループ化して使う場合はUnit単位で<code class="code">.cassette</code>をグループ化してください。
             Cassette内には内側の余白は設定されていないため、<code class="code">.inner</code>を併用して使います。
           </p>
@@ -130,9 +130,9 @@
           </div><!-- {* /.row *} -->
         </section>
         <section class="unit scaffolding">
-          <h1 class="lv2" id="Headline-lv2">Headline-lv2</h1>
+          <h1 class="lv2" id="Caution">Caution</h1>
           <p class="sentence">
-            <code class="code">headline-lv2</code> headlineはUnitの一番上で使う大見出しですが、headline-v2は中間で使う中見出しになります。
+            <code class="code">caution</code> headlineはUnitの一番上で使う大見出しですが、cautionは中間で使う中見出しになります。
           </p>
           <div class="row">
             <div class="col6">
@@ -144,7 +144,7 @@
                       <p class="sentence">Cassette</p>
                     </div>
                   </article><!-- {* /.cassette *} -->
-                  <h2 class="headline-lv2">Headline</h2>
+                  <h2 class="caution">Caution</h2>
                   <article class="cassette">
                     <div class="inner">
                       <p class="sentence">Cassette</p>
@@ -165,34 +165,34 @@
         </section>
         <section class="unit scaffolding">
           <p class="sentence">
-            <code class="code">.headline-lv2.skin-{$color}</code>とすることでHeadline-lv2の色を変更することができます。
+            <code class="code">.caution.skin-{$color}</code>とすることでcautionの色を変更することができます。
           </p>
           <div class="row">
             <div class="col6">
               <div class="example">
                 <section class="unit">
-                  <h1 class="headline-lv2">default</h1>
+                  <h1 class="caution">default</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="headline-lv2 skin-purple">purple</h1>
+                  <h1 class="caution skin-purple">purple</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="headline-lv2 skin-red">red</h1>
+                  <h1 class="caution skin-red">red</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="headline-lv2 skin-orange">orange</h1>
+                  <h1 class="caution skin-orange">orange</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="headline-lv2 skin-yellow">yellow</h1>
+                  <h1 class="caution skin-yellow">yellow</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="headline-lv2 skin-green">green</h1>
+                  <h1 class="caution skin-green">green</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="headline-lv2 skin-gray">gray</h1>
+                  <h1 class="caution skin-gray">gray</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="headline-lv2 skin-silver">silver</h1>
+                  <h1 class="caution skin-silver">silver</h1>
                 </section><!-- {* /.unit *} -->
               </div><!-- {* /example *} -->
             </div><!-- {* /.col6 *} -->
@@ -382,16 +382,18 @@
                     </div>
                   </article><!-- {* /.cassette *} -->
                   <section class="cassette">
-                    <div class="inner">
-                      <div class="flexible">
-                        <div class="item">
-                          <p class="seemore">もっと見る</p>
-                        </div>
-                        <div class="item-caret">
-                          <div class="item-caret">&gt;</div>
-                        </div>
-                      </div><!-- {* /.flexible *} -->
-                    </div>
+                    <a href="" class="tap">
+                      <div class="inner">
+                        <div class="flexible">
+                          <div class="item">
+                            <p class="seemore">もっと見る</p>
+                          </div>
+                          <div class="item-caret">
+                            <div class="item-caret">&gt;</div>
+                          </div>
+                        </div><!-- {* /.flexible *} -->
+                      </div>
+                    </a><!-- {* /.tap *} -->
                   </section><!-- {* /.cassette *} -->
                 </section><!-- {* /.unit *} -->
               </div><!-- {* /example *} -->
@@ -546,7 +548,7 @@
   });
 })();
 (function(){
-  TOOLKIT.tapped('tap');
+  HACKLEBERRY.tapped('tap');
 })();
 </script>
 
