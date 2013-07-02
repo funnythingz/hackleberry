@@ -48,7 +48,7 @@
         <li><a href="#Unit">Unit</a>
           <ul>
             <li><a href="#Headline">Headline</a></li>
-            <li><a href="#Caution">Caution</a></li>
+            <li><a href="#Caption">Caption</a></li>
             <li><a href="#Cassette">Cassette</a></li>
             <li><a href="#Seemore">Seemore</a></li>
           </ul>
@@ -63,7 +63,7 @@
         <div class="header">
           <h1 class="lv1">Unit</h1>
           <p class="lead">
-            Unitコンポーネントです。Unitは<code class="code">.headline</code>, <code class="code">.caution</code>, <code class="code">.unit</code>, <code class="code">.cassette</code>, <code class="code">.inner</code>を組み合わせて使います。
+            Unitコンポーネントです。Unitは<code class="code">.headline</code>, <code class="code">.caption</code>, <code class="code">.unit</code>, <code class="code">.cassette</code>, <code class="code">.inner</code>を組み合わせて使います。
             <code class="code">.cassette</code>は単体では機能せず、<code class="code">.unit</code>の中で使います。グループ化して使う場合はUnit単位で<code class="code">.cassette</code>をグループ化してください。
             Cassette内には内側の余白は設定されていないため、<code class="code">.inner</code>を併用して使います。
           </p>
@@ -71,7 +71,7 @@
         <section class="unit scaffolding">
           <h1 class="lv2" id="Headline">Headline</h1>
           <p class="sentence">
-            <code class="code">headline</code>
+            <code class="code">.headline</code>
           </p>
           <div class="row">
             <div class="col6">
@@ -130,9 +130,9 @@
           </div><!-- {* /.row *} -->
         </section>
         <section class="unit scaffolding">
-          <h1 class="lv2" id="Caution">Caution</h1>
+          <h1 class="lv2" id="Caption">Caption</h1>
           <p class="sentence">
-            <code class="code">caution</code> headlineはUnitの一番上で使う大見出しですが、cautionは中間で使う中見出しになります。
+            <code class="code">.caption</code> headlineはUnitの一番上で使う大見出しですが、captionは中間で使う中見出しになります。
           </p>
           <div class="row">
             <div class="col6">
@@ -144,7 +144,7 @@
                       <p class="sentence">Cassette</p>
                     </div>
                   </article><!-- {* /.cassette *} -->
-                  <h2 class="caution">Caution</h2>
+                  <h2 class="caption">Caption</h2>
                   <article class="cassette">
                     <div class="inner">
                       <p class="sentence">Cassette</p>
@@ -165,34 +165,34 @@
         </section>
         <section class="unit scaffolding">
           <p class="sentence">
-            <code class="code">.caution.skin-{$color}</code>とすることでcautionの色を変更することができます。
+            <code class="code">.caption.skin-{$color}</code>とすることでcaptionの色を変更することができます。
           </p>
           <div class="row">
             <div class="col6">
               <div class="example">
                 <section class="unit">
-                  <h1 class="caution">default</h1>
+                  <h1 class="caption">default</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="caution skin-purple">purple</h1>
+                  <h1 class="caption skin-purple">purple</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="caution skin-red">red</h1>
+                  <h1 class="caption skin-red">red</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="caution skin-orange">orange</h1>
+                  <h1 class="caption skin-orange">orange</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="caution skin-yellow">yellow</h1>
+                  <h1 class="caption skin-yellow">yellow</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="caution skin-green">green</h1>
+                  <h1 class="caption skin-green">green</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="caution skin-gray">gray</h1>
+                  <h1 class="caption skin-gray">gray</h1>
                 </section><!-- {* /.unit *} -->
                 <section class="unit">
-                  <h1 class="caution skin-silver">silver</h1>
+                  <h1 class="caption skin-silver">silver</h1>
                 </section><!-- {* /.unit *} -->
               </div><!-- {* /example *} -->
             </div><!-- {* /.col6 *} -->
@@ -204,7 +204,7 @@
         <section class="unit scaffolding">
           <h1 class="lv2" id="Cassette">Cassette</h1>
           <p class="sentence">
-            <code class="code">cassette</code>
+            <code class="code">.cassette</code>
           </p>
           <div class="row">
             <div class="col6">

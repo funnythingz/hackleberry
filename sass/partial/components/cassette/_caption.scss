@@ -1,11 +1,11 @@
-.#{$class_caution} {
-  padding: #{$headline_spacingInnerTop/2}px #{$headline_spacingInnerRight}px #{$headline_spacingInnerBottom/2}px #{$headline_spacingInnerLeft}px;
-  background-color: #{$caution_backgroundColor_skinBlue};
+.#{$class_caption} {
+  padding: #{$spacingInner/2}px #{$spacingInner}px #{$spacingInner/2}px #{$spacingInner}px;
+  background-color: #{$caption_backgroundColor_skinBlue};
   border-top:   solid 1px #{$cassette_borderColorTop};
   border-left:  solid 1px #{$cassette_borderColorLeft};
   border-right: solid 1px #{$cassette_borderColorRight};
   @include medium;
-  @include bold;
+  @include normal;
 
   &:first-child{
     @include border-top-radius(5px);
@@ -21,24 +21,24 @@
 
   /* 帯のカラーが変わる場合 */
   &.#{$class_skin-purple} {
-    background-color: #{$caution_backgroundColor_skinPurple};
+    background-color: #{$caption_backgroundColor_skinPurple};
   }
   &.#{$class_skin-red} {
-    background-color: #{$caution_backgroundColor_skinRed};
+    background-color: #{$caption_backgroundColor_skinRed};
   }
   &.#{$class_skin-orange} {
-    background-color: #{$caution_backgroundColor_skinOrange};
+    background-color: #{$caption_backgroundColor_skinOrange};
   }
   &.#{$class_skin-yellow} {
-    background-color: #{$caution_backgroundColor_skinYellow};
+    background-color: #{$caption_backgroundColor_skinYellow};
   }
   &.#{$class_skin-green} {
-    background-color: #{$caution_backgroundColor_skinGreen};
+    background-color: #{$caption_backgroundColor_skinGreen};
   }
   &.#{$class_skin-gray} {
-    background-color: #{$caution_backgroundColor_skinGray};
+    background-color: #{$caption_backgroundColor_skinGray};
   }
   &.#{$class_skin-silver} {
-    background-color: #{$caution_backgroundColor_skinSilver};
+    background-color: #{$caption_backgroundColor_skinSilver};
   }
 }
