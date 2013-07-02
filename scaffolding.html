@@ -11,8 +11,16 @@
   <link rel="apple-touch-icon-precomposed" href="">
   <title>Scaffolding | Hackleberry: HTML5/CSS3/JavaScript UI Framework</title>
   <link rel="shortcut icon" type="image/x-icon" href="">
-  <link rel="stylesheet" type="text/css" href="css/hackleberry.css">
   <script src="js/hackleberry.min.js"></script>
+  <script>
+  (function(){
+   HACKLEBERRY.changeStylesheet({
+     path: 'css/',
+     file: ['hackleberry.css','reference.css'],
+     pure: true
+     });
+   })();
+  </script>
 </head>
 <body>
 

@@ -11,8 +11,16 @@
   <link rel="apple-touch-icon-precomposed" href="">
   <title>Hackleberry::HTML5/CSS3/JavaScript UI Framework</title>
   <link rel="shortcut icon" type="image/x-icon" href="">
-  <link rel="stylesheet" type="text/css" href="css/hackleberry.css">
   <script src="js/hackleberry.min.js"></script>
+  <script>
+  (function(){
+   HACKLEBERRY.changeStylesheet({
+     path: 'css/',
+     file: ['hackleberry.css','reference.css'],
+     pure: true
+     });
+   })();
+  </script>
 </head>
 <body>
 
@@ -67,102 +75,112 @@
           CSSはSass/Compassを導入してハイパフォーマンスな開発を援助します。
         </p>
       </div><!-- {* /.header.page *} -->
-
-      <section class="unit">
-        
-      </section><!-- {* /.unit *} -->
     </article><!-- {* /.unit *} -->
 
     <article class="unit">
-      <div class="header">
-        <h1 class="lv1">Get Started</h1>
-        <p class="lead">
-          Hackleberryの概要と、基本テンプレートを使ったチュートリアルを説明します。
-        </p>
-      </div><!-- {* /.header.page *} -->
+      <h1 class="headline">Get Started</h1>
+      <section class="cassette">
+        <div class="inner">
+          <p class="sentence">
+            Hackleberryの概要と、基本テンプレートを使ったチュートリアルを説明します。
+          </p>
+        </div>
+      </section>
 
-      <section class="unit">
-        <h1 class="lv2">1. Download</h1>
-        <p class="sentence">
-          ソースファイルはダウンロードしてご参照ください。<br>
-          このページでは、コンパイル版Hackleberryファイルを使った作業の始め方のみご説明します。
-        </p>
-        <div class="row">
-          <div class="col6">
-            <section>
-              <button class="button primary large spacing" onclick="location.href='https://github.com/funnythingz/hackleberry/assets/hackleberry.zip'">Download compiled</button>
-              <p class="sentence">
-                作業を開始するのに最も簡単な方法です。
-                CSS、JS、画像が含まれたコンパイル縮小版で、余計なドキュメントやオリジナルのソースファイルは含まれていません。
-              </p>
-            </section>
-          </div>
-          <div class="col6">
-            <section>
-              <button class="button primary large spacing" onclick="location.href='https://github.com/funnythingz/hackleberry/archive/master.zip'">Download source</button>
-              <p class="sentence">
-                全てのCSS、JavaScriptを含んだオリジナルのファイルです。
-                GitHubから直接、最新版をダウンロードすることが出来ます。
-              </p>
-            </section>
+      <h2 class="caption">1. Download</h2>
+      <section class="cassette">
+        <div class="inner">
+          <p class="sentence">
+            ソースファイルはダウンロードしてご参照ください。<br>
+            このページでは、コンパイル版Hackleberryファイルを使った作業の始め方のみご説明します。
+          </p>
+        </div>
+      </section>
+      <section class="cassette">
+        <div class="inner">
+          <div class="row">
+            <div class="col6">
+              <section>
+                <button class="button primary large spacing" onclick="location.href='https://github.com/funnythingz/hackleberry/assets/hackleberry.zip'">Download compiled</button>
+                <p class="sentence">
+                  作業を開始するのに最も簡単な方法です。
+                  CSS、JS、画像が含まれたコンパイル縮小版で、余計なドキュメントやオリジナルのソースファイルは含まれていません。
+                </p>
+              </section>
+            </div>
+            <div class="col6">
+              <section>
+                <button class="button primary large spacing" onclick="location.href='https://github.com/funnythingz/hackleberry/archive/master.zip'">Download source</button>
+                <p class="sentence">
+                  全てのCSS、JavaScriptを含んだオリジナルのファイルです。
+                  GitHubから直接、最新版をダウンロードすることが出来ます。
+                </p>
+              </section>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="unit">
-        <h1 class="lv2">2. File Structure</h1>
-        <p class="sentence spacing">
-          ダウンロードファイル内には、次のファイル構成とコンテンツが含まれており、共通アセットごとにグループ分けされています。
-          また、コンパイル化された通常版と圧縮版があります。
-        </p>
-        <p class="sentence">
-          ダウンロード完了後、圧縮ファイルを解凍してHackleberryのストラクチャを確認してください。
-          ストラクチャは、以下のような形式で書かれています。
-        </p>
-        <script src="https://gist.github.com/funnythingz/5582376.js"></script>
-        <p class="sentence">
-          上記はHackleberryのもっとも基本的な形で、Sassファイルとほぼ全てのウェブプロジェクトにおいて一時的に使えるようにしたコンパイルファイルです。
-          CSSはSass/Compassでコンパイルしていて、cssディレクトリに圧縮された縮小版、css_debugディレクトリに非圧縮の通常版がはいっています。
-          CSSを編集の際にはCSSを直接ではなくSass/Compassを使ってコンパイルしてください。
-          JavaScriptはコンパイル化した通常版（hackleberry.js). と同じく、縮小版(hackleberry.min.js)が含まれています。
-          イメージファイルはImageOptim（Mac用のPNG圧縮ソフト）で圧縮しています。
-        </p>
+      <h2 class="caption">2. File Structure</h2>
+      <section class="cassette">
+        <div class="inner">
+          <p class="sentence spacing">
+            ダウンロードファイル内には、次のファイル構成とコンテンツが含まれており、共通アセットごとにグループ分けされています。
+            また、コンパイル化された通常版と圧縮版があります。
+          </p>
+          <p class="sentence">
+            ダウンロード完了後、圧縮ファイルを解凍してHackleberryのストラクチャを確認してください。
+            ストラクチャは、以下のような形式で書かれています。
+          </p>
+          <script src="https://gist.github.com/funnythingz/5582376.js"></script>
+          <p class="sentence">
+            上記はHackleberryのもっとも基本的な形で、Sassファイルとほぼ全てのウェブプロジェクトにおいて一時的に使えるようにしたコンパイルファイルです。
+            CSSはSass/Compassでコンパイルしていて、cssディレクトリに圧縮された縮小版、css_debugディレクトリに非圧縮の通常版がはいっています。
+            CSSを編集の際にはCSSを直接ではなくSass/Compassを使ってコンパイルしてください。
+            JavaScriptはコンパイル化した通常版（hackleberry.js). と同じく、縮小版(hackleberry.min.js)が含まれています。
+            イメージファイルはImageOptim（Mac用のPNG圧縮ソフト）で圧縮しています。
+          </p>
+        </div>
       </section>
 
-      <section class="unit">
-        <h1 class="lv2">3. What's included</h1>
-        <p class="sentence">
-          HackleberryはHTML、CSS、JSのあらゆるパーツを用意しています。
-          詳しくは各カテゴリページで説明しています。
-        </p>
-        <article>
-          <h1 class="lv3"><a href="scaffolding.html">Scaffolding</a></h1>
-          <p class="sentence">
-            基本レイアウトやスタイルのリセット、余白、グリッドシステムを含んでいます。Hackleberryを使う上では読み込み必須になります。
+      <h2 class="caption">3. What's included</h2>
+      <section class="cassette">
+        <div class="inner">
+          <p class="sentence spacing">
+            HackleberryはHTML、CSS、JSのあらゆるパーツを用意しています。
+            詳しくは各カテゴリページで説明しています。
           </p>
-        </article>
-        <article>
-          <h1 class="lv3"><a href="base.html">Base Elements</a></h1>
-          <p class="sentence">
-            ベースのHTML要素にスタイルをつけたものです。typography, lists, tables, forms, images が含まれます。
-          </p>
-        </article>
-        <article>
-          <h1 class="lv3"><a href="components.html">Components</a></h1>
-          <p class="sentence">
-            Hackleberryが独自に定義しているUIコンポーネント集です。
-          </p>
-        </article>
+          <article>
+            <h1 class="lv3"><a href="scaffolding.html">Scaffolding</a></h1>
+            <p class="sentence">
+              基本レイアウトやスタイルのリセット、余白、グリッドシステムを含んでいます。Hackleberryを使う上では読み込み必須になります。
+            </p>
+          </article>
+          <article>
+            <h1 class="lv3"><a href="base.html">Base Elements</a></h1>
+            <p class="sentence">
+              ベースのHTML要素にスタイルをつけたものです。typography, lists, tables, forms, images が含まれます。
+            </p>
+          </article>
+          <article>
+            <h1 class="lv3"><a href="components.html">Components</a></h1>
+            <p class="sentence">
+              Hackleberryが独自に定義しているUIコンポーネント集です。
+            </p>
+          </article>
+        </div>
       </section>
 
-      <section class="unit">
-        <h1 class="lv2">4. Basic HTML template</h1>
-        <p class="sentence">
-          基本HTMLテンプレートには「2. File Structure」にあるコンテンツが含まれています。
-          こちらを活用して、Hackleberryを使うことが出来ます。
-          典型的なHTMLファイルは、以下のような見た目になっています
-        </p>
-        <script src="https://gist.github.com/funnythingz/5582819.js"></script>
+      <h2 class="caption">4. Basic HTML template</h2>
+      <section class="cassette">
+        <div class="inner">
+          <p class="sentence">
+            基本HTMLテンプレートには「2. File Structure」にあるコンテンツが含まれています。
+            こちらを活用して、Hackleberryを使うことが出来ます。
+            典型的なHTMLファイルは、以下のような見た目になっています
+          </p>
+          <script src="https://gist.github.com/funnythingz/5582819.js"></script>
+        </div>
       </section>
     </article>
 
@@ -171,8 +189,14 @@
 
 <footer class="footer global">
   <div class="container center">
-    <p class="sentence">Made for all good people by <a href="http://www.funnythingz.com" target="_blank">funnythingz</a> in 2013</p>
-    <p class="sentence">Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    <div class="unit">
+      <p class="sentence">
+        Made for all good people by <a href="http://www.funnythingz.com" target="_blank">funnythingz</a> in 2013
+      </p>
+      <p class="sentence">
+        Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+      </p>
+    </div>
   </div><!-- {* /.container *} -->
 </footer><!-- {* /.footer *} -->
 
