@@ -172,6 +172,7 @@ _global.HACKLEBERRY = {
         toggleCallback()
         return
       , false);
+      return
 
     init = ->
       toggleContentsCheck()
@@ -180,6 +181,7 @@ _global.HACKLEBERRY = {
       initCallback()
       return
 
+    init()
     return
 
 }
