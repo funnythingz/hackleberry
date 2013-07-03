@@ -97,7 +97,7 @@
 * Cassette
 */
 /* headline */
-/* caution */
+/* caption */
 /* cassette */
 /* Buttons */
 /*
@@ -1109,18 +1109,18 @@ img.polaroid {
   background-image: linear-gradient(#bdc3c7, #bdc3c7);
 }
 
-.caution {
-  padding: 3.5px 7px 3.5px 7px;
+.caption {
+  padding: 3px 6px 3px 6px;
   background-color: #d7e1ed;
   border-top: solid 1px #e1e2e3;
   border-left: solid 1px #e1e2e3;
   border-right: solid 1px #e1e2e3;
   font-size: 14px;
   line-height: 21px;
-  font-weight: bold;
+  font-weight: normal;
   /* 帯のカラーが変わる場合 */
 }
-.caution:first-child {
+.caption:first-child {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
@@ -1128,7 +1128,7 @@ img.polaroid {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-.caution:last-child {
+.caption:last-child {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -1137,7 +1137,7 @@ img.polaroid {
   border-bottom-right-radius: 5px;
   border-bottom: solid 1px #e1e2e3;
 }
-.caution.only-child {
+.caption.only-child {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
@@ -1151,25 +1151,25 @@ img.polaroid {
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.caution.skin-purple {
+.caption.skin-purple {
   background-color: #e7dceb;
 }
-.caution.skin-red {
+.caption.skin-red {
   background-color: #f8dfe2;
 }
-.caution.skin-orange {
+.caption.skin-orange {
   background-color: #ffdfb6;
 }
-.caution.skin-yellow {
+.caption.skin-yellow {
   background-color: #efeec9;
 }
-.caution.skin-green {
+.caption.skin-green {
   background-color: #cde3e0;
 }
-.caution.skin-gray {
+.caption.skin-gray {
   background-color: #e7e8e9;
 }
-.caution.skin-silver {
+.caption.skin-silver {
   background-color: #f7f8f9;
 }
 
