@@ -189,7 +189,7 @@
         }
       };
       eventFunc = function() {
-        return toggleEvent.addEventListener(eventType, function() {
+        toggleEvent.addEventListener(eventType, function() {
           flag = flag ? false : true;
           toggleFunc();
           toggleCallback();
@@ -201,6 +201,7 @@
         toggleFunc();
         initCallback();
       };
+      init();
     }
   };
 
