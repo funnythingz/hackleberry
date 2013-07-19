@@ -157,10 +157,10 @@ _global.HACKLEBERRY = {
             toggleContents.className = toggleContents.className.replace(args.hideClass, '')
           return
         else
-          for elm in args.contents
+          for elm in toggleContents
             if elm.className.indexOf(args.showClass) < 0
               elm.className += (' ' + args.showClass)
-          for elm in args.contents
+          for elm in toggleContents
             if elm.className.indexOf(args.hideClass) > 0
               elm.className = elm.className.replace(args.hideClass, '')
           return
