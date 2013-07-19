@@ -139,7 +139,7 @@
         }
       };
       toggleFunc = function() {
-        var elm, _i, _j, _k, _l, _len, _len1, _len2, _len3, _ref, _ref1;
+        var elm, _i, _j, _k, _l, _len, _len1, _len2, _len3;
         if (!flag) {
           if (!toggleContentsArrayFlag) {
             if (toggleContents.className.indexOf(args.hideClass) < 0) {
@@ -171,16 +171,14 @@
               toggleContents.className = toggleContents.className.replace(args.hideClass, '');
             }
           } else {
-            _ref = args.contents;
-            for (_k = 0, _len2 = _ref.length; _k < _len2; _k++) {
-              elm = _ref[_k];
+            for (_k = 0, _len2 = toggleContents.length; _k < _len2; _k++) {
+              elm = toggleContents[_k];
               if (elm.className.indexOf(args.showClass) < 0) {
                 elm.className += ' ' + args.showClass;
               }
             }
-            _ref1 = args.contents;
-            for (_l = 0, _len3 = _ref1.length; _l < _len3; _l++) {
-              elm = _ref1[_l];
+            for (_l = 0, _len3 = toggleContents.length; _l < _len3; _l++) {
+              elm = toggleContents[_l];
               if (elm.className.indexOf(args.hideClass) > 0) {
                 elm.className = elm.className.replace(args.hideClass, '');
               }
