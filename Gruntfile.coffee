@@ -9,7 +9,7 @@ module.exports = (grunt)->
     concat:
       dist:
         src: ['src/**/*.js']
-        dest: 'public/hackleberry.js'
+        dest: 'public/js/hackleberry.js'
 
       options:
         separator: ';'
