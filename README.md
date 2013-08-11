@@ -7,7 +7,10 @@
 </pre>
 
 
-HTML5/CSS3/JavaScript Templateです。TypeScriptとSass/Compassでできています。Gruntでコンパイルします。
+HTML5/CSS3/JavaScript Templateです。TypeScriptとSass/Compassでできています。
+Gruntでコンパイルします。
+
+<a href="https://github.com/funnythingz/typos">コンパイルについてはこちら</a>
 
 ### <a href="http://funnythingz.github.io/hackleberry/">Get Started</a>
 
