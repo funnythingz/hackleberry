@@ -4,7 +4,7 @@ module.exports = (grunt)->
 
     uglify:
       build:
-        files: 'public/hackleberry.min.js': ['public/hackleberry.js']
+        files: 'public/js/hackleberry.min.js': ['public/js/hackleberry.js']
 
     concat:
       dist:
