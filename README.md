@@ -7,7 +7,7 @@
 </pre>
 
 
-HTML5/CSS3/JavaScript Frameworkです。Sass/CompassとpureなJSでできています。
+HTML5/CSS3/JavaScript Templateです。TypeScriptとSass/Compassでできています。Gruntでコンパイルします。
 
 ### <a href="http://funnythingz.github.io/hackleberry/">Get Started</a>
 

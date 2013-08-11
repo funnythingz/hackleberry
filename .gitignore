@@ -7,7 +7,6 @@ Thumbs.db
 .config
 .yardoc
 Gemfile.lock
-*.DS_Store
-.sass-cache/*
 *.orig
 node_modules
+.npm-debug.log

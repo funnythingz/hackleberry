@@ -1,9 +1,8 @@
-http_path = "/"
-#sass_options = (environment == :production) ? {:debug_info => false} : {:debug_info => true}
-css_dir = (environment == :production) ? "css" : "css_debug"
+http_path = "./"
+css_dir = "public/css"
 sass_dir = "sass"
-images_dir = "imgs"
-javascripts_dir = "js"
+images_dir = "public/imgs"
+javascripts_dir = "public/"
 
-output_style = (environment == :production) ? :compressed : :expanded
+output_style = :compressed
 line_comments = false
