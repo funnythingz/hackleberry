@@ -31,4 +31,4 @@ hackleberryが独自に定義しているUIコンポーネント集です。
 
 
 <hr>
-<address>&copy; hiroki.oiwa - funnythingz</address>
+<address>&copy; funnythingz</address>
