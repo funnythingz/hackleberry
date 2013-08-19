@@ -3,12 +3,16 @@ module.exports = (grunt)->
     pkg: grunt.file.readJSON('package.json')
 
     uglify:
-      build:
+      hackleberry:
         files: 'public/js/hackleberry.min.js': ['public/js/hackleberry.js']
 
     concat:
-      dist:
-        src: ['src/**/*.js']
+      #dist:
+      #  src: ['src/**/*.js']
+      #  dest: 'public/js/hackleberry.js'
+
+      hackleberry:
+        src: ['src/hackleberry/*.js']
         dest: 'public/js/hackleberry.js'
 
       options:
@@ -54,7 +58,6 @@ module.exports = (grunt)->
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-contrib-connect')
   grunt.loadNpmTasks('grunt-contrib-clean')
-  grunt.loadTasks('tasks')
 
   grunt.registerTask('default', ['watch'])
   grunt.registerTask('server', ['connect'])

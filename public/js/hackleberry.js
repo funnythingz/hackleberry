@@ -82,7 +82,7 @@ var HACKLEBERRY;
             return;
         }
 
-        for (var i, L = elms.length; i < L; i++) {
+        for (var i = 0, L = elms.length; i < L; i++) {
             var val = elms[i];
             val.addEventListener('touchstart', changeFunc, false);
             val.addEventListener('touchmove', offFunc, false);
