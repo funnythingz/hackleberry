@@ -1,5 +1,0 @@
-img {
-  &.#{$class_imgCircle} {
-    @include border-radius(50%);
-  }
-}

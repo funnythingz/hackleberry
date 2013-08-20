@@ -1,5 +1,0 @@
-img {
-  &.#{$class_imgRound} {
-    @include border-radius(#{$imgRoundBorderRadius}px);
-  }
-}
