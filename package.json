@@ -1,22 +1,25 @@
 {
-  "name": "typos",
+  "name": "Hackleberry",
   "version": "0.0.0",
-  "description": "TypeScript & sass/compass Project",
-  "main": "index.js",
+  "description": "HTML5/CSS3/JavaScript UI Framework",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/funnythingz/typos.git"
+    "url": "https://github.com/funnythingz/hackleberry"
   },
   "author": "funnythingz",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/funnythingz/typos/issues"
+    "url": "https://github.com/funnythingz/hackleberry/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
+    "grunt-typescript": "~0.2.3",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-watch": "~0.5.1",
     "grunt-contrib-sass": "~0.4.1",
     "grunt-contrib-compass": "~0.5.0",

@@ -59,5 +59,5 @@ module.exports = (grunt)->
   grunt.loadNpmTasks('grunt-contrib-connect')
   grunt.loadNpmTasks('grunt-contrib-clean')
 
-  grunt.registerTask('default', ['watch'])
+  grunt.registerTask('default', ['typescript', 'concat', 'uglify', 'clean', 'compass'])
   grunt.registerTask('server', ['connect'])
