@@ -1,20 +1,8 @@
 {
   "name": "Hackleberry",
-  "version": "0.0.0",
   "description": "HTML5/CSS3/JavaScript UI Framework",
-  "main": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/funnythingz/hackleberry"
-  },
   "author": "funnythingz",
   "license": "BSD",
-  "bugs": {
-    "url": "https://github.com/funnythingz/hackleberry/issues"
-  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-typescript": "~0.2.3",
