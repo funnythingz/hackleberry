@@ -29,44 +29,44 @@ module HACKLEBERRY {
     function toggleFunc() {
       if(!flag) {
         if(!toggleContentsArrayFlag) {
-          if(toggleContents.className.indexOf(args.hideClass) < 0) {
-            toggleContents.className += (' ' + args.hideClass);
+          if(toggleContents.className.indexOf(' ' + args.hideClass + ' ') < 0) {
+            toggleContents.className += (' ' + args.hideClass + ' ');
           }
-          if(toggleContents.className.indexOf(args.showClass) > 0) {
-            toggleContents.className = toggleContents.className.replace(args.showClass, '');
+          if(toggleContents.className.indexOf(' ' + args.showClass + ' ') > 0) {
+            toggleContents.className = toggleContents.className.replace(' ' + args.showClass + ' ', '');
           }
           return;
         }
         for(var elm in toggleContents) {
-          if(toggleContents[elm].className.indexOf(args.hideClass) < 0) {
-            toggleContents[elm].className += (' ' + args.hideClass);
+          if(toggleContents[elm].className.indexOf(' ' + args.hideClass + ' ') < 0) {
+            toggleContents[elm].className += (' ' + args.hideClass + ' ');
           }
         }
         for(var elm in toggleContents) {
-          if(toggleContents[elm].className.indexOf(args.showClass) > 0) {
-            toggleContents[elm].className = toggleContents[elm].className.replace(args.showClass, '');
+          if(toggleContents[elm].className.indexOf(' ' + args.showClass + ' ') > 0) {
+            toggleContents[elm].className = toggleContents[elm].className.replace(' ' + args.showClass + ' ', '');
           }
         }
         return;
       }
 
       if(!toggleContentsArrayFlag) {
-        if(toggleContents.className.indexOf(args.showClass) < 0) {
-          toggleContents.className += (' ' + args.showClass);
+        if(toggleContents.className.indexOf(' ' + args.showClass + ' ') < 0) {
+          toggleContents.className += (' ' + args.showClass + ' ');
         }
-        if(toggleContents.className.indexOf(args.hideClass) > 0) {
-          toggleContents.className = toggleContents.className.replace(args.hideClass, '');
+        if(toggleContents.className.indexOf(' ' + args.hideClass + ' ') > 0) {
+          toggleContents.className = toggleContents.className.replace(' ' + args.hideClass + ' ', '');
         }
         return;
       }
       for(elm in toggleContents) {
-        if(elm.className.indexOf(args.showClass) < 0) {
-          elm.className += (' ' + args.showClass);
+        if(elm.className.indexOf(' ' + args.showClass + ' ') < 0) {
+          elm.className += (' ' + args.showClass + ' ');
         }
       }
       for(elm in toggleContents) {
-        if(elm.className.indexOf(args.hideClass) > 0) {
-          elm.className = elm.className.replace(args.hideClass, '');
+        if(elm.className.indexOf(' ' + args.hideClass + ' ') > 0) {
+          elm.className = elm.className.replace(' ' + args.hideClass + ' ', '');
         }
       }
       return;
