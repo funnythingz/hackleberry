@@ -12,19 +12,27 @@ Gruntでコンパイルします。
 
 <a href="https://github.com/funnythingz/typos">コンパイルについてはこちら</a>
 
-### <a href="http://funnythingz.github.io/hackleberry/">Get Started</a>
+### Get Started
+
+http://funnythingz.github.io/hackleberry/
 
 hackleberryの概要と、基本テンプレートを使ったチュートリアルを説明しています。
 
-### <a href="http://funnythingz.github.io/hackleberry/scaffolding.html">Scaffolding</a>
+### Scaffolding
+
+http://funnythingz.github.io/hackleberry/scaffolding.html
 
 基本レイアウトやスタイルのリセット、余白、グリッドシステムを含んでいます。hackleberryを使う上では読み込み必須になります。
 
-### <a href="http://funnythingz.github.io/hackleberry/base.html">Base Elements</a>
+### Base Elements
+
+http://funnythingz.github.io/hackleberry/base.html
 
 ベースのHTML要素にスタイルをつけたものです。typography, lists, tables, forms, images が含まれます。
 
-### <a href="http://funnythingz.github.io/hackleberry/components.html">Components</a>
+### Components
+
+http://funnythingz.github.io/hackleberry/components.html
 
 hackleberryが独自に定義しているUIコンポーネント集です。
 
