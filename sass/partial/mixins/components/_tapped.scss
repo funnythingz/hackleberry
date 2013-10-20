@@ -1,4 +1,6 @@
-@-webkit-keyframes _tapped {
+@import "../../animation/core";
+
+@include keyframes(_tapped) {
   0% {
     //color: #{$status_normalColor};
     background-color: transparent;
@@ -8,16 +10,12 @@
     background-color: #{$cassette_tappedBackgroundColor};
   }
 }
+
 @mixin tapped {
   background-color: #{$cassette_tappedBackgroundColor};
-  @include experimental(animation-name, _tapped);
-  //@include experimental(animation-iteration-count, 1);
-  @include experimental(animation-direction, normal);
-  @include experimental(animation-duration, 0.1s);
-  @include experimental(animation-timing-function, ease-in);
-  @include experimental(animation-delay, 0s);
-  //color: #{$cassette_tappedColor};
-  //.minor {
-  //  color: #{$cassette_tappedColor};
-  //}
+  @include animation(_tapped 0.1s ease-in);
+}
+
+.tapped {
+  @include tapped;
 }

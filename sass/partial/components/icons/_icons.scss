@@ -1,12 +1,8 @@
-@mixin _icon($_size, $_radius){
-  width:  #{$_size}px;
-  height: #{$_size}px;
+%_icon {
   display: inline-block;
   vertical-align: top;
   background-repeat: no-repeat;
   background-position: center center;
-  @include background-size(#{$_size}px);
-  @include border-radius(#{$_radius}px);
 
   /* tap */
   &.tap {
@@ -19,6 +15,23 @@
         width:  100%;
         height: 100%;
         background-color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+}
+
+@mixin _icon($_size, $_radius){
+  width:  #{$_size}px;
+  height: #{$_size}px;
+  @include background-size(#{$_size}px);
+  @include border-radius(#{$_radius}px);
+
+  @extend %_icon;
+
+  /* tap */
+  &.tap {
+    &.tapped {
+      &::after {
         @include border-radius(#{$_radius}px);
       }
     }

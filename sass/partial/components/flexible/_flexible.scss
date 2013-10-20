@@ -1,7 +1,11 @@
+%_display {
+  display: table-cell;
+}
+
 @mixin wrap-icon($_size){
   > .#{$class_wrap-icon}#{$_size} {
     width: #{$_size + $spacingInner}px;
-    display: table-cell;
+    @extend %_display;
     @include left;
   }
 }
@@ -12,18 +16,18 @@
   table-layout: fixed;
   border-collapse: collapse;
   > .#{$class_item} {
-    display: table-cell;
+    @extend %_display;
     vertical-align: top;
     @include left;
   }
   > .#{$class_item-caret} {
-    display: table-cell;
+    @extend %_display;
     vertical-align: middle;
     @include right;
     width: 18px;
   }
   > .#{$class_item-button} {
-    display: table-cell;
+    @extend %_display;
     vertical-align: middle;
     @include right;
     width: 6em;
