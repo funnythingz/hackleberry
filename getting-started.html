@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Hackleberry: HTML5/CSS3/JavaScript UI Framework">
+  <meta name="keywords" content="Hackleberry, sass, compass">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=10">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <link rel="apple-touch-icon-precomposed" href="">
+  <title>Hackleberry::HTML5/CSS3/JavaScript UI Framework</title>
+  <link rel="shortcut icon" type="image/x-icon" href="">
+  <script src="js/hackleberry.min.js"></script>
+  <script>
+  (function(){
+   HACKLEBERRY.changeStylesheet({
+     path: 'css/',
+     file: ['hackleberry.css','reference.css'],
+     pure: true
+     });
+   })();
+  </script>
+</head>
+<body>
+
+<section id="globalMenu" class="global-menu fixed">
+  <nav class="menu global container center">
+    <ul class="horizontal"><!--
+      --><li class="spacing-left10"><a href="index.html">Hackleberry</a></li><!--
+      --><li class="spacing-left10 current"><a href="getting-started.html">Getting Started</a></li><!--
+      --><li class="spacing-left10"><a href="scaffolding.html">Scaffolding</a></li><!--
+      --><li class="spacing-left10"><a href="base.html">Base Elements</a></li><!--
+      --><li class="spacing-left10"><a href="components.html">Components</a></li><!--
+      --><li class="spacing-left10"><a href="icons.html">Icons</a></li><!--
+    --></ul>
+  </nav>
+</section>
+
+<header class="header">
+  <div class="container">
+    <h1 class="lv1">Getting Started</h1>
+    <p class="lead">
+      HackleberryはHTML5/CSS3/JavaScript によるスマートフォンに最適化されたUIを提供するためのフレームワークです。<br>
+      CSSはSass/Compassを導入してハイパフォーマンスな開発を援助します。
+    </p>
+  </div><!-- {* /.container *} -->
+</header><!-- {* /.header *} -->
+
+<section>
+  <div class="container">
+
+    <article class="unit">
+      <h1 class="lv2">1. Download</h1>
+      <section>
+        <p class="sentence">
+          全てのCSS、JavaScriptを含んだオリジナルのファイルです。
+          GitHubから直接、最新版をダウンロードすることが出来ます。<br>
+          ソースファイルはダウンロードしてご参照ください。
+        </p>
+        <button class="button primary large spacing" onclick="location.href='https://github.com/funnythingz/hackleberry/archive/master.zip'">Download source</button>
+      </section>
+
+      <h1 class="lv2">2. File Structure</h1>
+      <section>
+        <p class="sentence spacing">
+          ダウンロードファイル内には、次のファイル構成とコンテンツが含まれており、共通アセットごとにグループ分けされています。
+          また、コンパイル化された通常版と圧縮版があります。
+        </p>
+        <p class="sentence">
+          ダウンロード完了後、圧縮ファイルを解凍してHackleberryのストラクチャを確認してください。
+          ストラクチャは、以下のような形式で書かれています。
+        </p>
+        <script src="https://gist.github.com/funnythingz/5582376.js"></script>
+        <p class="sentence">
+          上記はHackleberryのもっとも基本的な形で、Sassファイルとほぼ全てのウェブプロジェクトにおいて一時的に使えるようにしたコンパイルファイルです。
+          CSSはSass/Compassでコンパイルしていて、cssディレクトリに圧縮された縮小版、css_debugディレクトリに非圧縮の通常版がはいっています。
+          CSSを編集の際にはCSSを直接ではなくSass/Compassを使ってコンパイルしてください。
+          JavaScriptはコンパイル化した通常版（hackleberry.js). と同じく、縮小版(hackleberry.min.js)が含まれています。
+          イメージファイルはImageOptim（Mac用のPNG圧縮ソフト）で圧縮しています。
+        </p>
+      </section>
+
+      <h1 class="lv2">3. What's included</h1>
+      <section>
+        <p class="sentence spacing">
+          HackleberryはHTML、CSS、JSのあらゆるパーツを用意しています。
+          詳しくは各カテゴリページで説明しています。
+        </p>
+        <article class="unit">
+          <h1 class="lv3"><a href="scaffolding.html">Scaffolding</a></h1>
+          <p class="sentence">
+            基本レイアウトやスタイルのリセット、余白、グリッドシステムを含んでいます。Hackleberryを使う上では読み込み必須になります。
+          </p>
+        </article>
+        <article class="unit">
+          <h1 class="lv3"><a href="base.html">Base Elements</a></h1>
+          <p class="sentence">
+            ベースのHTML要素にスタイルをつけたものです。typography, lists, tables, forms, images が含まれます。
+          </p>
+        </article>
+        <article class="unit">
+          <h1 class="lv3"><a href="components.html">Components</a></h1>
+          <p class="sentence">
+            Hackleberryが独自に定義しているUIコンポーネント集です。
+          </p>
+        </article>
+      </section>
+
+      <h1 class="lv2">4. Basic HTML template</h1>
+      <section>
+        <p class="sentence">
+          基本HTMLテンプレートには「2. File Structure」にあるコンテンツが含まれています。
+          こちらを活用して、Hackleberryを使うことが出来ます。
+          典型的なHTMLファイルは、以下のような見た目になっています
+        </p>
+        <script src="https://gist.github.com/funnythingz/5582819.js"></script>
+      </section>
+    </article>
+
+  </div><!-- {* /.container *} -->
+</section>
+
+<footer class="footer global">
+  <div class="container center">
+    <div class="unit">
+      <p class="sentence">
+        &copy; <a href="http://www.funnythingz.com" target="_blank">funnythingz</a>
+      </p>
+    </div>
+  </div><!-- {* /.container *} -->
+</footer><!-- {* /.footer *} -->
+
+</body></html>
