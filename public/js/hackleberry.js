@@ -72,14 +72,13 @@ var HACKLEBERRY;
 
             if (!re.test(this.className)) {
                 this.className += ' ' + tapped;
-                return;
+            } else {
+                offFunc();
             }
-            offFunc();
         }
 
         function offFunc() {
             this.className = this.className.replace(tapped, '');
-            return;
         }
 
         for (var i = 0, L = elms.length; i < L; i++) {
@@ -193,7 +192,7 @@ var HACKLEBERRY;
         } else if (ua.match(/Trident/)) {
             return 'ms';
         }
-        return null;
+        return;
     }
     HACKLEBERRY.uaTypeFactory = uaTypeFactory;
 })(HACKLEBERRY || (HACKLEBERRY = {}));
