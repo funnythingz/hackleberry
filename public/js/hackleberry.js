@@ -105,16 +105,15 @@ var HACKLEBERRY;
         var toggleCallback = (args.toggleCallback) ? args.toggleCallback : function () {
         };
 
-        function toggleContentsCheck() {
+        function getToggleContents() {
             if (toggleContentsArrayFlag) {
                 toggleContents = [];
                 for (var elm in args.contents) {
                     toggleContents.push(d.getElementById(elm));
                 }
-                return;
+            } else {
+                toggleContents = d.getElementById(args.contents);
             }
-            toggleContents = d.getElementById(args.contents);
-            return;
         }
 
         function toggleFunc() {
@@ -172,7 +171,7 @@ var HACKLEBERRY;
         }
 
         function init() {
-            toggleContentsCheck();
+            getToggleContents();
             eventFunc();
             toggleFunc();
             initCallback();

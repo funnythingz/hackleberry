@@ -14,16 +14,15 @@ module HACKLEBERRY {
     var initCallback = (args.initCallback)? args.initCallback : function(){};
     var toggleCallback = (args.toggleCallback)? args.toggleCallback : function(){};
 
-    function toggleContentsCheck() {
+    function getToggleContents() {
       if(toggleContentsArrayFlag) {
         toggleContents = [];
         for(var elm in args.contents) {
           toggleContents.push(d.getElementById(elm));
         }
-        return;
+      } else {
+        toggleContents = d.getElementById(args.contents);
       }
-      toggleContents = d.getElementById(args.contents);
-      return
     }
 
     function toggleFunc() {
@@ -81,7 +80,7 @@ module HACKLEBERRY {
     }
 
     function init() {
-      toggleContentsCheck();
+      getToggleContents();
       eventFunc();
       toggleFunc();
       initCallback();
