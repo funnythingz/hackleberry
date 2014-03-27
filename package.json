@@ -6,12 +6,11 @@
   "license": "BSD",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-ts": "latest",
+    "grunt-typescript": "latest",
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-watch": "~0.5.1",
-    "grunt-contrib-sass": "~0.4.1",
-    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-compass": "",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-connect": "~0.3.0"
   }

@@ -18,11 +18,9 @@ module.exports = (grunt)->
       options:
         separator: ';'
 
-    ts:
+    typescript:
       base:
         src: ['src/**/*.ts']
-        options:
-          sourceMap: false
 
     compass:
       dist:
@@ -32,7 +30,7 @@ module.exports = (grunt)->
     watch:
       ts:
         files: ['src/**/*.ts']
-        tasks: ['ts', 'concat', 'uglify', 'clean']
+        tasks: ['typescript', 'concat', 'uglify', 'clean']
         options:
           atBegin: true
 
@@ -42,7 +40,7 @@ module.exports = (grunt)->
         options:
           atBegin: true
 
-    clean: ['src/**/*.js', 'tscommand.tmp.txt']
+    clean: ['src/**/*.js']
 
     connect:
       server:
@@ -54,12 +52,12 @@ module.exports = (grunt)->
   })
 
   grunt.loadNpmTasks('grunt-contrib-compass')
-  grunt.loadNpmTasks('grunt-ts')
+  grunt.loadNpmTasks('grunt-typescript')
   grunt.loadNpmTasks('grunt-contrib-concat')
   grunt.loadNpmTasks('grunt-contrib-uglify')
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-contrib-connect')
   grunt.loadNpmTasks('grunt-contrib-clean')
 
-  grunt.registerTask('default', ['ts', 'concat', 'uglify', 'clean', 'compass'])
+  grunt.registerTask('default', ['typescript', 'concat', 'uglify', 'clean', 'compass'])
   grunt.registerTask('server', ['connect'])
