@@ -7,10 +7,7 @@
 </pre>
 
 
-HTML5/CSS3/JavaScript Templateです。TypeScriptとSass/Compassでできています。
-Gruntでコンパイルします。
-
-<a href="http://www.funnythingz.com/typeSC/">コンパイルについてはこちら</a>
+HTML5/CSS3 UIフレームワークです。TypeScriptとSass/Compassでつくってます。
 
 ### Get Started
 
