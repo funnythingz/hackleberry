@@ -1,4 +1,10 @@
 module.exports = (grunt)->
+
+  require('load-grunt-tasks')(grunt)
+
+  grunt.registerTask('default', ['typescript', 'uglify', 'clean', 'compass'])
+  grunt.registerTask('server', ['connect'])
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json')
 
@@ -6,21 +12,10 @@ module.exports = (grunt)->
       hackleberry:
         files: 'public/js/hackleberry.min.js': ['public/js/hackleberry.js']
 
-    concat:
-      #dist:
-      #  src: ['src/**/*.js']
-      #  dest: 'public/js/hackleberry.js'
-
-      hackleberry:
-        src: ['src/hackleberry/*.js']
-        dest: 'public/js/hackleberry.js'
-
-      options:
-        separator: ';'
-
     typescript:
       base:
         src: ['src/**/*.ts']
+        dest: 'public/js/hackleberry.js'
 
     compass:
       dist:
@@ -30,7 +25,7 @@ module.exports = (grunt)->
     watch:
       ts:
         files: ['src/**/*.ts']
-        tasks: ['typescript', 'concat', 'uglify', 'clean']
+        tasks: ['typescript', 'uglify', 'clean']
         options:
           atBegin: true
 
@@ -50,14 +45,3 @@ module.exports = (grunt)->
           keepalive: true
 
   })
-
-  grunt.loadNpmTasks('grunt-contrib-compass')
-  grunt.loadNpmTasks('grunt-typescript')
-  grunt.loadNpmTasks('grunt-contrib-concat')
-  grunt.loadNpmTasks('grunt-contrib-uglify')
-  grunt.loadNpmTasks('grunt-contrib-watch')
-  grunt.loadNpmTasks('grunt-contrib-connect')
-  grunt.loadNpmTasks('grunt-contrib-clean')
-
-  grunt.registerTask('default', ['typescript', 'concat', 'uglify', 'clean', 'compass'])
-  grunt.registerTask('server', ['connect'])
