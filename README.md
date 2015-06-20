@@ -6,7 +6,6 @@
                                                            /___/  
 </pre>
 
-
 HTML5/CSS3 UIフレームワークです。TypeScriptとSass/Compassでつくってます。
 
 ### Get Started
@@ -32,8 +31,6 @@ http://www.hackleberry.me/base.html
 http://www.hackleberry.me/components.html
 
 hackleberryが独自に定義しているUIコンポーネント集です。
-
-
 
 <hr>
 <address>&copy; funnythingz</address>
