@@ -1,5 +1,21 @@
 var HACKLEBERRY;
 (function (HACKLEBERRY) {
+    function uaTypeFactory(ua) {
+        if (ua.match(/AppleWebKit/)) {
+            return 'webkit';
+        } else if (ua.match(/Opera/)) {
+            return 'o';
+        } else if (ua.match(/Firefox/)) {
+            return 'moz';
+        } else if (ua.match(/Trident/)) {
+            return 'ms';
+        }
+        return;
+    }
+    HACKLEBERRY.uaTypeFactory = uaTypeFactory;
+})(HACKLEBERRY || (HACKLEBERRY = {}));
+var HACKLEBERRY;
+(function (HACKLEBERRY) {
     function changeStylesheet(args) {
         var ua = navigator.userAgent;
         var head = document.getElementsByTagName('head')[0];
@@ -11,7 +27,7 @@ var HACKLEBERRY;
     }
     HACKLEBERRY.changeStylesheet = changeStylesheet;
 })(HACKLEBERRY || (HACKLEBERRY = {}));
-;var HACKLEBERRY;
+var HACKLEBERRY;
 (function (HACKLEBERRY) {
     function scrollFixed(args) {
         var elm = document.getElementById(args.id);
@@ -61,7 +77,7 @@ var HACKLEBERRY;
     }
     HACKLEBERRY.scrollFixed = scrollFixed;
 })(HACKLEBERRY || (HACKLEBERRY = {}));
-;var HACKLEBERRY;
+var HACKLEBERRY;
 (function (HACKLEBERRY) {
     function tapped(tap, tapped) {
         var elms = document.getElementsByClassName(tap);
@@ -90,7 +106,7 @@ var HACKLEBERRY;
     }
     HACKLEBERRY.tapped = tapped;
 })(HACKLEBERRY || (HACKLEBERRY = {}));
-;var HACKLEBERRY;
+var HACKLEBERRY;
 (function (HACKLEBERRY) {
     function toggle(args) {
         var d = document;
@@ -179,20 +195,4 @@ var HACKLEBERRY;
         init();
     }
     HACKLEBERRY.toggle = toggle;
-})(HACKLEBERRY || (HACKLEBERRY = {}));
-;var HACKLEBERRY;
-(function (HACKLEBERRY) {
-    function uaTypeFactory(ua) {
-        if (ua.match(/AppleWebKit/)) {
-            return 'webkit';
-        } else if (ua.match(/Opera/)) {
-            return 'o';
-        } else if (ua.match(/Firefox/)) {
-            return 'moz';
-        } else if (ua.match(/Trident/)) {
-            return 'ms';
-        }
-        return;
-    }
-    HACKLEBERRY.uaTypeFactory = uaTypeFactory;
 })(HACKLEBERRY || (HACKLEBERRY = {}));

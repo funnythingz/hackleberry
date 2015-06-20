@@ -6,7 +6,31 @@
                                                            /___/  
 </pre>
 
-このリポジトリは[こちら](https://github.com/hackleberry/hackleberry)に移行しました。
+HTML5/CSS3 UIフレームワークです。TypeScriptとSass/Compassでつくってます。
+
+### Get Started
+
+http://www.hackleberry.me/getting-started.html
+
+hackleberryの概要と、基本テンプレートを使ったチュートリアルを説明しています。
+
+### Scaffolding
+
+http://www.hackleberry.me/scaffolding.html
+
+基本レイアウトやスタイルのリセット、余白、グリッドシステムを含んでいます。hackleberryを使う上では読み込み必須になります。
+
+### Base Elements
+
+http://www.hackleberry.me/base.html
+
+ベースのHTML要素にスタイルをつけたものです。typography, lists, tables, forms, images が含まれます。
+
+### Components
+
+http://www.hackleberry.me/components.html
+
+hackleberryが独自に定義しているUIコンポーネント集です。
 
 <hr>
 <address>&copy; funnythingz</address>
